@@ -1,3 +1,3 @@
 function bbc
-    brew bundle cleanup --file=~/personal/dotfiles/brew/macOS.Brewfile --force
+    brew bundle cleanup --file=~/.dotfiles/brew/macOS.Brewfile --force
 end
