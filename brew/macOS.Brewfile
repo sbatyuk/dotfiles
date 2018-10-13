@@ -4,14 +4,14 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
-tap "homebrew/services"
+# tap "homebrew/services"
 
 ##################### brew #####################
-brew "ack"
+brew "ag"
 brew "cmake" # for YouCompleteMe vim plugin
 brew "coreutils" # for awesome commands like timeout
 brew "extract_url" # for urlview tmux plugin
-brew "ffmpeg" # for being able to manipulate videos for example
+# brew "ffmpeg" # for being able to manipulate videos for example
 brew "fish"
 brew "gifsicle" # for gif_compress fish function
 brew "git"
@@ -20,49 +20,54 @@ brew "python@2"
 brew "httpie"
 brew "hub"
 brew "m-cli"
-brew "mariadb", restart_service: :changed
+# brew "mariadb", restart_service: :changed
 brew "node"
-brew "p7zip"
+# brew "p7zip"
 brew "pipenv"
-brew "postgresql", restart_service: :changed
+# brew "postgresql", restart_service: :changed
 brew "reattach-to-user-namespace" # for tmux commands to work
-brew "redis", restart_service: :changed
+# brew "redis", restart_service: :changed
 brew "tldr"
 brew "tmux"
-brew "trash"
+# brew "trash"
 brew "tree"
 brew "vim"
 brew "wget"
 brew "wifi-password"
 brew "yarn"
-brew "youtube-dl"
+# brew "youtube-dl"
 brew "z"
 brew "heroku/brew/heroku"
 
 ##################### cask #####################
-cask "1password"
-cask "alfred"
-cask "bartender"
+# cask "1password"
+cask "adobe-acrobat-reader"
+# cask "alfred"
+cask "atom"
+# cask "bartender"
+cask "cheatsheet"
 cask "docker"
-cask "dropbox"
-cask "firefox"
+# cask "dropbox"
+# cask "firefox"
 cask "font-fira-mono-for-powerline" # for iTerm2 powerline
-cask "gimp"
+# cask "gimp"
 cask "google-chrome"
-cask "google-cloud-sdk"
+# cask "google-cloud-sdk"
+cask "google-featured-photos"
+cask "google-hangouts"
 cask "iterm2"
-cask "microsoft-office"
-cask "nordvpn"
+# cask "microsoft-office"
+# cask "nordvpn"
 cask "postico"
 cask "postman"
-cask "robo-3t"
-cask "sequel-pro"
+# cask "robo-3t"
+# cask "sequel-pro"
+cask "skype"
 cask "spectacle"
-cask "spotify"
-cask "sublime-text"
-cask "teamviewer"
-cask "the-unarchiver"
-cask "transmission"
-cask "tunnelblick"
-cask "vlc"
-
+# cask "spotify"
+# cask "sublime-text"
+# cask "teamviewer"
+# cask "the-unarchiver"
+# cask "transmission"
+# cask "tunnelblick"
+# cask "vlc"

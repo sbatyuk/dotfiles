@@ -14,7 +14,8 @@ set --global --export fish_user_paths /usr/local/bin $fish_user_paths # Homebrew
 # Configuration for Powerline
 ############################################################################
 set --global --export \
-    POWERLINE_ROOT_REPO /usr/local/lib/python3.6/site-packages
+    POWERLINE_ROOT_REPO \
+    (pip3 show powerline-status | ag location | cut -d' ' -f2)
 set fish_function_path \
     $fish_function_path "$POWERLINE_ROOT_REPO/powerline/bindings/fish"
 powerline-daemon --quiet
@@ -27,4 +28,3 @@ set -q XDG_DATA_HOME
     and set --global --export OMF_PATH "$XDG_DATA_HOME/omf"
     or set  --global --export OMF_PATH "$HOME/.local/share/omf"
 source $OMF_PATH/init.fish
-

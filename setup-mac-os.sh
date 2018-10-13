@@ -2,7 +2,7 @@
 
 main() {
     # First things first, asking for sudo credentials
-    ask_for_sudo
+    # ask_for_sudo
     # Installing Homebrew, the basis of anything and everything
     install_homebrew
     # Cloning Dotfiles repository for install_packages_with_brewfile
@@ -33,7 +33,7 @@ main() {
     # Update /etc/hosts
     update_hosts_file
     # Setting up macOS defaults
-    setup_macOS_defaults
+    # setup_macOS_defaults
     # Updating login items
     update_login_items
 }
@@ -58,8 +58,13 @@ function install_homebrew() {
     if hash brew 2>/dev/null; then
         success "Homebrew already exists."
     else
-url=https://raw.githubusercontent.com/Sajjadhosn/dotfiles/master/installers/homebrew_installer
-        if /usr/bin/ruby -e "$(curl -fsSL ${url})"; then
+        url=https://raw.githubusercontent.com/Homebrew/install/master/install
+        # Prevent Homebrew installer waiting for user input
+        export CI=true
+        /usr/bin/ruby -e "$(curl -fsSL ${url})"
+        homebrew_installed=$?
+        unset CI
+        if [ homebrew_installed -eq 0 ]; then
             success "Homebrew installation succeeded."
         else
             error "Homebrew installation failed."
@@ -233,9 +238,9 @@ function setup_symlinks() {
     #symlink "spectacle" \
     # the above line should be commented out and used instead of the "cp" below
     # when Spectacle fixes the sorting issue of Shortcuts.json file
-    cp \
-        ${DOTFILES_REPO}/spectacle/Shortcuts.json \
-        ~/Library/Application\ Support/Spectacle/Shortcuts.json
+    # cp \
+    #     ${DOTFILES_REPO}/spectacle/Shortcuts.json \
+    #     ~/Library/Application\ Support/Spectacle/Shortcuts.json
     symlink "fish:completions" ${DOTFILES_REPO}/fish/completions \
         ~/.config/fish/completions
     symlink "fish:functions" ${DOTFILES_REPO}/fish/functions \
@@ -306,12 +311,12 @@ function setup_macOS_defaults() {
 
 function update_login_items() {
     info "Updating login items..."
-    login_item /Applications/1Password\ 7.app
-    login_item /Applications/Alfred\ 3.app
-    login_item /Applications/Bartender\ 3.app
+    # login_item /Applications/1Password\ 7.app
+    # login_item /Applications/Alfred\ 3.app
+    # login_item /Applications/Bartender\ 3.app
     login_item /Applications/Docker.app
-    login_item /Applications/Dropbox.app
-    login_item /Applications/NordVPN.app
+    # login_item /Applications/Dropbox.app
+    # login_item /Applications/NordVPN.app
     login_item /Applications/Spectacle.app
     login_item /Applications/iTerm.app
     success "Login items successfully updated."
