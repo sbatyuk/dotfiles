@@ -7,7 +7,6 @@ tap "homebrew/core"
 # tap "homebrew/services"
 
 ##################### brew #####################
-brew "ag"
 brew "cmake" # for YouCompleteMe vim plugin
 brew "coreutils" # for awesome commands like timeout
 brew "extract_url" # for urlview tmux plugin
@@ -20,6 +19,7 @@ brew "python@2"
 brew "httpie"
 brew "hub"
 brew "m-cli"
+brew "mas"
 # brew "mariadb", restart_service: :changed
 brew "node"
 # brew "p7zip"
@@ -27,6 +27,7 @@ brew "pipenv"
 # brew "postgresql", restart_service: :changed
 brew "reattach-to-user-namespace" # for tmux commands to work
 # brew "redis", restart_service: :changed
+brew "the_silver_searcher"
 brew "tldr"
 brew "tmux"
 # brew "trash"
@@ -71,3 +72,16 @@ cask "spectacle"
 # cask "transmission"
 # cask "tunnelblick"
 # cask "vlc"
+
+##################### mas #####################
+mas "Agenda", id: 1287445660
+mas "Be Focused", id: 973134470
+mas "Bear", id: 1091189122
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Slack", id: 803453959
+mas "Things3", id: 904280696
+mas "Trello", id: 1278508951
