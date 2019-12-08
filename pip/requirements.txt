@@ -31,5 +31,5 @@ virtualenv-clone==0.5.3   # via pipenv
 virtualenv==16.7.8
 
 # The following packages are considered to be unsafe in a requirements file:
-# pip==19.3.1               # via pipenv
-# setuptools==42.0.2        # via pipenv
+# pip
+# setuptools
