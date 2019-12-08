@@ -4,31 +4,32 @@
 #
 #    pip-compile requirements.in
 #
-certifi==2019.9.11        # via pipenv, requests
+asgiref==3.2.3            # via django
+certifi==2019.11.28       # via pipenv, requests
 chardet==3.0.4            # via requests
 click==7.0                # via pip-tools, tmuxp
-colorama==0.4.1           # via tmuxp
-django==2.2.6
+colorama==0.4.3           # via tmuxp
+django==3.0
 idna==2.8                 # via requests
 kaptan==0.5.12            # via tmuxp
 libtmux==0.8.2            # via tmuxp
 mypy-extensions==0.4.3    # via mypy
-mypy==0.740
-pip-tools==4.2.0
+mypy==0.750
+pip-tools==4.3.0
 pipenv==2018.11.26
 powerline-status==2.7
 pytz==2019.3              # via django
-pyyaml==5.1.2             # via kaptan
+pyyaml==5.2               # via kaptan
 requests==2.22.0
-six==1.12.0               # via pip-tools
+six==1.13.0               # via pip-tools
 sqlparse==0.3.0           # via django
-tmuxp==1.5.3
+tmuxp==1.5.4
 typed-ast==1.4.0          # via mypy
-typing-extensions==3.7.4  # via mypy
-urllib3==1.25.6           # via requests
+typing-extensions==3.7.4.1  # via mypy
+urllib3==1.25.7           # via requests
 virtualenv-clone==0.5.3   # via pipenv
-virtualenv==16.7.7
+virtualenv==16.7.8
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip==19.3.1               # via pipenv
-# setuptools==42.0.0        # via pipenv
+# setuptools==42.0.2        # via pipenv
