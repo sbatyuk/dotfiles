@@ -1,3 +1,3 @@
 function ddc
-    docker-compose down; clear
+    clear; docker-compose down $argv
 end
