@@ -26,7 +26,7 @@
 | `✱` + ↑   | Resize window to half towards up      |
 | `✱` + →   | Resize window to half towards right   |
 | `✱` + B   | Maximize window                       |
-| `⌥` + \`  | Move focus to next window of same app |
+| `⌥` + `\`  | Move focus to next window of same app |
 
 ## Karabiner shortcuts
 
