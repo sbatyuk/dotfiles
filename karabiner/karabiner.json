@@ -1010,15 +1010,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "q",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_command",
-                                            "right_control",
-                                            "right_shift",
-                                            "right_option"
-                                        ]
-                                    }
+                                    "key_code": "escape"
                                 },
                                 "to": [
                                     {
@@ -1072,10 +1064,10 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "left_gui"
+                                "key_code": "application"
                             },
                             "to": {
-                                "key_code": "left_alt"
+                                "key_code": "right_alt"
                             }
                         },
                         {
@@ -1084,6 +1076,14 @@
                             },
                             "to": {
                                 "key_code": "left_gui"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_gui"
+                            },
+                            "to": {
+                                "key_code": "left_alt"
                             }
                         },
                         {
@@ -1092,14 +1092,6 @@
                             },
                             "to": {
                                 "key_code": "right_gui"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "application"
-                            },
-                            "to": {
-                                "key_code": "right_alt"
                             }
                         }
                     ]
@@ -1212,14 +1204,6 @@
                 {
                     "from": {
                         "key_code": "delete_or_backspace"
-                    },
-                    "to": {
-                        "key_code": "vk_none"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "escape"
                     },
                     "to": {
                         "key_code": "vk_none"

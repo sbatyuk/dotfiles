@@ -91,13 +91,13 @@ Directly inspired from amazing [Capslock Enhancement](https://github.com/Vonng/C
 
 ## Misc
 
-| Origin                 | Maps to             | Comment                                        |
-| ---------------------- | ------------------- | ---------------------------------------------- |
-| `✱` + /                | `⇧⌘⌃4`              | Screenshot of area to clipboard                |
-| `✱` + `⌘` + /          | `⇧⌘4`               | Screenshot of area to file                     |
-| `✱` + X                | `⌃␢`  Ctrl+Spacebar | Switch Input Source                            |
-| `✱` + `I`              | `⌃I`                | Ctrl + I                                       |
-| `✱` + `O`              | `⌃O`                | Ctrl + O                                       |
-| `✱` + `R`              | `⌃R`                | Ctrl + R                                       |
-| `✱` + `Q`              | `⌃⌘Q`               | Lock screen                                    |
-| `✱` + `Y`              | `⌃⌘␢`               | Native macOS emoji keyboard popup              |
+| Origin        | Maps to             | Comment                           |
+| ------------- | ------------------- | --------------------------------- |
+| `✱` + /       | `⇧⌘⌃4`              | Screenshot of area to clipboard   |
+| `✱` + `⌘` + / | `⇧⌘4`               | Screenshot of area to file        |
+| `✱` + X       | `⌃␢`  Ctrl+Spacebar | Switch Input Source               |
+| `✱` + `I`     | `⌃I`                | Ctrl + I                          |
+| `✱` + `O`     | `⌃O`                | Ctrl + O                          |
+| `✱` + `R`     | `⌃R`                | Ctrl + R                          |
+| `esc`         | `⌃⌘Q`               | Lock screen                       |
+| `✱` + `Y`     | `⌃⌘␢`               | Native macOS emoji keyboard popup |
