@@ -17,7 +17,7 @@ function up
     yarn global upgrade --silent
 
     echo -e '\n####################################\n# Oh-My-Fish \n####################################'
-    omf install; omf update;
+    omf update;
 
     echo -e '####################################\n# Done \n####################################'
 end
