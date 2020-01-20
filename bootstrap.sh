@@ -7,6 +7,7 @@ main() {
     install_homebrew
     install_packages_with_brewfile
     change_shell_to_fish
+    install_oh_my_fish
     install_pip_packages
     install_yarn_packages
     setup_symlinks # needed for setup_vim and setup_tmux
@@ -128,6 +129,20 @@ function change_shell_to_fish() {
             success "Fish shell successfully set for \"${user}\""
         else
             error "Please try setting Fish shell again"
+        fi
+    fi
+}
+
+function install_oh_my_fish() {
+    info "Oh My Fish! setup"
+    if fish --command=omf &>/dev/null; then
+        success "Oh My Fish! already exists"
+    else
+        if fish --command="curl --silent --location https://get.oh-my.fish | fish /dev/stdin --yes"; then
+            success "Oh My Fish! installation succeeded"
+        else
+            error "Oh My Fish! installation failed"
+            exit 1
         fi
     fi
 }
