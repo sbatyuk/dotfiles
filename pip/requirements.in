@@ -1,7 +1,4 @@
 django
-# Explicitly installing docker-compose 1.25 and ignoring the older version that comes
-# with Docker cask due to the major bug fix in https://github.com/docker/compose/issues/6857
-docker-compose==1.25.1
 mypy
 pip-tools
 pipenv
