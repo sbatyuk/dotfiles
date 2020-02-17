@@ -77,6 +77,8 @@ function configure_dock() {
     defaults write com.apple.dock autohide-delay -float 0
     # Disable the Launchpad gesture (pinch with thumb and three fingers)
     defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
+    # Disable automatically rearranging of Spaces based on most recent use
+    defaults write com.apple.dock mru-spaces -bool false
 
     ## Hot corners
     ## Possible values:
