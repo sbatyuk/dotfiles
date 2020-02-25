@@ -3,6 +3,7 @@ local modules_to_load = {
     'hammerspoon_preferences',
     'iterm_startup',
     'window_management',
+    'quit_fantastical',
 }
 
 for _, module in pairs(modules_to_load) do
