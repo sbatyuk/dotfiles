@@ -1,4 +1,4 @@
-brew/Brewfile
+brew/Brewfile*.json
 karabiner/automatic_backups
 
 # Created by https://www.gitignore.io/api/git,vim,macos,linux,emacs
