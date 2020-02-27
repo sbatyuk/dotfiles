@@ -14,7 +14,7 @@ function unsplash
     set --local IMAGE_URL (echo $UNSPLASH_RESPONSE | jq --raw-output ".urls.full")
 
     ##################################################################################################
-    # Downloading to Dropbox so that IFTTT can download it to iOS pictures and setting it as wallpaper
+    # Downloading to Dropbox so that I can manually set my iPhone wallpaper photo from there
     ##################################################################################################
     rm -f $DROPBOX_IMAGES
     wget --quiet --output-document=$DROPBOX_WALLPAPER $IMAGE_URL
