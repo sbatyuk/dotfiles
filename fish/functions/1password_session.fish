@@ -1,5 +1,5 @@
 function 1password_session
-    if op get account > /dev/null
+    if op get account &> /dev/null
         return
     else
         while true
