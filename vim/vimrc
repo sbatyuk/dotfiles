@@ -40,6 +40,7 @@ Plugin 'posva/vim-vue' " Syntax highlighting for Vue
 Plugin 'hashivim/vim-terraform' " Syntax highlighting for Terraform files
 Plugin 'tpope/vim-markdown' " Syntax highlighting for markdown files
 Plugin 'mzlogin/vim-markdown-toc' " Generate table of content for markdown files
+Plugin 'jez/vim-superman' " Open man pages in Vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vundle finalisation
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
