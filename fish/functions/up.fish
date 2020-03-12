@@ -1,8 +1,14 @@
 function up
+    sudo -v
+
+    echo -e '####################################\n# Pull repos \n####################################'
+    pull_repos
+
     echo -e '####################################\n# Software Update \n####################################'
     sudo softwareupdate --install --all
 
     echo -e '####################################\n# Brew \n####################################'
+    bbc
     brew update
     brew upgrade
     mas upgrade
