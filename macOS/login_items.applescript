@@ -1,5 +1,6 @@
 # "¬" charachter tells osascript that the line continues
 set login_item_list to {¬
+    "AirBar",¬
     "Alfred 4",¬
     "Bartender 3",¬
     "Docker",¬
