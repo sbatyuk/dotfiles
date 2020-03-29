@@ -311,7 +311,7 @@ function update_hosts_file() {
         exit 1
     fi
 
-    if sudo wget --quiet --output-document="${downloaded_hosts_file_path}" \
+    if sudo wget --timeout=5 --tries=1 --quiet --output-document="${downloaded_hosts_file_path}" \
         https://someonewhocares.org/hosts/hosts; then
         substep "hosts file downloaded successfully"
 
@@ -333,7 +333,6 @@ function update_hosts_file() {
 
     else
         error "Failed to download hosts file"
-        exit 1
     fi
 }
 
