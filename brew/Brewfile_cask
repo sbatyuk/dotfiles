@@ -27,6 +27,7 @@ cask "libreoffice"
 cask "ngrok"
 cask "nordvpn"
 cask "numi"
+cask "osxfuse" # to extend macOS file handling capabilities via third-party file system. sshfs uses this e.g.
 cask "postico"
 cask "robo-3t"
 cask "slack"
