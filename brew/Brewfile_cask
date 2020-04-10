@@ -30,6 +30,7 @@ cask "numi"
 cask "osxfuse" # to extend macOS file handling capabilities via third-party file system. sshfs uses this e.g.
 cask "postico"
 cask "robo-3t"
+cask "signal"
 cask "slack"
 cask "spotify"
 cask "steam"
