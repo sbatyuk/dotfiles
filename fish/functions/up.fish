@@ -20,7 +20,7 @@ function up
     pip-sync ~/personal/dotfiles/pip/requirements.txt
 
     echo -e '####################################\n# Yarn \n####################################'
-    yarn global upgrade --silent
+    yarn global upgrade --silent 2>&1 | ack --invert-match warning
 
     echo -e '\n####################################\n# Oh-My-Fish \n####################################'
     omf update;
