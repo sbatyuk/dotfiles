@@ -1,5 +1,4 @@
 # "¬" charachter tells osascript that the line continues
-#"NordVPN",¬ NordVPN latest version doesn't respect menu bar only icon :/
 set login_item_list to {¬
     "AirBar",¬
     "Alfred 4",¬
