@@ -1,7 +1,6 @@
 local modules_to_load = {
     'reload_configuration',
     'hammerspoon_preferences',
-    'iterm_startup',
     'window_management',
     'quit_fantastical',
 }
