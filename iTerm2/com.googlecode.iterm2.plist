@@ -86,7 +86,7 @@
 		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
 	</array>
 	<key>NSStatusItem Preferred Position Item-0</key>
-	<real>30489</real>
+	<real>30470</real>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -432,6 +432,8 @@
 			<false/>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Text</key>
+			<string>tt</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -823,9 +825,10 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.6</string>
-		<string>3.3.7</string>
+		<string>3.3.9</string>
 		<string>3.3.8</string>
+		<string>3.3.7</string>
+		<string>3.3.6</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
@@ -837,7 +840,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>898CCA98-CC85-44CB-BB6B-59382CFB8B58</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>50</integer>
+	<integer>133</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1646,7 +1649,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.8</string>
+	<string>3.3.9</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>5</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
