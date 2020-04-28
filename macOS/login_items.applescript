@@ -7,7 +7,6 @@ set login_item_list to {¬
     "Dropbox",¬
     "Fantastical",¬
     "Hammerspoon",¬
-    "Krisp",¬
     "Numi",¬
     "iTerm"¬
 }
