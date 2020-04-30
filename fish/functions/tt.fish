@@ -1,5 +1,6 @@
 function tt
-    '''This command is sent to a new shell when iTerm launches'''
+    # This command is sent to a new shell when iTerm launches
+
     clear
 
     # Kill all background jobs
