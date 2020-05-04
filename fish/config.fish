@@ -32,6 +32,7 @@ set --global --export LANG en_US.UTF-8   # Set locale
 # By putting these paths before $fish_user_paths, they will take precedence
 # over system provided programs
 set --global --export fish_user_paths \
+    /usr/local/opt/python@3.8/bin \
     /usr/local/bin \
     /usr/local/sbin \
     /usr/local/opt/ruby/bin \
