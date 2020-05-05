@@ -60,6 +60,9 @@ function configure_system() {
     defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
     # Enable full keyboard access for all controls which enables Tab selection in modal dialogs
     defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+    # Show battery percentage in menu bar
+    defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.battery" -bool true
+    defaults write com.apple.menuextra.battery '{ ShowPercent = YES; }'
 }
 
 function configure_dock() {
