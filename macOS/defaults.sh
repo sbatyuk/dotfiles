@@ -148,6 +148,12 @@ function configure_finder() {
     defaults write com.apple.finder FXPreferredViewStyle -string clmv
     # Disable the warning before emptying the Trash
     defaults write com.apple.finder WarnOnEmptyTrash -bool false
+    # Display file extensions in Finder
+    defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+    # Disable the warning when changing a file extension
+    defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+    # Disable screenshot preview thumbnails
+    defaults write com.apple.screencapture show-thumbnail -bool false
 }
 
 function quit() {
