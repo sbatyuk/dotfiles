@@ -401,4 +401,6 @@ function error() {
     coloredEcho "$1" red "========>"
 }
 
-main "$@"
+if [ "${1}" != "--source-only" ]; then
+    main "${@}"
+fi
