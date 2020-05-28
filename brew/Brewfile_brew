@@ -9,6 +9,8 @@ brew "flake8" # for linting Python files
 brew "gifsicle" # for gif_compress fish function
 brew "git"
 brew "git-open"
+brew "gnu-sed"
+brew "grep"
 brew "htop"
 brew "httpie"
 brew "imagemagick"
