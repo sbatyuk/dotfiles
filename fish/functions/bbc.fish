@@ -7,4 +7,5 @@ function bbc
 
     cat $TAP $BREW $CASK $MAS > $BREWFILE
     brew bundle cleanup --file=$BREWFILE --force
+    rm $BREWFILE
 end
