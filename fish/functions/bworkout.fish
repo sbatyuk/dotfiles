@@ -13,7 +13,7 @@ function bworkout
         set --local FOLDER_NAME (date -r $VIDEOS_LIST[1] "+%Y-%m-%d")
         set --local TARGET_DIR /Volumes/Content/Training/$FOLDER_NAME
 
-        for i in (seq 1 4)
+        for i in (seq 1 6)
             mv $VIDEOS_LIST[$i] $RENAMED_VIDEOS_LIST[$i]
         end
 
