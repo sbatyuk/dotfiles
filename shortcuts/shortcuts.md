@@ -8,11 +8,9 @@
 
 | Shortcut | Application                 | Comment                      |
 | -------- | --------------------------- | ---------------------------- |
-| `✱` + Z  | System Preferences Keyboard | Move focus to the menu bar   |
 | `✱` + T  | Fantastical                 | Mini window shortcut         |
 | `✱` + P  | TickTick                    | Show/Hide Main Window        |
 | `✱` + S  | Bartender                   | Keyboard navigate            |
-| `✱` + E  | Bartender                   | Show Hidden Items            |
 | `✱` + F  | 1password                   | Fill Login or Show 1password |
 | `✱` + G  | 1password                   | Show 1password               |
 
