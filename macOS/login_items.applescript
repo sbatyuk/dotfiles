@@ -9,6 +9,7 @@ set login_item_list to {¬
     "Hammerspoon",¬
     "Numi",¬
     "TickTick",¬
+    "Unsplash Wallpapers",¬
     "iTerm"¬
 }
 
