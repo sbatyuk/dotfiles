@@ -1,7 +1,7 @@
 cask "1password"
 cask "1password-cli"
 cask "alfred"
-cask "avast-security"
+cask "avira-antivirus"
 cask "bartender"
 cask "cyberduck"
 cask "docker"
