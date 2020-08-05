@@ -8,6 +8,7 @@
 
 | Shortcut | Application                 | Comment                      |
 | -------- | --------------------------- | ---------------------------- |
+| `✱` + E  | Bear                        | Open Bear main window        |
 | `✱` + T  | Fantastical                 | Mini window shortcut         |
 | `✱` + P  | TickTick                    | Show/Hide Main Window        |
 | `✱` + S  | Bartender                   | Keyboard navigate            |
