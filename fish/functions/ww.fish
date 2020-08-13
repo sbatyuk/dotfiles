@@ -1,4 +1,4 @@
-function wallpaper
+function ww
     set --local DOWNLOADED_IMAGE ~/Downloads/*.jpg
     set --local DROPBOX_IMAGE  ~/Dropbox/Uploads/todays_picture_(random).jpg
     set --local DROPBOX_IMAGES ~/Dropbox/Uploads/todays_picture_*.jpg
