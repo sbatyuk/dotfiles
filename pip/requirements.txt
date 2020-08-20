@@ -4,23 +4,30 @@
 #
 #    pip-compile requirements.in
 #
+ansible==2.9.12           # via -r requirements.in
 appdirs==1.4.4            # via virtualenv
 asgiref==3.2.10           # via django
 certifi==2020.6.20        # via pipenv, requests
+cffi==1.14.2              # via cryptography
 chardet==3.0.4            # via requests
 click==7.1.2              # via pip-tools
+cryptography==3.0         # via ansible
 distlib==0.3.1            # via virtualenv
 django==3.1               # via -r requirements.in
 filelock==3.0.12          # via virtualenv
 idna==2.10                # via requests
+jinja2==2.11.2            # via ansible
+markupsafe==1.1.1         # via jinja2
 mypy-extensions==0.4.3    # via mypy
 mypy==0.782               # via -r requirements.in
 pip-tools==5.3.1          # via -r requirements.in
 pipenv==2020.8.13         # via -r requirements.in
 powerline-status==2.7     # via -r requirements.in
+pycparser==2.20           # via cffi
 pytz==2020.1              # via django
+pyyaml==5.3.1             # via ansible
 requests==2.24.0          # via -r requirements.in
-six==1.15.0               # via pip-tools, virtualenv
+six==1.15.0               # via cryptography, pip-tools, virtualenv
 sqlparse==0.3.1           # via django
 typed-ast==1.4.1          # via mypy
 typing-extensions==3.7.4.2  # via mypy
