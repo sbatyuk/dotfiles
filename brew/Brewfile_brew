@@ -29,7 +29,7 @@ brew "redis"
 brew "rename"
 brew "ruby" # for Vim command-t plugin to work
 brew "sshfs" # to mount remote folders locally
-brew "terraform"
+brew "terraform@0.12"
 brew "tldr"
 brew "tmux"
 brew "trash"
