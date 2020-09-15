@@ -3,8 +3,12 @@ function ww
     set --local DROPBOX_IMAGE  ~/Dropbox/Uploads/todays_picture_(random).jpg
     set --local DROPBOX_IMAGES ~/Dropbox/Uploads/todays_picture_*.jpg
 
-    rm $DROPBOX_IMAGES
-    mv $DOWNLOADED_IMAGE $DROPBOX_IMAGE
-    osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$DROPBOX_IMAGE\""
+    if count $DOWNLOADED_IMAGE > /dev/null
+        rm -F $DROPBOX_IMAGES
+        mv $DOWNLOADED_IMAGE $DROPBOX_IMAGE
+        osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$DROPBOX_IMAGE\""
+    else
+        echo 'No wallpaper in Downloads folder'
+    end
 end
 
