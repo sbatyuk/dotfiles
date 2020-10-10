@@ -32,7 +32,7 @@ set --global --export LANG en_US.UTF-8   # Set locale
 # By putting these paths before $fish_user_paths, they will take precedence
 # over system provided programs
 set --global --export fish_user_paths \
-    /usr/local/opt/python@3.8/bin \
+    /usr/local/opt/python@3.9/bin \
     /usr/local/bin \
     /usr/local/sbin \
     /usr/local/opt/ruby/bin \
@@ -43,7 +43,7 @@ set --global --export fish_user_paths \
 # Configuration for Powerline
 ############################################################################
 set --global --export \
-    POWERLINE_ROOT_REPO /usr/local/lib/python3.8/site-packages
+    POWERLINE_ROOT_REPO /usr/local/lib/python3.9/site-packages
 set fish_function_path \
     $fish_function_path "$POWERLINE_ROOT_REPO/powerline/bindings/fish"
 powerline-daemon --quiet

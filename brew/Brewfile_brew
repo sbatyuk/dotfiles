@@ -23,8 +23,7 @@ brew "p7zip"
 brew "parallel"
 brew "poppler" # to work with pdf files and merge/extract them for example
 brew "postgresql"
-brew "python"
-brew "python@3.8"
+brew "python@3.9"
 brew "reattach-to-user-namespace" # for tmux commands to work
 brew "redis"
 brew "rename"
