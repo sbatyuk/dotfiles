@@ -32,7 +32,6 @@ set --global --export LANG en_US.UTF-8   # Set locale
 # By putting these paths before $fish_user_paths, they will take precedence
 # over system provided programs
 set --global --export fish_user_paths \
-    /usr/local/opt/terraform@0.12/bin \
     /usr/local/opt/python@3.9/bin \
     /usr/local/bin \
     /usr/local/sbin \
