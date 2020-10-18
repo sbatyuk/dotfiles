@@ -1,5 +1,5 @@
 function gitignore
-    set --local BASE_URL https://gitignore.io/api
+    set --local BASE_URL https://www.toptal.com/developers/gitignore/api
     set --local ARGS (string join ',' $argv)
 
 
