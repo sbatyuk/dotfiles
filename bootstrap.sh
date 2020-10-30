@@ -56,8 +56,8 @@ function install_homebrew() {
     if hash brew 2>/dev/null; then
         success "Homebrew already exists"
     else
-        url=https://raw.githubusercontent.com/Homebrew/install/master/install
-        if yes | /usr/bin/ruby -e "$(curl -fsSL ${url})"; then
+        url=https://raw.githubusercontent.com/Homebrew/install/master/install.sh
+        if yes | /bin/bash -c "$(curl -fsSL ${url})"; then
             success "Homebrew installation succeeded"
         else
             error "Homebrew installation failed"
