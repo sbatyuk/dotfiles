@@ -1,3 +1,16 @@
+##################################################################
+# START of packages that need to be installed sequentially
+##################################################################
+brew "svn" # to be able to install font-fira-mono-for-powerline
+cask "font-fira-mono-for-powerline" # for iTerm2 powerline
+
+cask "osxfuse" # to extend macOS file handling capabilities via third-party file system. sshfs uses this e.g.
+brew "sshfs" # to mount remote folders locally
+
+##################################################################
+# END
+##################################################################
+
 brew "ack"
 brew "awscli"
 brew "cmake" # for YouCompleteMe vim plugin
@@ -28,8 +41,6 @@ brew "reattach-to-user-namespace" # for tmux commands to work
 brew "redis"
 brew "rename"
 brew "ruby" # for Vim command-t plugin to work
-brew "sshfs" # to mount remote folders locally
-brew "svn" # to be able to install font-fira-mono-for-powerline
 brew "terraform"
 brew "tldr"
 brew "tmux"
