@@ -8,6 +8,7 @@ set login_item_list to {¬
     "Fantastical",¬
     "Hammerspoon",¬
     "Numi",¬
+    "Shifty",¬
     "TickTick",¬
     "Unsplash Wallpapers",¬
     "iTerm"¬
