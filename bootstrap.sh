@@ -35,12 +35,12 @@ function ask_for_sudo() {
 function install_xcode_command_line_tools() {
     info "Installing Xcode command line tools"
 
-    if softwareupdate --history | grep --silent "Command Line Tools"; then
+    if xcode-select --print-path &>/dev/null; then
         success "Xcode command line tools already exists"
     else
         xcode-select --install
         while true; do
-            if softwareupdate --history | grep --silent "Command Line Tools"; then
+            if xcode-select --print-path 2>/dev/null; then
                 success "Xcode command line tools installation succeeded"
                 break
             else
