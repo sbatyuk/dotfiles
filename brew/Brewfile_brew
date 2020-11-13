@@ -4,9 +4,6 @@
 brew "svn" # to be able to install font-fira-mono-for-powerline
 cask "font-fira-mono-for-powerline" # for iTerm2 powerline
 
-cask "osxfuse" # to extend macOS file handling capabilities via third-party file system. sshfs uses this e.g.
-brew "sshfs" # to mount remote folders locally
-
 ##################################################################
 # END
 ##################################################################
