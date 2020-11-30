@@ -6,6 +6,6 @@ function bbc
     set --local BREWFILE ~/personal/dotfiles/brew/Brewfile
 
     cat $TAP $BREW $CASK $MAS > $BREWFILE
-    brew bundle cleanup --file=$BREWFILE --force
+    brew bundle cleanup --file=$BREWFILE --force 2>&1 | ack --invert-match 'For the cask, use'
     rm $BREWFILE
 end
