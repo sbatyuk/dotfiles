@@ -122,7 +122,7 @@ let g:UltiSnipsJumpBackwardTrigger = ""
 let NERDTreeQuitOnOpen = 1 " automatically close NerdTree when you open a file
 let NERDTreeMinimalUI = 1 " disable that old “Press ? for help”
 let NERDTreeShowHidden = 1
-let NERDTreeIgnore = ['\.swp$', '\.DS_Store$', '\.git$', '\.node_modules$']
+let NERDTreeIgnore = ['\.swp$', '\.DS_Store$', '\.git$', '^node_modules$']
 " open NERDTree when vim starts up with no files specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
