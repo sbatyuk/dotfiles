@@ -251,6 +251,7 @@ set visualbell " suppress audio/visual error bell
 set wildmenu " visual autocomplete for command menu
 set wildmode=list:longest,full " bash-like tab completion
 set writebackup " write backup before overwriting a file, delete it afterwards
+set wildignore+=*/node_modules/*,*/venv/*
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Indentation configurations
