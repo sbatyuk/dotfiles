@@ -135,6 +135,8 @@ autocmd bufenter * if (winnr("$") == 1 &&
 autocmd BufWritePre *.js,*.jsx Neoformat
 autocmd BufWritePre *.ts,*.tsx Neoformat
 autocmd BufWritePre *.vue Neoformat
+" using black for formatting python files
+autocmd BufWritePre *.py Neoformat
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Mappings (Always use non-recursive mappings, i.e. "nore")
