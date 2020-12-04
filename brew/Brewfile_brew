@@ -18,6 +18,7 @@ brew "fish"
 brew "flake8"
 brew "gifsicle" # for gif_compress fish function
 brew "git"
+brew "git-extras"
 brew "git-open"
 brew "gnu-sed"
 brew "grep"
