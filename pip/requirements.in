@@ -1,5 +1,6 @@
 ansible
 black
+cookiecutter
 django
 mypy
 pip-tools
