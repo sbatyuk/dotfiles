@@ -1,4 +1,5 @@
 ansible
+black
 django
 mypy
 pip-tools
