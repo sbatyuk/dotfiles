@@ -4,52 +4,55 @@
 #
 #    pip-compile requirements.in
 #
-ansible==2.9.12           # via -r requirements.in
+ansible-base==2.10.3      # via ansible
+ansible==2.10.4           # via -r requirements.in
 appdirs==1.4.4            # via black, virtualenv
 arrow==0.17.0             # via jinja2-time
-asgiref==3.2.10           # via django
+asgiref==3.3.1            # via django
 binaryornot==0.4.4        # via cookiecutter
 black==20.8b1             # via -r requirements.in
-certifi==2020.6.20        # via pipenv, requests
-cffi==1.14.2              # via cryptography
+certifi==2020.12.5        # via pipenv, requests
+cffi==1.14.4              # via cryptography
 cfgv==3.2.0               # via pre-commit
 chardet==3.0.4            # via binaryornot, requests
 click==7.1.2              # via black, cookiecutter, pip-tools
 cookiecutter==1.7.2       # via -r requirements.in
-cryptography==3.0         # via ansible
+cryptography==3.3.1       # via ansible-base
 distlib==0.3.1            # via virtualenv
-django==3.1               # via -r requirements.in
+django==3.1.4             # via -r requirements.in
 filelock==3.0.12          # via virtualenv
 identify==1.5.10          # via pre-commit
 idna==2.10                # via requests
 jinja2-time==0.2.0        # via cookiecutter
-jinja2==2.11.2            # via ansible, cookiecutter, jinja2-time
+jinja2==2.11.2            # via ansible-base, cookiecutter, jinja2-time
 markupsafe==1.1.1         # via cookiecutter, jinja2
 mypy-extensions==0.4.3    # via black, mypy
-mypy==0.782               # via -r requirements.in
+mypy==0.790               # via -r requirements.in
 nodeenv==1.5.0            # via pre-commit
+packaging==20.7           # via ansible-base
 pathspec==0.8.1           # via black
-pip-tools==5.3.1          # via -r requirements.in
-pipenv==2020.8.13         # via -r requirements.in
+pip-tools==5.4.0          # via -r requirements.in
+pipenv==2020.11.15        # via -r requirements.in
 powerline-status==2.7     # via -r requirements.in
 poyo==0.5.0               # via cookiecutter
-pre-commit==2.9.2         # via -r requirements.in
+pre-commit==2.9.3         # via -r requirements.in
 pycparser==2.20           # via cffi
+pyparsing==2.4.7          # via packaging
 python-dateutil==2.8.1    # via arrow
 python-slugify==4.0.1     # via cookiecutter
-pytz==2020.1              # via django
-pyyaml==5.3.1             # via ansible, pre-commit
+pytz==2020.4              # via django
+pyyaml==5.3.1             # via ansible-base, pre-commit
 regex==2020.11.13         # via black
-requests==2.24.0          # via -r requirements.in, cookiecutter
+requests==2.25.0          # via -r requirements.in, cookiecutter
 six==1.15.0               # via cookiecutter, cryptography, pip-tools, python-dateutil, virtualenv
-sqlparse==0.3.1           # via django
+sqlparse==0.4.1           # via django
 text-unidecode==1.3       # via python-slugify
 toml==0.10.2              # via black, pre-commit
 typed-ast==1.4.1          # via black, mypy
-typing-extensions==3.7.4.2  # via black, mypy
-urllib3==1.25.10          # via requests
+typing-extensions==3.7.4.3  # via black, mypy
+urllib3==1.26.2           # via requests
 virtualenv-clone==0.5.4   # via pipenv
-virtualenv==20.0.31       # via -r requirements.in, pipenv, pre-commit
+virtualenv==20.2.2        # via -r requirements.in, pipenv, pre-commit
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
