@@ -271,9 +271,10 @@ function setup_symlinks() {
     # Disable shell login message
     symlink "hushlogin" /dev/null ~/.hushlogin
 
-    symlink "fish:completions" ${DOTFILES_REPO}/fish/completions ~/.config/fish/completions
-    symlink "fish:functions"   ${DOTFILES_REPO}/fish/functions   ~/.config/fish/functions
-    symlink "fish:config.fish" ${DOTFILES_REPO}/fish/config.fish ~/.config/fish/config.fish
+    symlink "fish:completions" ${DOTFILES_REPO}/fish/completions  ~/.config/fish/completions
+    symlink "fish:functions"   ${DOTFILES_REPO}/fish/functions    ~/.config/fish/functions
+    symlink "fish:config.fish" ${DOTFILES_REPO}/fish/config.fish  ~/.config/fish/config.fish
+    symlink "fish:plugins"     ${DOTFILES_REPO}/fish/fish_plugins ~/.config/fish/fish_plugins
 
     success "Symlinks successfully setup"
 }
