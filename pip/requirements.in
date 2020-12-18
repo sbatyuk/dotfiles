@@ -4,7 +4,6 @@ cookiecutter
 django
 mypy
 pip-tools
-pipenv
 powerline-status
 pre-commit
 requests
