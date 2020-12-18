@@ -1,8 +1,7 @@
 ############################################################################
-# Fish theme - influences only the colors of what you type
+# Fish theme influences only the colors of what you type
 # Powerline controls fish prompt
 ############################################################################
-source ~/personal/dotfiles/fish/fish_theme.fish
 
 ############################################################################
 # Environment Variables
