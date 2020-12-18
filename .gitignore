@@ -129,5 +129,5 @@ tags
 
 # End of https://www.gitignore.io/api/git,vim,macos,linux,emacs
 
-fish/functions/*z*.fish
+fish/functions/__z*.fish
 fish/*/fisher.fish
