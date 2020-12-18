@@ -9,7 +9,7 @@
     curl --silent https://raw.githubusercontent.com/sam-hosseini/dotfiles/master/bootstrap.sh | bash
     ```
 
-  * Open a Fish shell and execute `compile_vim_plugins` function.
+  * Open a Fish shell and execute `compile_vim_plugins` and `install_fish_plugin_manager` functions.
   * Enter licesne information of purchased applications.
   * Manually set [un-automatable shortcuts](https://github.com/sam-hosseini/dotfiles/blob/master/shortcuts/shortcuts.md#un-automatable-shortcuts)
 
