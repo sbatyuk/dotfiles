@@ -69,10 +69,10 @@ function install_homebrew() {
 function install_packages_with_brewfile() {
     info "Installing Brewfile packages"
 
-    TAP=${DOTFILES_REPO}/brew/Brewfile_tap
-    BREW=${DOTFILES_REPO}/brew/Brewfile_brew
-    CASK=${DOTFILES_REPO}/brew/Brewfile_cask
-    MAS=${DOTFILES_REPO}/brew/Brewfile_mas
+    TAP=${DOTFILES_REPO}/homebrew/tap
+    BREW=${DOTFILES_REPO}/homebrew/brew
+    CASK=${DOTFILES_REPO}/homebrew/cask
+    MAS=${DOTFILES_REPO}/homebrew/mas
 
     if hash parallel 2>/dev/null; then
         substep "parallel already exists"
@@ -90,7 +90,7 @@ function install_packages_with_brewfile() {
         success "Brewfile packages are already installed"
     else
         if brew bundle --file="$TAP"; then
-            substep "Brewfile_tap installation succeeded"
+            substep "Brewfile taps installation succeeded"
 
             export HOMEBREW_CASK_OPTS="--no-quarantine"
             if (echo $BREW; echo $CASK; echo $MAS) | parallel --verbose --linebuffer -j 3 brew bundle --file={}; then
@@ -100,7 +100,7 @@ function install_packages_with_brewfile() {
                 exit 1
             fi
         else
-            error "Brewfile_tap installation failed"
+            error "Brewfile taps installation failed"
             exit 1
         fi
     fi
