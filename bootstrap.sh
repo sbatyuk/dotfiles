@@ -274,7 +274,6 @@ function setup_symlinks() {
     symlink "fish:completions" ${DOTFILES_REPO}/fish/completions ~/.config/fish/completions
     symlink "fish:functions"   ${DOTFILES_REPO}/fish/functions   ~/.config/fish/functions
     symlink "fish:config.fish" ${DOTFILES_REPO}/fish/config.fish ~/.config/fish/config.fish
-    symlink "fish:oh_my_fish"  ${DOTFILES_REPO}/fish/oh_my_fish  ~/.config/omf
 
     success "Symlinks successfully setup"
 }

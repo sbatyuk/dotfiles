@@ -1,6 +1,6 @@
 ############################################################################
 # Fish theme - influences only the colors of what you type
-# omf theme will not have any influence as powerline controls fish prompt
+# Powerline controls fish prompt
 ############################################################################
 source ~/personal/dotfiles/fish/fish_theme.fish
 
@@ -48,12 +48,4 @@ set fish_function_path \
     $fish_function_path "$POWERLINE_ROOT_REPO/powerline/bindings/fish"
 powerline-daemon --quiet
 powerline-setup
-
-############################################################################
-# Configuration for Oh-My-Fish!
-############################################################################
-set -q XDG_DATA_HOME
-    and set --global --export OMF_PATH "$XDG_DATA_HOME/omf"
-    or set  --global --export OMF_PATH "$HOME/.local/share/omf"
-source $OMF_PATH/init.fish
 
