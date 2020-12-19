@@ -1,10 +1,8 @@
-# [My macOS Empire](https://medium.com/@sam_hosseini/build-a-macos-empire-a0c83879ac24) 👑
-[![my macOS empire](https://i.imgur.com/dSbidA6.png)](https://vimeo.com/samhosseini/my-macos-empire "Watch a sample executation of my macOS bootstrapping script")
+# Dotfiles 🧡
 
-
-* Setup for a software development environment entirely with a one-liner 🔥
+* On a fresh macOS, bootstrap with a one-liner
   ```bash
-  curl --silent https://raw.githubusercontent.com/sam-hosseini/dotfiles/master/bootstrap.sh | bash
+  curl -sL bit.ly/sam-hosseini-dotfiles | bash
   ```
 
 * Open a Fish shell and execute the following functions:
