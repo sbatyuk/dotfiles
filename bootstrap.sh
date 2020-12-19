@@ -258,13 +258,11 @@ function setup_tmux() {
 
 function setup_symlinks() {
     APPLICATION_SUPPORT=~/Library/Application\ Support
-    POWERLINE_ROOT_REPO=/usr/local/lib/python3.9/site-packages
 
     info "Setting up symlinks"
     symlink "git" ${DOTFILES_REPO}/git/gitconfig ~/.gitconfig
     symlink "hammerspoon" ${DOTFILES_REPO}/hammerspoon ~/.hammerspoon
     symlink "karabiner" ${DOTFILES_REPO}/karabiner ~/.config/karabiner
-    symlink "powerline" ${DOTFILES_REPO}/powerline ${POWERLINE_ROOT_REPO}/powerline/config_files
     symlink "tmux" ${DOTFILES_REPO}/tmux/tmux.conf ~/.tmux.conf
     symlink "vim" ${DOTFILES_REPO}/vim/vimrc ~/.vimrc
 

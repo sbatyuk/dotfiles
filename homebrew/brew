@@ -1,13 +1,3 @@
-##################################################################
-# START of packages that need to be installed sequentially
-##################################################################
-brew "svn" # to be able to install font-fira-mono-for-powerline
-cask "font-fira-mono-for-powerline" # for iTerm2 powerline
-
-##################################################################
-# END
-##################################################################
-
 brew "ack"
 brew "awscli"
 brew "cmake" # for YouCompleteMe vim plugin
