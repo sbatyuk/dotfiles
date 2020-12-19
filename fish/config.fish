@@ -16,7 +16,7 @@ set --global --export fish_greeting ''
 set --global --export HOMEBREW_CASK_OPTS "--no-quarantine"
 set --global --export LC_ALL en_US.UTF-8 # Set locale
 set --global --export LANG en_US.UTF-8   # Set locale
-set --global --export DOTFILES_REPO ~/personal/dotfiles
+set --global --export DOTFILES_REPO ~/repos/dotfiles
 
 ############################################################################
 # PATH setup

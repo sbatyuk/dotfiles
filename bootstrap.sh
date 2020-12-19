@@ -17,7 +17,7 @@ main() {
     update_login_items
 }
 
-DOTFILES_REPO=~/personal/dotfiles
+DOTFILES_REPO=~/repos/dotfiles
 
 function ask_for_sudo() {
     info "Prompting for sudo password"
