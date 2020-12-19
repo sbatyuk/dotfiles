@@ -1,8 +1,4 @@
 ############################################################################
-# Fish theme influences only the colors of what you type
-############################################################################
-
-############################################################################
 # Environment Variables
 ############################################################################
 set --global --export GIT_GLOBAL_NAME  "Sam Hosseini"
@@ -37,3 +33,8 @@ set --global --export fish_user_paths \
     /usr/local/lib/ruby/gems/2.6.0/bin \
     $fish_user_paths
 
+############################################################################
+# Fish theme influences only the colors of what you type
+# starship controls fish prompt
+############################################################################
+starship init fish | source

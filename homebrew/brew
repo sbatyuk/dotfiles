@@ -29,6 +29,7 @@ brew "reattach-to-user-namespace" # for tmux commands to work
 brew "redis"
 brew "rename"
 brew "ruby" # for Vim command-t plugin to work
+brew "starship"
 brew "terraform"
 brew "tldr"
 brew "tmux"
