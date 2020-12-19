@@ -7,3 +7,4 @@ pip-tools
 pre-commit
 requests
 virtualenv
+watchdog # needed by YouCompleteMe

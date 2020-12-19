@@ -50,6 +50,7 @@ typed-ast==1.4.1          # via black, mypy
 typing-extensions==3.7.4.3  # via black, mypy
 urllib3==1.26.2           # via requests
 virtualenv==20.2.2        # via -r requirements.in, pre-commit
+watchdog==1.0.2           # via -r requirements.in
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
