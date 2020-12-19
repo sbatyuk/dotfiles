@@ -131,3 +131,4 @@ tags
 
 fish/functions/__z*.fish
 fish/*/fisher.fish
+homebrew/all_packages
