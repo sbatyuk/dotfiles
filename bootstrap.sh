@@ -254,6 +254,7 @@ function setup_symlinks() {
     symlink "hammerspoon"   ${DOTFILES_REPO}/hammerspoon                ~/.hammerspoon
     symlink "karabiner"     ${DOTFILES_REPO}/karabiner                  ~/.config/karabiner
     symlink "tmux"          ${DOTFILES_REPO}/tmux/tmux.conf             ~/.tmux.conf
+    symlink "vim"           ${DOTFILES_REPO}/vim/vimrc                  ~/.vimrc
     symlink "starship"      ${DOTFILES_REPO}/starship/starship.toml     ~/.config/starship.toml
 
     # Disable shell login message
