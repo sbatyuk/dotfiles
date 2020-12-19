@@ -10,7 +10,7 @@ function tt
     caffeinate -d &
 
     # Load tmux session
-    if tmux new-session -s base -n base
+    if tmux new-session -s base -n '    '
         return
     else
         tmux attach-session -t base
