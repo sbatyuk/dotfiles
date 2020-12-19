@@ -41,6 +41,7 @@ Plugin 'hashivim/vim-terraform' " Syntax highlighting for Terraform files
 Plugin 'tpope/vim-markdown' " Syntax highlighting for markdown files
 Plugin 'mzlogin/vim-markdown-toc' " Generate table of content for markdown files
 Plugin 'jez/vim-superman' " Open man pages in Vim
+Plugin 'vim-airline/vim-airline' " Vim statusline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vundle finalisation
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -50,6 +51,11 @@ filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins configurations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" ================ vim-airline configuration ========================
+let g:airline_section_b = ''
+let g:airline_section_x = ''
+let g:airline_section_y = ''
 
 " ================ vim-markdown configuration ========================
 let g:markdown_syntax_conceal = 0
