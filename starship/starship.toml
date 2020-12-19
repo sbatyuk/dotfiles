@@ -1,0 +1,15 @@
+# starship configs https://starship.rs/config/
+
+add_newline = false
+
+[directory]
+truncation_length = 8
+
+[line_break]
+disabled = true
+
+[python]
+python_binary = "python3"
+
+[status]
+disabled = false

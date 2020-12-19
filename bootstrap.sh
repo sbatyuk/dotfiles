@@ -260,11 +260,12 @@ function setup_symlinks() {
     APPLICATION_SUPPORT=~/Library/Application\ Support
 
     info "Setting up symlinks"
-    symlink "git" ${DOTFILES_REPO}/git/gitconfig ~/.gitconfig
-    symlink "hammerspoon" ${DOTFILES_REPO}/hammerspoon ~/.hammerspoon
-    symlink "karabiner" ${DOTFILES_REPO}/karabiner ~/.config/karabiner
-    symlink "tmux" ${DOTFILES_REPO}/tmux/tmux.conf ~/.tmux.conf
-    symlink "vim" ${DOTFILES_REPO}/vim/vimrc ~/.vimrc
+
+    symlink "git"           ${DOTFILES_REPO}/git/gitconfig              ~/.gitconfig
+    symlink "hammerspoon"   ${DOTFILES_REPO}/hammerspoon                ~/.hammerspoon
+    symlink "karabiner"     ${DOTFILES_REPO}/karabiner                  ~/.config/karabiner
+    symlink "tmux"          ${DOTFILES_REPO}/tmux/tmux.conf             ~/.tmux.conf
+    symlink "starship"      ${DOTFILES_REPO}/starship/starship.toml     ~/.config/starship.toml
 
     # Disable shell login message
     symlink "hushlogin" /dev/null ~/.hushlogin
