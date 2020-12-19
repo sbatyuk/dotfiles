@@ -275,6 +275,9 @@ function setup_symlinks() {
     symlink "fish:config.fish" ${DOTFILES_REPO}/fish/config.fish  ~/.config/fish/config.fish
     symlink "fish:plugins"     ${DOTFILES_REPO}/fish/fish_plugins ~/.config/fish/fish_plugins
 
+    symlink "yarn:package.json"  ${DOTFILES_REPO}/yarn/global-package.json  ~/.config/yarn/global/package.json
+    symlink "yarn:yarn.lock"     ${DOTFILES_REPO}/yarn/global-yarn.lock     ~/.config/yarn/global/yarn.lock
+
     success "Symlinks successfully setup"
 }
 
