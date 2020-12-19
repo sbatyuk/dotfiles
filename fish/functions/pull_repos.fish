@@ -1,3 +1,5 @@
 function pull_repos
-    find ~/repos/ -type d -maxdepth 1 -mindepth 1 -exec git -C {} pull \;
+    set --local REPOS (find ~/repos/ -type d -maxdepth 1 -mindepth 1)
+
+    parallel --verbose --linebuffer -j (count $REPOS) git -C {} pull ::: $REPOS
 end
