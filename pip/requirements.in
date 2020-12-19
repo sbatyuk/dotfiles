@@ -4,7 +4,6 @@ cookiecutter
 django
 mypy
 pip-tools
-powerline-status
 pre-commit
 requests
 virtualenv
