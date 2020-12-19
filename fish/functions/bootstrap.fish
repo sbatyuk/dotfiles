@@ -1,3 +1,3 @@
 function bootstrap
-    bash ~/personal/dotfiles/bootstrap.sh
+    bash $DOTFILES_REPO/bootstrap.sh
 end

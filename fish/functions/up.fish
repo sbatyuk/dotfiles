@@ -17,7 +17,7 @@ function up
     brew doctor
 
     echo -e '####################################\n# Pip \n####################################'
-    pip-sync ~/personal/dotfiles/pip/requirements.txt
+    pip-sync $DOTFILES_REPO/pip/requirements.txt
 
     echo -e '####################################\n# Yarn \n####################################'
     yarn global upgrade --silent 2>&1 | ack --invert-match warning

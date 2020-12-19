@@ -29,12 +29,12 @@ function configure_numi() {
 
 function configure_iterm2() {
     defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -int 1
-    defaults write com.googlecode.iterm2 PrefsCustomFolder -string ~/personal/dotfiles/iTerm2
+    defaults write com.googlecode.iterm2 PrefsCustomFolder -string $DOTFILES_REPO/iTerm2
 }
 
 function configure_system() {
-    LOGIN_HOOK_PATH=~/personal/dotfiles/macOS/login_hook_script.sh
-    LOGOUT_HOOK_PATH=~/personal/dotfiles/macOS/logout_hook_script.sh
+    LOGIN_HOOK_PATH=$DOTFILES_REPO/macOS/login_hook_script.sh
+    LOGOUT_HOOK_PATH=$DOTFILES_REPO/macOS/logout_hook_script.sh
 
     PRIMARY_CLOUDFLARE_DNS_ADDRESS="1.1.1.1"
     SECONDARY_CLOUDFLARE_DNS_ADDRESS="1.0.0.1"
