@@ -1,3 +1,3 @@
 function ll
-    clear; ls -l $argv
+    clear; exa --long --classify --group-directories-first --group $argv
 end
