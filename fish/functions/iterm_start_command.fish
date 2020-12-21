@@ -1,4 +1,4 @@
-function tt
+function iterm_start_command
     # This command is sent to a new shell when iTerm launches
 
     clear
