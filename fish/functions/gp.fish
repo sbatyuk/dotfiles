@@ -1,3 +1,3 @@
 function gp --wraps "git push"
-    git push $argv
+    git push --quiet $argv
 end

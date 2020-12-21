@@ -1,3 +1,3 @@
 function gl --wraps "git pull"
-    git pull $argv
+    git pull --quiet $argv
 end
