@@ -157,7 +157,7 @@ nmap <leader>r
 nnoremap <C-i> :YcmCompleter GoToDefinition<CR> :<backspace>
 
 function CustomNerdToggle()
-    if &filetype == 'nerdtree'
+    if &filetype == 'nerdtree' || bufname('%') == ""
         :NERDTreeToggle
     else
         :NERDTreeFind
