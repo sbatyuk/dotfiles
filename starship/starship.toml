@@ -2,6 +2,9 @@
 
 add_newline = false
 
+[character]
+success_symbol = "[ꫝ](bold green)"
+
 [directory]
 read_only = " "
 truncation_length = 8
