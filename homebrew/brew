@@ -32,6 +32,7 @@ brew "python@3.9"
 brew "reattach-to-user-namespace" # for tmux commands to work
 brew "redis"
 brew "rename"
+brew "ripgrep"
 brew "ruby" # for Vim command-t plugin to work
 brew "sd"
 brew "starship"
