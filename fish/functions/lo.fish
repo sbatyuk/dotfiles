@@ -1,3 +1,3 @@
 function lo --wraps "git log"
-    clear; and git log --oneline $argv
+    clear; and git log --oneline --max-count 20 $argv
 end
