@@ -8,5 +8,5 @@ function unsplash
     set --local IMAGE_URL (echo $UNSPLASH_RESPONSE | jq --raw-output ".urls.full")
     set --local DOWNLOADED_IMAGE ~/Downloads/todays_picture_$PHOTO_ID.jpg
 
-    wget --quiet --output-document=$DOWNLOADED_IMAGE $IMAGE_URL
+    http --quiet --download --output $DOWNLOADED_IMAGE $IMAGE_URL
 end
