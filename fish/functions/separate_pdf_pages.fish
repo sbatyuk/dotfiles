@@ -1,4 +1,4 @@
-function pdf_extract_pages
+function separate_pdf_pages
     set --local PDF_FILE    $argv[1]
     set --local FIRST_PAGE  $argv[2]
     set --local LAST_PAGE   $argv[3]
