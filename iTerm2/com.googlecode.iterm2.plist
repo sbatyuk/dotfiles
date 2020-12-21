@@ -691,7 +691,7 @@
 			<key>Normal Font</key>
 			<string>FiraMonoNerdFontComplete-Regular 12</string>
 			<key>Only The Default BG Color Uses Transparency</key>
-			<false/>
+			<true/>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prevent Opening in a Tab</key>
