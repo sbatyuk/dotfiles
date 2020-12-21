@@ -62,6 +62,7 @@ let g:markdown_syntax_conceal = 0
 
 " ================ command-t configuration ========================
 let g:CommandTAlwaysShowDotFiles = 1
+autocmd FocusGained * :CommandTFlush
 
 " ================ vim-snippets configuration ========================
 " Adding html snippets to tsx and jsx file types
@@ -142,14 +143,6 @@ autocmd BufWritePre *.py Neoformat
 
 " ================ NORMAL MODE =========================
 
-" EXCEPTION of using recursive mapping to refresh command-t and nerdtree
-nmap <leader>r
-    \ :NERDTreeFocus<CR>R
-    \ :sleep 100m<CR>
-    \ :q<CR>
-    \ :CommandTFlush<CR>:<backspace>
-    \ :echo "File cache updated!"<CR>
-
 " map control-i to GoTo subcommand of YouCompleteMe
 nnoremap <C-i> :YcmCompleter GoToDefinition<CR> :<backspace>
 
@@ -157,7 +150,7 @@ function CustomNerdToggle()
     if &filetype == 'nerdtree' || bufname('%') == ""
         :NERDTreeToggle
     else
-        :NERDTreeFind
+        :NERDTreeFind | :NERDTreeRefreshRoot
     endif
 endfunction
 " map <leader>o to toggle the tree AND reveal the open file in the tree
