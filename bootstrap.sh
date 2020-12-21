@@ -290,14 +290,15 @@ function symlink() {
 
 function update_hosts_file() {
     info "Updating /etc/hosts"
+    base_hosts_file_path=${DOTFILES_REPO}/hosts/base_hosts_file
     own_hosts_file_path=${DOTFILES_REPO}/hosts/own_hosts_file
     ignored_keywords_path=${DOTFILES_REPO}/hosts/ignored_keywords
     downloaded_hosts_file_path=/etc/downloaded_hosts_file
     downloaded_updated_hosts_file_path=/etc/downloaded_updated_hosts_file
     community_hosts_file_url=https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts
 
-    if sudo cp "${own_hosts_file_path}" /etc/hosts; then
-        substep "Copying ${own_hosts_file_path} to /etc/hosts succeeded"
+    if cat ${base_hosts_file_path} ${own_hosts_file_path} | sudo tee /etc/hosts > /dev/null; then
+        substep "Copying dotfiles hosts files to /etc/hosts succeeded"
     else
         error "Copying ${own_hosts_file_path} to /etc/hosts failed"
         exit 1
