@@ -1,3 +1,3 @@
-function gc
-    git commit
+function gc --wraps "git commit"
+    git commit $argv
 end
