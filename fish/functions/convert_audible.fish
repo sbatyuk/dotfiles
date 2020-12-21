@@ -1,4 +1,4 @@
-function audible_convert
+function convert_audible
     1password_session
     set --local AUDIBLE_AUTHENTICATION_CODE (op get item 'Amazon store' | jq --raw-output '.details.sections[0].fields[1].v')
 
