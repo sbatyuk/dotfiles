@@ -1,4 +1,4 @@
-function homebrew_cleanup
+function clean_homebrew
     set --local TAP  $DOTFILES_REPO/homebrew/tap
     set --local BREW $DOTFILES_REPO/homebrew/brew
     set --local CASK $DOTFILES_REPO/homebrew/cask
