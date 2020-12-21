@@ -1,4 +1,5 @@
 brew "awscli"
+brew "bandwhich"
 brew "bat"
 brew "cmake" # for YouCompleteMe vim plugin
 brew "coreutils" # for awesome commands like timeout
