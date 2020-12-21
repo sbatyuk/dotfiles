@@ -36,7 +36,7 @@ fe80::1%lo0	    localhost
 #
 #
 # What is below is from https://github.com/StevenBlack/hosts
-# To ignore certain keyword patterns based on the result of ack command-line
+# To ignore certain keyword patterns based on the result of rg command-line
 # application, add the keyword to ignored_keywords file using '|' as a separator.
 # The keywords will be removed from the final hosts file.
 #

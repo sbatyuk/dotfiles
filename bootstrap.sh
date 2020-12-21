@@ -307,7 +307,7 @@ function update_hosts_file() {
         $community_hosts_file_url; then
         substep "hosts file downloaded successfully"
 
-        if ack --invert-match "$(cat ${ignored_keywords_path})" "${downloaded_hosts_file_path}" | \
+        if rg --invert-match "$(cat ${ignored_keywords_path})" "${downloaded_hosts_file_path}" | \
             sudo tee "${downloaded_updated_hosts_file_path}" > /dev/null; then
             substep "Ignored patterns successfully removed from downloaded hosts file"
         else

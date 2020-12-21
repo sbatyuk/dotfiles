@@ -1,4 +1,3 @@
-brew "ack"
 brew "awscli"
 brew "bat"
 brew "cmake" # for YouCompleteMe vim plugin
