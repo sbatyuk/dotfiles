@@ -21,13 +21,16 @@ DOTFILES_REPO=~/repos/dotfiles
 
 function ask_for_sudo() {
     info "Prompting for sudo password"
+
+    sudoers_timeout_url=https://raw.githubusercontent.com/sam-hosseini/dotfiles/master/sudoers/timeout
+    sudoers_timeout_path=/private/etc/sudoers.d/timeout
+
     if sudo --validate; then
-        # Keep-alive
-        while true; do sudo --non-interactive true; \
-            sleep 10; kill -0 "$$" || exit; done 2>/dev/null &
-        success "Sudo password updated"
+        if sudo wget --timeout=5 --tries=3 --quiet --output-document="${sudoers_timeout_path}" $sudoers_timeout_url; then
+            success "sudoers timeout updated"
+        fi
     else
-        error "Sudo password update failed"
+        error "sudoers timeout update failed"
         exit 1
     fi
 }
