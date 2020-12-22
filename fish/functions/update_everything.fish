@@ -4,9 +4,6 @@ function update_everything
     echo -e '####################################\n# Pull repos \n####################################'
     pull_repos
 
-    echo -e '####################################\n# Software Update \n####################################'
-    sudo softwareupdate --install --all
-
     echo -e '####################################\n# Brew \n####################################'
     clean_homebrew
     update_homebrew
