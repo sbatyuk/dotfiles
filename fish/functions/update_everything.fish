@@ -1,4 +1,4 @@
-function up
+function update_everything
     sudo -v
 
     echo -e '####################################\n# Pull repos \n####################################'
