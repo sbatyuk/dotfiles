@@ -8,13 +8,8 @@ function update_everything
     sudo softwareupdate --install --all
 
     echo -e '####################################\n# Brew \n####################################'
-    bbc
-    brew update
-    brew upgrade
-    mas upgrade
-    brew outdated --cask --greedy --verbose | rg --invert-match latest | awk '{print $1;}' | xargs brew upgrade --cask
-    brew cleanup
-    brew doctor
+    clean_homebrew
+    update_homebrew
 
     echo -e '####################################\n# Pip \n####################################'
     pip-sync $DOTFILES_REPO/pip/requirements.txt
