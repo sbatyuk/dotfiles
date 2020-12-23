@@ -22,17 +22,10 @@ set --global --export BAT_THEME Dracula
 ############################################################################
 # PATH setup
 ############################################################################
-# /usr/local/bin is where brew symlinks most executables it installs
-# /usr/local/sbin is where brew symlinks some of its executables
-# /usr/local/opt/ruby/bin is where the symlinked brew Ruby executable lives
-# By putting these paths before $fish_user_paths, they will take precedence
-# over system provided programs
-
-set --append OWN_PATH /usr/local/opt/python@3.9/bin
-set --append OWN_PATH /usr/local/bin
-set --append OWN_PATH /usr/local/sbin
-set --append OWN_PATH /usr/local/opt/ruby/bin
-set --append OWN_PATH /usr/local/lib/ruby/gems/2.6.0/bin
+set --local --append OWN_PATH /usr/local/bin                        # Where brew symlinks most packages
+set --local --append OWN_PATH /usr/local/sbin                       # Where brew symlinks some packages
+set --local --append OWN_PATH /usr/local/opt/ruby/bin               # Where brew's ruby lives
+set --local --append OWN_PATH /usr/local/lib/ruby/gems/2.7.0/bin    # Where brew's ruby gems live
 
 set --global --export fish_user_paths $OWN_PATH
 
