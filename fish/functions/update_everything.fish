@@ -15,7 +15,9 @@ function update_everything
 
     tldr --update
 
+    ~/.tmux/plugins/tpm/bin/./clean_plugins
     ~/.tmux/plugins/tpm/bin/./update_plugins all 1>/dev/null
 
+    vim +PluginClean  +qall
     vim +PluginUpdate +qall
 end
