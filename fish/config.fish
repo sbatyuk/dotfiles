@@ -24,8 +24,4 @@ set --local --append OWN_PATH /usr/local/lib/ruby/gems/2.7.0/bin    # Where brew
 
 set --global --export fish_user_paths $OWN_PATH
 
-############################################################################
-# Fish theme influences only the colors of what you type
-# starship controls fish prompt
-############################################################################
-starship init fish | source
+source $DOTFILES_REPO/starship/initializer.fish
