@@ -1,24 +1,16 @@
 function update_everything
     sudo -v
 
-    echo -e '####################################\n# Pull repos \n####################################'
     pull_repos
 
-    echo -e '####################################\n# Brew \n####################################'
     clean_homebrew
     update_homebrew
 
-    echo -e '####################################\n# Pip \n####################################'
-    pip-sync $DOTFILES_REPO/pip/requirements.txt
+    pip-sync $DOTFILES_REPO/pip/requirements.txt | grep --invert-match "Everything up-to-date"
 
-    echo -e '####################################\n# Yarn \n####################################'
-    yarn global upgrade --silent 2>&1 | rg --invert-match warning
+    yarn global upgrade --silent 2>&1 | grep --invert-match warning
 
-    echo -e '####################################\n# Fisher \n####################################'
-    fisher update
+    fisher update 1>/dev/null
 
-    echo -e '####################################\n# TLDR \n####################################'
     tldr --update
-
-    echo -e '####################################\n# Done \n####################################'
 end
