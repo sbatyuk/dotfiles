@@ -13,15 +13,6 @@ set --global --export LANG en_US.UTF-8   # Set locale
 set --global --export DOTFILES_REPO ~/repos/dotfiles
 set --global --export BAT_THEME Dracula
 
+source $DOTFILES_REPO/fish/path.fish
 source $DOTFILES_REPO/git/contact_info.fish
-############################################################################
-# PATH setup
-############################################################################
-set --local --append OWN_PATH /usr/local/bin                        # Where brew symlinks most packages
-set --local --append OWN_PATH /usr/local/sbin                       # Where brew symlinks some packages
-set --local --append OWN_PATH /usr/local/opt/ruby/bin               # Where brew's ruby lives
-set --local --append OWN_PATH /usr/local/lib/ruby/gems/2.7.0/bin    # Where brew's ruby gems live
-
-set --global --export fish_user_paths $OWN_PATH
-
 source $DOTFILES_REPO/starship/initializer.fish
