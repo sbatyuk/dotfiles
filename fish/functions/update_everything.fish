@@ -1,5 +1,5 @@
 function update_everything
-    sudo -v
+    sudo --validate
 
     pull_repos
 
@@ -13,4 +13,8 @@ function update_everything
     fisher update 1>/dev/null
 
     tldr --update
+
+    ~/.tmux/plugins/tpm/bin/./update_plugins all 1>/dev/null
+
+    vim +PluginUpdate +qall
 end
