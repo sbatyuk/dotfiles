@@ -27,13 +27,14 @@ set --global --export BAT_THEME Dracula
 # /usr/local/opt/ruby/bin is where the symlinked brew Ruby executable lives
 # By putting these paths before $fish_user_paths, they will take precedence
 # over system provided programs
-set --global --export fish_user_paths \
-    /usr/local/opt/python@3.9/bin \
-    /usr/local/bin \
-    /usr/local/sbin \
-    /usr/local/opt/ruby/bin \
-    /usr/local/lib/ruby/gems/2.6.0/bin \
-    $fish_user_paths
+
+set --append OWN_PATH /usr/local/opt/python@3.9/bin
+set --append OWN_PATH /usr/local/bin
+set --append OWN_PATH /usr/local/sbin
+set --append OWN_PATH /usr/local/opt/ruby/bin
+set --append OWN_PATH /usr/local/lib/ruby/gems/2.6.0/bin
+
+set --global --export fish_user_paths $OWN_PATH
 
 ############################################################################
 # Fish theme influences only the colors of what you type
