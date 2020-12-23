@@ -9,4 +9,5 @@ function unsplash
     set --local DOWNLOADED_IMAGE ~/Downloads/todays_picture_$PHOTO_ID.jpg
 
     http --quiet --download --output $DOWNLOADED_IMAGE $IMAGE_URL
+    ww
 end
