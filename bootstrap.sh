@@ -253,7 +253,7 @@ function setup_symlinks() {
 
     info "Setting up symlinks"
 
-    symlink "git"           ${DOTFILES_REPO}/git/gitconfig              ~/.gitconfig
+    symlink "git"           ${DOTFILES_REPO}/git/config                 ~/.gitconfig
     symlink "hammerspoon"   ${DOTFILES_REPO}/hammerspoon                ~/.hammerspoon
     symlink "karabiner"     ${DOTFILES_REPO}/karabiner                  ~/.config/karabiner
     symlink "tmux"          ${DOTFILES_REPO}/tmux/tmux.conf             ~/.tmux.conf
