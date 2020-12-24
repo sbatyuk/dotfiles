@@ -1,14 +1,14 @@
 [core]
-	autocrlf = input  # bit.ly/2RLLxed
+	autocrlf = input                    # Convert Windows line ending (CRLF) to macOS line ending (LF) when adding files to git
 
 [pull]
-	rebase = false
+	rebase = true                       # Rebase local commits on top of remote commits when pulling
 
 [advice]
-	addEmptyPathspec = false
+	addEmptyPathspec = false            # Disable warning of "Maybe you wanted to say git add ."
 
 [status]
-	showUntrackedFiles = all
+	showUntrackedFiles = all            # Show all untracked files in an untracked folder, not just the untracked folder
 
 [include]
 path = ~/repos/dotfiles/git/diff_so_fancy
