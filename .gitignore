@@ -133,3 +133,4 @@ fish/functions/__z*.fish
 fish/functions/_pisces*.fish
 fish/*/fisher.fish
 homebrew/all_packages
+hammerspoon/Spoons/*
