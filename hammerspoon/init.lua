@@ -1,4 +1,5 @@
 local modules_to_load = {
+    'spoon_manager',
     'reload_configuration',
     'hammerspoon_preferences',
     'window_management',
