@@ -1,4 +1,4 @@
-hs.autoLaunch(false)
+hs.autoLaunch(true)
 hs.automaticallyCheckForUpdates(false)
 hs.dockicon.hide()
 hs.menuIcon(false)
