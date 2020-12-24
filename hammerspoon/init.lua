@@ -1,19 +1,7 @@
-local modules_to_load = {
-    'spoon_manager',
-    'reload_configuration',
-    'hammerspoon_preferences',
-    'window_management',
-    'quit_fantastical',
-}
+require('spoon_manager')
+require('reload_configuration')
+require('hammerspoon_preferences')
+require('window_management')
+require('quit_fantastical')
 
-for _, module in pairs(modules_to_load) do
-    require(module)
-end
-
-local notification_config = {
-    title="Hammerspoon",
-    informativeText="Config loaded",
-    withdrawAfter=1.25
-}
-
-hs.notify.new(notification_config):send()
+hs.notify.new({informativeText='Successfully loaded', withdrawAfter=1.25}):send()
