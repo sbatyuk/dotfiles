@@ -1,3 +1,1 @@
-hs.loadSpoon("ReloadConfiguration")
-
-spoon.ReloadConfiguration:start()
+InstallSpoon:andUse("ReloadConfiguration", {start = true})
