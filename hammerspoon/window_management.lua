@@ -1,4 +1,4 @@
-hs.loadSpoon("MiroWindowsManager")
+InstallSpoon:andUse("MiroWindowsManager")
 
 hs.window.animationDuration = 0
 
