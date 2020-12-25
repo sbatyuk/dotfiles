@@ -1,4 +1,4 @@
-require('spoon_manager')
+hs.loadSpoon('SpoonInstall')
 
 require('hide_ticktick')
 require('preferences')
