@@ -1,51 +1,35 @@
-brew "awscli"
+brew "cmake"            # required for compiling YouCompleteMe
+brew "imagemagick"      # for "convert" tool
+brew "poppler"          # for "pdfunite" and "pdfseparate" tools
+brew "ruby"             # required for compiling command-t
+
 brew "bandwhich"
 brew "bat"
-brew "cmake" # for YouCompleteMe vim plugin
-brew "coreutils" # for awesome commands like timeout
 brew "diff-so-fancy"
 brew "dust"
 brew "exa"
 brew "fd"
-brew "ffmpeg" # for being able to manipulate videos for example
+brew "ffmpeg"
 brew "fish"
 brew "flake8"
 brew "git"
 brew "git-extras"
 brew "git-open"
-brew "gnu-sed"
-brew "grep"
-brew "htop"
 brew "httpie"
-brew "imagemagick"
 brew "jq"
 brew "mas"
-brew "mongodb-community"
-brew "mongodb-database-tools"
 brew "node"
 brew "p7zip"
 brew "parallel"
-brew "poppler" # to work with pdf files and merge/extract them for example
-brew "postgresql"
-brew "python@3.9"
-brew "reattach-to-user-namespace" # for tmux commands to work
-brew "redis"
+brew "python3"
 brew "rename"
 brew "ripgrep"
-brew "ruby" # for Vim command-t plugin to work
 brew "sd"
 brew "starship"
 brew "terraform"
 brew "tldr"
 brew "tmux"
 brew "trash"
-brew "tree"
-brew "twine-pypi" # for packaging Pypi packages, needed by setup.py repo
-brew "vault"
 brew "vim"
-brew "wget"
-brew "wifi-password"
 brew "yarn"
 brew "youtube-dl"
-brew "z"
-brew "heroku/brew/heroku"
