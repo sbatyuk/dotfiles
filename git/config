@@ -9,6 +9,3 @@
 
 [status]
 	showUntrackedFiles = all            # Show all untracked files in an untracked folder, not just the untracked folder
-
-[include]
-path = ~/repos/dotfiles/git/diff_so_fancy

@@ -5,7 +5,6 @@ brew "ruby"             # required for compiling command-t
 
 brew "bandwhich"
 brew "bat"
-brew "diff-so-fancy"
 brew "dust"
 brew "exa"
 brew "fd"
