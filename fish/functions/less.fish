@@ -1,3 +1,3 @@
 function less --wraps "bat"
-    bat $argv
+    bat --paging=always $argv
 end

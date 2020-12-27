@@ -1,3 +1,3 @@
 function cat --wraps "bat"
-    bat $argv
+    bat --paging=never $argv
 end
