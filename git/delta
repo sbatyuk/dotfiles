@@ -1,2 +1,15 @@
 [core]
     pager = delta
+
+[delta]
+    syntax-theme    = Dracula
+    plus-style      = syntax "#003800"
+    minus-style     = syntax "#3f0001"
+    features        = decorations
+
+[delta "decorations"]
+    commit-style                    = bold yellow box
+    commit-decoration-style         = bold yellow box
+    file-style                      = bold yellow box
+    file-decoration-style           = bold yellow box
+    hunk-header-decoration-style    = cyan box
