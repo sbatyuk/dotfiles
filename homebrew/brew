@@ -1,7 +1,8 @@
 brew "cmake"            # required for compiling YouCompleteMe
+brew "ruby"             # required for compiling command-t
+brew "less"             # required for bat to have the latest version of less as its pager
 brew "imagemagick"      # for "convert" tool
 brew "poppler"          # for "pdfunite" and "pdfseparate" tools
-brew "ruby"             # required for compiling command-t
 
 brew "bandwhich"
 brew "bat"
