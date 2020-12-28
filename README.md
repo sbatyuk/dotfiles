@@ -1,5 +1,3 @@
-<h1 align="center">ꫝ</h1>
-
 [![My macOS setup][My macOS setup image]][My macOS setup link]
 
 [My macOS setup image]: https://raw.githubusercontent.com/sam-hosseini/dotfiles/master/images/aesthetics.png
