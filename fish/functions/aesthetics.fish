@@ -1,0 +1,3 @@
+function aesthetics
+    neofetch
+end
