@@ -16,6 +16,11 @@
     name: "{{ ansible_user_id }}"
     shell: /usr/local/bin/fish
 
+- name: Create fish config directory
+  file:
+    path: ~/.config/fish
+    state: directory
+
 - name: Setup fish symlinks
   file:
     src: '{{ item.src }}'
