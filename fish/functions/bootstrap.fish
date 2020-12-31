@@ -1,3 +1,3 @@
 function bootstrap
-    bash $DOTFILES_REPO/bootstrap.sh
+    ansible-playbook --inventory $DOTFILES_REPO/hosts.ini $DOTFILES_REPO/bootstrap.yml
 end
