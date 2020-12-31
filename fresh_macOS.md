@@ -5,3 +5,4 @@
     ```
     ansible-playbook --ask-become-pass --tags fish --inventory hosts.ini bootstrap.yml
     ```
+* Open a fish shell and execute `bootstrap`
