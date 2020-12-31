@@ -1,0 +1,6 @@
+- name: BOOTSTRAP
+  hosts: my_local_machine
+  roles:
+    - role: fish
+      tags:
+        - fish
