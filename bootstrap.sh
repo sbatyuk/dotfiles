@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
 main() {
-    install_xcode_command_line_tools # to get "git", needed for clone_dotfiles_repo
-    clone_dotfiles_repo
-    install_homebrew
     install_packages_with_brewfile
     install_pip_packages
     setup_symlinks # needed for setup_vim and setup_tmux
@@ -16,40 +13,6 @@ main() {
 }
 
 DOTFILES_REPO=~/repos/dotfiles
-
-function install_xcode_command_line_tools() {
-    info "Installing Xcode command line tools"
-
-    if xcode-select --print-path &>/dev/null; then
-        success "Xcode command line tools already exists"
-    else
-        xcode-select --install
-        while true; do
-            if xcode-select --print-path 2>/dev/null; then
-                success "Xcode command line tools installation succeeded"
-                break
-            else
-                substep "Xcode command line tools still installing..."
-                sleep 20
-            fi
-        done
-    fi
-}
-
-function install_homebrew() {
-    info "Installing Homebrew"
-    if hash brew 2>/dev/null; then
-        success "Homebrew already exists"
-    else
-        url=https://raw.githubusercontent.com/Homebrew/install/master/install.sh
-        if yes | /bin/bash -c "$(curl -fsSL ${url})"; then
-            success "Homebrew installation succeeded"
-        else
-            error "Homebrew installation failed"
-            exit 1
-        fi
-    fi
-}
 
 function install_packages_with_brewfile() {
     info "Installing Brewfile packages"
@@ -116,24 +79,6 @@ function install_yarn_packages() {
         exit 1
     fi
 
-}
-
-function clone_dotfiles_repo() {
-    info "Cloning dotfiles repository into ${DOTFILES_REPO}"
-    if test -e $DOTFILES_REPO; then
-        substep "${DOTFILES_REPO} already exists"
-        pull_latest $DOTFILES_REPO
-        success "Pull successful in ${DOTFILES_REPO} repository"
-    else
-        url=https://github.com/sam-hosseini/dotfiles.git
-        if git clone "$url" $DOTFILES_REPO && \
-           git -C $DOTFILES_REPO remote set-url origin git@github.com:sam-hosseini/dotfiles.git; then
-            success "Dotfiles repository cloned into ${DOTFILES_REPO}"
-        else
-            error "Dotfiles repository cloning failed"
-            exit 1
-        fi
-    fi
 }
 
 function pull_latest() {
