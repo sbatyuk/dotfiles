@@ -1,6 +1,6 @@
 - name: BOOTSTRAP
   hosts: my_local_machine
+  vars:
+    DOTFILES_REPO: ~/repos/dotfiles
   roles:
-    - role: fish
-      tags:
-        - fish
+    - { role: fish, tags: fish }
