@@ -1,3 +1,3 @@
 function oo
-    git open
+    git browse
 end
