@@ -48,3 +48,5 @@
   shell:
     executable: /usr/local/bin/fish
     cmd: 'fisher update'
+  args:
+    creates: ~/.config/fish/conf.d/dracula.fish
