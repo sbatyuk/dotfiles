@@ -50,3 +50,14 @@
     cmd: 'fisher update'
   args:
     creates: ~/.config/fish/conf.d/dracula.fish
+
+- name: Install starship with homebrew
+  homebrew:
+    name: starship
+    state: present
+
+- name: Setup starship symlink
+  file:
+    src: '{{ DOTFILES_REPO }}/roles/fish/files/starship.toml'
+    dest: ~/.config/starship.toml
+    state: link
