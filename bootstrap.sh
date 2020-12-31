@@ -5,7 +5,6 @@ main() {
     clone_dotfiles_repo
     install_homebrew
     install_packages_with_brewfile
-    change_shell_to_fish
     install_pip_packages
     setup_symlinks # needed for setup_vim and setup_tmux
     setup_vim
@@ -88,34 +87,6 @@ function install_packages_with_brewfile() {
         else
             error "Brewfile taps installation failed"
             exit 1
-        fi
-    fi
-}
-
-function change_shell_to_fish() {
-    info "Fish shell setup"
-    if grep --quiet fish <<< "$SHELL"; then
-        success "Fish shell already exists"
-    else
-        user=$(whoami)
-        substep "Adding Fish executable to /etc/shells"
-        if grep --fixed-strings --line-regexp --quiet \
-            "/usr/local/bin/fish" /etc/shells; then
-            substep "Fish executable already exists in /etc/shells"
-        else
-            if echo /usr/local/bin/fish | sudo tee -a /etc/shells > /dev/null;
-            then
-                substep "Fish executable successfully added to /etc/shells"
-            else
-                error "Failed to add Fish executable to /etc/shells"
-                exit 1
-            fi
-        fi
-        substep "Switching shell to Fish for \"${user}\""
-        if sudo chsh -s /usr/local/bin/fish "$user"; then
-            success "Fish shell successfully set for \"${user}\""
-        else
-            error "Please try setting Fish shell again"
         fi
     fi
 }
@@ -246,10 +217,6 @@ function setup_symlinks() {
 
     # Disable shell login message
     symlink "hushlogin" /dev/null ~/.hushlogin
-
-    symlink "fish:functions"   ${DOTFILES_REPO}/fish/functions    ~/.config/fish/functions
-    symlink "fish:config.fish" ${DOTFILES_REPO}/fish/config.fish  ~/.config/fish/config.fish
-    symlink "fish:plugins"     ${DOTFILES_REPO}/fish/plugins      ~/.config/fish/fish_plugins
 
     symlink "yarn:package.json"  ${DOTFILES_REPO}/yarn/package.json  ~/.config/yarn/global/package.json
     symlink "yarn:yarn.lock"     ${DOTFILES_REPO}/yarn/yarn.lock     ~/.config/yarn/global/yarn.lock
