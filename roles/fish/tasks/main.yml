@@ -4,6 +4,7 @@
     line: Defaults timestamp_timeout=120
     dest: /private/etc/sudoers.d/timeout
     state: present
+    create: yes
 
 - name: Install fish with homebrew
   homebrew:
