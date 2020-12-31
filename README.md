@@ -9,7 +9,6 @@
   ```
 
 * Open a Fish shell and execute the following functions:
-  * `install_fisher`
   * `compile_vim_plugins`
   * `clone_repos`
 
