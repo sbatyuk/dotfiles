@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 main() {
-    ask_for_sudo
     install_xcode_command_line_tools # to get "git", needed for clone_dotfiles_repo
     clone_dotfiles_repo
     install_homebrew
@@ -18,22 +17,6 @@ main() {
 }
 
 DOTFILES_REPO=~/repos/dotfiles
-
-function ask_for_sudo() {
-    info "Prompting for sudo password"
-
-    sudoers_timeout_url=https://raw.githubusercontent.com/sam-hosseini/dotfiles/master/sudoers/timeout
-    sudoers_timeout_path=/private/etc/sudoers.d/timeout
-
-    if sudo --validate; then
-        if sudo wget --timeout=5 --tries=3 --quiet --output-document="${sudoers_timeout_path}" $sudoers_timeout_url; then
-            success "sudoers timeout updated"
-        fi
-    else
-        error "sudoers timeout update failed"
-        exit 1
-    fi
-}
 
 function install_xcode_command_line_tools() {
     info "Installing Xcode command line tools"
