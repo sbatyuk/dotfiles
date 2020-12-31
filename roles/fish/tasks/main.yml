@@ -38,3 +38,13 @@
     - { src: '{{ DOTFILES_REPO }}/roles/fish/files/functions',   dest: '~/.config/fish/functions'}
     - { src: '{{ DOTFILES_REPO }}/roles/fish/files/config.fish', dest: '~/.config/fish/config.fish'}
     - { src: '{{ DOTFILES_REPO }}/roles/fish/files/plugins',     dest: '~/.config/fish/fish_plugins'}
+
+- name: Download fisher function
+  get_url:
+    url: https://git.io/fisher
+    dest: '{{ DOTFILES_REPO }}/roles/fish/files/functions/fisher.fish'
+
+- name: Install fisher plugins
+  shell:
+    executable: /usr/local/bin/fish
+    cmd: 'fisher update'
