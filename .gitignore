@@ -129,8 +129,8 @@ tags
 
 # End of https://www.gitignore.io/api/git,vim,macos,linux,emacs
 
-fish/functions/__z*.fish
-fish/functions/_pisces*.fish
-fish/*/fisher.fish
+roles/fish/files/functions/__z*.fish
+roles/fish/files/functions/_pisces*.fish
+roles/fish/files/functions/fisher.fish
 homebrew/all_packages
 hammerspoon/Spoons/*
