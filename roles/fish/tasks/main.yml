@@ -1,3 +1,10 @@
+- name: 'Extend sudo timeout to 2 hours'
+  become: yes
+  lineinfile:
+    line: Defaults timestamp_timeout=120
+    dest: /private/etc/sudoers.d/timeout
+    state: present
+
 - name: Install fish with homebrew
   homebrew:
     name: fish
