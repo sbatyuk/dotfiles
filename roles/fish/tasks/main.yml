@@ -1,63 +1,62 @@
-- name: 'Extend sudo timeout to 2 hours'
+- name: fish role => Extend sudo timeout
   become: yes
-  lineinfile:
-    line: Defaults timestamp_timeout=120
-    dest: /private/etc/sudoers.d/timeout
+  ansible.builtin.lineinfile:
+    line: Defaults timestamp_timeout=120 # 2 hours
+    path: /private/etc/sudoers.d/timeout
     state: present
     create: yes
 
-- name: Install fish with homebrew
-  homebrew:
+- name: fish role => Install fish with homebrew
+  community.general.homebrew:
     name: fish
     state: present
 
-- name: Add fish executable to /etc/shells
+- name: fish role => Add fish executable to /etc/shells
   become: yes
-  lineinfile:
+  ansible.builtin.lineinfile:
     line: /usr/local/bin/fish
-    dest: /etc/shells
+    path: /etc/shells
     state: present
 
-- name: Set fish as default shell
+- name: fish role => Set fish as default shell
   become: yes
-  user:
-    name: "{{ ansible_user_id }}"
+  ansible.builtin.user:
+    name: sam_hosseini
     shell: /usr/local/bin/fish
 
-- name: Create fish config directory
-  file:
+- name: fish role => Create fish config directory
+  ansible.builtin.file:
     path: ~/.config/fish
     state: directory
 
-- name: Setup fish symlinks
-  file:
+- name: fish role => Setup fish symlinks
+  ansible.builtin.file:
     src: '{{ item.src }}'
-    dest: '{{ item.dest }}'
+    path: '{{ item.path }}'
     state: link
-  with_items:
-    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/functions',   dest: '~/.config/fish/functions'}
-    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/config.fish', dest: '~/.config/fish/config.fish'}
-    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/plugins',     dest: '~/.config/fish/fish_plugins'}
+  loop:
+    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/functions',   path: '~/.config/fish/functions'}
+    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/config.fish', path: '~/.config/fish/config.fish'}
+    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/plugins',     path: '~/.config/fish/fish_plugins'}
 
-- name: Download fisher function
-  get_url:
+- name: fish role => Download fisher function
+  ansible.builtin.get_url:
     url: https://git.io/fisher
     dest: '{{ DOTFILES_REPO }}/roles/fish/files/functions/fisher.fish'
 
-- name: Install fisher plugins
-  shell:
+- name: fish role => Install fisher plugins
+  ansible.builtin.shell:
     executable: /usr/local/bin/fish
     cmd: 'fisher update'
-  args:
     creates: ~/.config/fish/conf.d/dracula.fish
 
-- name: Install starship with homebrew
-  homebrew:
+- name: fish role => Install starship with homebrew
+  community.general.homebrew:
     name: starship
     state: present
 
-- name: Setup starship symlink
-  file:
+- name: fish role => Setup starship symlink
+  ansible.builtin.file:
     src: '{{ DOTFILES_REPO }}/roles/fish/files/starship.toml'
-    dest: ~/.config/starship.toml
+    path: ~/.config/starship.toml
     state: link
