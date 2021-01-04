@@ -1,0 +1,15 @@
+- name: Install karabiner with homebrew
+  homebrew_cask:
+    name: karabiner-elements
+    state: present
+
+- name: Create karabiner config directory
+  file:
+    path: ~/.config/karabiner
+    state: directory
+
+- name: Setup karabiner symlink
+  file:
+    src: '{{ DOTFILES_REPO }}/roles/karabiner/files/karabiner.json'
+    dest: ~/.config/karabiner/karabiner.json
+    state: link
