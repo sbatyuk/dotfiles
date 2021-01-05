@@ -6,7 +6,6 @@ main() {
     setup_symlinks # needed for setup_vim and setup_tmux
     setup_vim
     setup_tmux
-    install_yarn_packages
     update_hosts_file
     setup_macOS_defaults
     update_login_items
@@ -62,20 +61,6 @@ function install_pip_packages() {
         success "pip packages successfully installed"
     else
         error "pip packages installation failed"
-        exit 1
-    fi
-
-}
-
-function install_yarn_packages() {
-    # prettier for Neoformat to auto-format files
-    # typescript for YouCompleteMe
-    info "Installing yarn packages"
-
-    if ( cd ~/.config/yarn/global; yarn global add &>/dev/null); then
-        success "yarn packages successfully installed"
-    else
-        error "yarn packages installation failed"
         exit 1
     fi
 
@@ -161,9 +146,6 @@ function setup_symlinks() {
 
     # Disable shell login message
     symlink "hushlogin" /dev/null ~/.hushlogin
-
-    symlink "yarn:package.json"  ${DOTFILES_REPO}/yarn/package.json  ~/.config/yarn/global/package.json
-    symlink "yarn:yarn.lock"     ${DOTFILES_REPO}/yarn/yarn.lock     ~/.config/yarn/global/yarn.lock
 
     success "Symlinks successfully setup"
 }
