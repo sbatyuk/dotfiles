@@ -1,7 +1,9 @@
 - name: BOOTSTRAP
   hosts: my_local_machine
+  gather_facts: no
   vars:
     DOTFILES_REPO: ~/repos/dotfiles
   roles:
     - { role: fish,         tags: fish         }
     - { role: karabiner,    tags: karabiner    }
+    - { role: vscode,       tags: vscode       }
