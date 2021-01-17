@@ -133,19 +133,13 @@ function setup_tmux() {
 }
 
 function setup_symlinks() {
-    APPLICATION_SUPPORT=~/Library/Application\ Support
-
     info "Setting up symlinks"
 
-    symlink "git"           ${DOTFILES_REPO}/git/config                 ~/.gitconfig
     symlink "hammerspoon"   ${DOTFILES_REPO}/hammerspoon                ~/.hammerspoon
     symlink "karabiner"     ${DOTFILES_REPO}/karabiner                  ~/.config/karabiner
     symlink "tmux"          ${DOTFILES_REPO}/tmux/tmux.conf             ~/.tmux.conf
     symlink "vim"           ${DOTFILES_REPO}/vim/vimrc                  ~/.vimrc
     symlink "neofetch"      ${DOTFILES_REPO}/neofetch/config.conf       ~/.config/neofetch/config.conf
-
-    # Disable shell login message
-    symlink "hushlogin" /dev/null ~/.hushlogin
 
     success "Symlinks successfully setup"
 }
