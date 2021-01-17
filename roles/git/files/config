@@ -13,6 +13,3 @@
 
 [status]
 	showUntrackedFiles = all            # Show all untracked files in an untracked folder, not just the untracked folder
-
-[include]
-path = ~/repos/dotfiles/roles/git/files/delta
