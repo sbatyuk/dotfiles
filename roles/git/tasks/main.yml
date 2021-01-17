@@ -1,0 +1,22 @@
+- name: git role => Install git with homebrew
+  community.general.homebrew:
+    name: git
+    state: present
+
+- name: git role => Create git config directory
+  ansible.builtin.file:
+    path: ~/.config/git
+    state: directory
+
+- name: git role => Setup git symlink
+  ansible.builtin.file:
+    src: '{{ DOTFILES_REPO }}/roles/git/files/config'
+    path: ~/.config/git/config
+    state: link
+
+- name: git role => Install git related packages with homebrew
+  community.general.homebrew:
+    name:
+      - git-delta
+      - git-extras
+    state: present
