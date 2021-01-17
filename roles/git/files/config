@@ -1,3 +1,7 @@
+[user]
+	name    = Sam Hosseini
+	email   = git-email@hosseini.io
+
 [core]
 	autocrlf = input                    # Convert Windows line ending (CRLF) to macOS line ending (LF) when adding files to git
 
