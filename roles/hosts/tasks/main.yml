@@ -1,0 +1,10 @@
+- name: hosts role => Download community hosts file
+  ansible.builtin.get_url:
+    url: https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts
+    dest: '{{ DOTFILES_REPO }}/roles/hosts/files/community_hosts_file'
+
+- name: hosts role => Install hosts template
+  become: yes
+  ansible.builtin.template:
+    src: '{{ DOTFILES_REPO }}/roles/hosts/templates/hosts.j2'
+    dest: /private/etc/hosts

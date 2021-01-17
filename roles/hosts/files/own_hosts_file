@@ -21,23 +21,3 @@
 ::	        yle.fi
 0.0.0.0	    www.yle.fi
 ::	        www.yle.fi
-
-############################################################################
-#
-#
-#
-# What is below is from https://github.com/StevenBlack/hosts
-# To ignore certain keyword patterns based on the result of rg command-line
-# application, add the keyword to ignored_keywords file using '|' as a separator.
-# The keywords will be removed from the final hosts file.
-#
-#
-#
-############################################################################
-
-
-
-
-
-
-

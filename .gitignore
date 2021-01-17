@@ -134,3 +134,4 @@ roles/fish/files/functions/_pisces*.fish
 roles/fish/files/functions/fisher.fish
 homebrew/all_packages
 hammerspoon/Spoons/*
+roles/hosts/files/community_hosts_file
