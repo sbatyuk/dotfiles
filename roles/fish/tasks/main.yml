@@ -60,3 +60,8 @@
     src: '{{ DOTFILES_REPO }}/roles/fish/files/starship.toml'
     path: ~/.config/starship.toml
     state: link
+
+- name: fish role => Disable shell login message
+  ansible.builtin.copy:
+    src: /dev/null
+    dest: ~/.hushlogin
