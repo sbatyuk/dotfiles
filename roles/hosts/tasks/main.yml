@@ -1,7 +1,21 @@
+- name: hosts role => Install ripgrep with homebrew
+  community.general.homebrew:
+    name: ripgrep
+    state: present
+
 - name: hosts role => Download community hosts file
   ansible.builtin.get_url:
     url: https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts
     dest: '{{ DOTFILES_REPO }}/roles/hosts/files/community_hosts_file'
+  register: community_hosts_file
+
+- name: hosts role => Remove ignored keywords from community hosts file
+  ansible.builtin.shell:
+    cmd: >
+      rg --invert-match --file '{{ DOTFILES_REPO }}/roles/hosts/files/ignored_keywords'
+      '{{ DOTFILES_REPO }}/roles/hosts/files/community_hosts_file'
+      > '{{ DOTFILES_REPO }}/roles/hosts/files/community_hosts_file_updated'
+  when: community_hosts_file.changed
 
 - name: hosts role => Install hosts template
   become: yes

@@ -2,7 +2,7 @@
   hosts: my_local_machine
   gather_facts: no
   vars:
-    DOTFILES_REPO: ~/repos/dotfiles
+    DOTFILES_REPO: /Users/sam_hosseini/repos/dotfiles
   roles:
     - { role: fish,         tags: fish         }
     - { role: karabiner,    tags: karabiner    }

@@ -135,3 +135,4 @@ roles/fish/files/functions/fisher.fish
 homebrew/all_packages
 hammerspoon/Spoons/*
 roles/hosts/files/community_hosts_file
+roles/hosts/files/community_hosts_file_updated
