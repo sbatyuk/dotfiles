@@ -14,9 +14,7 @@
     path: ~/.config/git/config
     state: link
 
-- name: git role => Install git related packages with homebrew
+- name: git role => Install git delta with homebrew
   community.general.homebrew:
-    name:
-      - git-delta
-      - git-extras
+    name: git-delta
     state: present
