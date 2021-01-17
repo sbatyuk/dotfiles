@@ -6,7 +6,6 @@ main() {
     setup_symlinks # needed for setup_vim and setup_tmux
     setup_vim
     setup_tmux
-    update_hosts_file
     setup_macOS_defaults
     update_login_items
 }
@@ -159,47 +158,6 @@ function symlink() {
     else
         error "Symlinking for \"${application}\" failed"
         exit 1
-    fi
-}
-
-function update_hosts_file() {
-    info "Updating /etc/hosts"
-    base_hosts_file_path=${DOTFILES_REPO}/hosts/base_hosts_file
-    own_hosts_file_path=${DOTFILES_REPO}/hosts/own_hosts_file
-    ignored_keywords_path=${DOTFILES_REPO}/hosts/ignored_keywords
-    downloaded_hosts_file_path=/etc/downloaded_hosts_file
-    downloaded_updated_hosts_file_path=/etc/downloaded_updated_hosts_file
-    community_hosts_file_url=https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts
-
-    if cat ${base_hosts_file_path} ${own_hosts_file_path} | sudo tee /etc/hosts > /dev/null; then
-        substep "Copying dotfiles hosts files to /etc/hosts succeeded"
-    else
-        error "Copying ${own_hosts_file_path} to /etc/hosts failed"
-        exit 1
-    fi
-
-    if sudo wget --timeout=5 --tries=3 --quiet --output-document="${downloaded_hosts_file_path}" \
-        $community_hosts_file_url; then
-        substep "hosts file downloaded successfully"
-
-        if rg --invert-match "$(cat ${ignored_keywords_path})" "${downloaded_hosts_file_path}" | \
-            sudo tee "${downloaded_updated_hosts_file_path}" > /dev/null; then
-            substep "Ignored patterns successfully removed from downloaded hosts file"
-        else
-            error "Failed to remove ignored patterns from downloaded hosts file"
-            exit 1
-        fi
-
-        if cat "${downloaded_updated_hosts_file_path}" | \
-            sudo tee -a /etc/hosts > /dev/null; then
-            success "/etc/hosts updated"
-        else
-            error "Failed to update /etc/hosts"
-            exit 1
-        fi
-
-    else
-        error "Failed to download hosts file"
     fi
 }
 
