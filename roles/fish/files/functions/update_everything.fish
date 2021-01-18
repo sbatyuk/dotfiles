@@ -6,9 +6,6 @@ function update_everything
     clean_homebrew
     update_homebrew
 
-    pip-compile --quiet --upgrade $DOTFILES_REPO/pip/requirements.in
-    pip-sync $DOTFILES_REPO/pip/requirements.txt | grep --invert-match "Everything up-to-date"
-
     fisher update 1>/dev/null
 
     tldr --update

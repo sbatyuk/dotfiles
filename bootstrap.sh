@@ -2,7 +2,6 @@
 
 main() {
     install_packages_with_brewfile
-    install_pip_packages
     setup_symlinks # needed for setup_vim and setup_tmux
     setup_vim
     setup_tmux
@@ -50,19 +49,6 @@ function install_packages_with_brewfile() {
             exit 1
         fi
     fi
-}
-
-function install_pip_packages() {
-    info "Installing pip packages"
-    REQUIREMENTS_FILE=${DOTFILES_REPO}/pip/requirements.txt
-
-    if pip3 install -r "$REQUIREMENTS_FILE" 1> /dev/null; then
-        success "pip packages successfully installed"
-    else
-        error "pip packages installation failed"
-        exit 1
-    fi
-
 }
 
 function pull_latest() {
