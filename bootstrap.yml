@@ -1,6 +1,5 @@
 - name: BOOTSTRAP
   hosts: my_local_machine
-  gather_facts: no
   vars:
     DOTFILES_REPO: /Users/sam_hosseini/repos/dotfiles
   roles:
