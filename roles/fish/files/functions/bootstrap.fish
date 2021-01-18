@@ -1,4 +1,4 @@
 function bootstrap --wraps "ansible-playbook"
     sudo --validate
-    ansible-playbook $DOTFILES_REPO/bootstrap.yml $argv
+    ansible-playbook $DOTFILES_REPO/ansible/bootstrap.yml $argv
 end
