@@ -1,6 +1,4 @@
 black
-cookiecutter
-django
 mypy
 pip-tools
 pre-commit
