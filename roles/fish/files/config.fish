@@ -1,4 +1,4 @@
-set --global --export DOTFILES_REPO ~/repos/dotfiles
+set --global --export DOTFILES_REPO /Users/sam_hosseini/repos/dotfiles
 
 source $DOTFILES_REPO/roles/fish/files/starship.fish
 source $DOTFILES_REPO/roles/fish/files/environment.fish
