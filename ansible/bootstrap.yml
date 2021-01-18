@@ -9,3 +9,4 @@
     - { role: '{{DOTFILES_REPO}}/roles/git',          tags: git          }
     - { role: '{{DOTFILES_REPO}}/roles/hosts',        tags: hosts        }
     - { role: '{{DOTFILES_REPO}}/roles/neofetch',     tags: neofetch     }
+    - { role: '{{DOTFILES_REPO}}/roles/homebrew',     tags: homebrew     }
