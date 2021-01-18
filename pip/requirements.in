@@ -1,2 +1,1 @@
 virtualenv
-watchdog # needed by YouCompleteMe
