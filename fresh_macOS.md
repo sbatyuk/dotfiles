@@ -3,6 +3,6 @@
 * Clone dotfiles repository from [github](https://github.com/sam-hosseini/dotfiles)
 * Setup fish shell
     ```
-    ansible-playbook --ask-become-pass --tags fish --inventory hosts.ini bootstrap.yml
+    ansible-playbook --ask-become-pass --tags fish bootstrap.yml
     ```
 * Open a fish shell and execute `bootstrap`
