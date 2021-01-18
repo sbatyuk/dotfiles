@@ -4,8 +4,3 @@
 #
 #    pip-compile requirements.in
 #
-appdirs==1.4.4            # via virtualenv
-distlib==0.3.1            # via virtualenv
-filelock==3.0.12          # via virtualenv
-six==1.15.0               # via virtualenv
-virtualenv==20.2.2        # via -r requirements.in
