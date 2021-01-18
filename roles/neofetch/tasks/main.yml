@@ -1,0 +1,15 @@
+- name: Install neofetch with homebrew
+  community.general.homebrew:
+    name: neofetch
+    state: present
+
+- name: Create neofetch config directory
+  ansible.builtin.file:
+    path: ~/.config/neofetch
+    state: directory
+
+- name: Setup neofetch symlink
+  ansible.builtin.file:
+    src: '{{ DOTFILES_REPO }}/roles/neofetch/files/config.conf'
+    path: '~/.config/neofetch/config.conf'
+    state: link
