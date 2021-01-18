@@ -1,16 +1,16 @@
-- name: git role => Install git and delta with homebrew
+- name: Install git and delta with homebrew
   community.general.homebrew:
     name:
       - git
       - git-delta
     state: present
 
-- name: git role => Create git config directory
+- name: Create git config directory
   ansible.builtin.file:
     path: ~/.config/git
     state: directory
 
-- name: git role => Install git config template
+- name: Install git config template
   ansible.builtin.template:
     src: '{{ DOTFILES_REPO }}/roles/git/templates/config.j2'
     dest: ~/.config/git/config

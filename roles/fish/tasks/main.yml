@@ -1,4 +1,4 @@
-- name: fish role => Extend sudo timeout
+- name: Extend sudo timeout
   become: yes
   ansible.builtin.lineinfile:
     line: Defaults timestamp_timeout=120 # 2 hours
@@ -6,30 +6,30 @@
     state: present
     create: yes
 
-- name: fish role => Install fish with homebrew
+- name: Install fish with homebrew
   community.general.homebrew:
     name: fish
     state: present
 
-- name: fish role => Add fish executable to /etc/shells
+- name: Add fish executable to /etc/shells
   become: yes
   ansible.builtin.lineinfile:
     line: /usr/local/bin/fish
     path: /etc/shells
     state: present
 
-- name: fish role => Set fish as default shell
+- name: Set fish as default shell
   become: yes
   ansible.builtin.user:
     name: sam_hosseini
     shell: /usr/local/bin/fish
 
-- name: fish role => Create fish config directory
+- name: Create fish config directory
   ansible.builtin.file:
     path: ~/.config/fish
     state: directory
 
-- name: fish role => Setup fish symlinks
+- name: Setup fish symlinks
   ansible.builtin.file:
     src: '{{ item.src }}'
     path: '{{ item.path }}'
@@ -39,29 +39,29 @@
     - { src: '{{ DOTFILES_REPO }}/roles/fish/files/config.fish', path: '~/.config/fish/config.fish'}
     - { src: '{{ DOTFILES_REPO }}/roles/fish/files/plugins',     path: '~/.config/fish/fish_plugins'}
 
-- name: fish role => Download fisher function
+- name: Download fisher function
   ansible.builtin.get_url:
     url: https://git.io/fisher
     dest: '{{ DOTFILES_REPO }}/roles/fish/files/functions/fisher.fish'
 
-- name: fish role => Install fisher plugins
+- name: Install fisher plugins
   ansible.builtin.shell:
     executable: /usr/local/bin/fish
     cmd: 'fisher update'
     creates: ~/.config/fish/conf.d/dracula.fish
 
-- name: fish role => Install starship with homebrew
+- name: Install starship with homebrew
   community.general.homebrew:
     name: starship
     state: present
 
-- name: fish role => Setup starship symlink
+- name: Setup starship symlink
   ansible.builtin.file:
     src: '{{ DOTFILES_REPO }}/roles/fish/files/starship.toml'
     path: ~/.config/starship.toml
     state: link
 
-- name: fish role => Disable shell login message
+- name: Disable shell login message
   ansible.builtin.copy:
     src: /dev/null
     dest: ~/.hushlogin

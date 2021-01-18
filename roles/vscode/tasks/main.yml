@@ -1,20 +1,20 @@
-- name: vscode role => Install vscode with homebrew
+- name: Install vscode with homebrew
   community.general.homebrew_cask:
     name: visual-studio-code
     state: present
 
-- name: vscode role => Create vscode config directory
+- name: Create vscode config directory
   ansible.builtin.file:
     path: '~/Library/Application Support/Code/User'
     state: directory
 
-- name: vscode role => Setup vscode symlink
+- name: Setup vscode symlink
   ansible.builtin.file:
     src: '{{ DOTFILES_REPO }}/roles/vscode/files/settings.json'
     path: '~/Library/Application Support/Code/User/settings.json'
     state: link
 
-- name: vscode role => Install vscode extensions
+- name: Install vscode extensions
   loop: "{{ vscode_extensions }}"
   ansible.builtin.command:
     cmd: code --install-extension {{ item }}

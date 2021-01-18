@@ -1,14 +1,14 @@
-- name: karabiner role => Install karabiner with homebrew
+- name: Install karabiner with homebrew
   community.general.homebrew_cask:
     name: karabiner-elements
     state: present
 
-- name: karabiner role => Create karabiner config directory
+- name: Create karabiner config directory
   ansible.builtin.file:
     path: ~/.config/karabiner
     state: directory
 
-- name: karabiner role => Setup karabiner symlink
+- name: Setup karabiner symlink
   ansible.builtin.file:
     src: '{{ DOTFILES_REPO }}/roles/karabiner/files/karabiner.json'
     path: ~/.config/karabiner/karabiner.json
