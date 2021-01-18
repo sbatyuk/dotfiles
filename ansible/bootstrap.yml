@@ -8,3 +8,4 @@
     - { role: '{{DOTFILES_REPO}}/roles/vscode',       tags: vscode       }
     - { role: '{{DOTFILES_REPO}}/roles/git',          tags: git          }
     - { role: '{{DOTFILES_REPO}}/roles/hosts',        tags: hosts        }
+    - { role: '{{DOTFILES_REPO}}/roles/neofetch',     tags: neofetch     }
