@@ -1,5 +1,2 @@
-black
-pip-tools
-pre-commit
 virtualenv
 watchdog # needed by YouCompleteMe
