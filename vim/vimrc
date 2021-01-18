@@ -109,8 +109,7 @@ let g:ycm_auto_hover = ''
 highlight SyntasticError guibg=#2f0000
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers = ['flake8'] " temporarily remove mypy as it causes huge delay on big repos with vim
-"let g:syntastic_python_checkers = ['flake8', 'mypy']
+let g:syntastic_python_checkers = ['flake8']
 
 " ================ GitGutter configuration ========================
 let g:gitgutter_map_keys = 0
