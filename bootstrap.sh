@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 main() {
-    install_packages_with_brewfile
     setup_symlinks # needed for setup_vim and setup_tmux
     setup_vim
     setup_tmux
@@ -10,46 +9,6 @@ main() {
 }
 
 DOTFILES_REPO=~/repos/dotfiles
-
-function install_packages_with_brewfile() {
-    info "Installing Brewfile packages"
-
-    TAP=${DOTFILES_REPO}/homebrew/tap
-    BREW=${DOTFILES_REPO}/homebrew/brew
-    CASK=${DOTFILES_REPO}/homebrew/cask
-    MAS=${DOTFILES_REPO}/homebrew/mas
-
-    if hash parallel 2>/dev/null; then
-        substep "parallel already exists"
-    else
-        if brew install parallel &> /dev/null; then
-            printf 'will cite' | parallel --citation &> /dev/null
-            substep "parallel installation succeeded"
-        else
-            error "parallel installation failed"
-            exit 1
-        fi
-    fi
-
-    if (echo $TAP; echo $BREW; echo $CASK; echo $MAS) | parallel --verbose --linebuffer -j 4 brew bundle check --file={} &> /dev/null; then
-        success "Brewfile packages are already installed"
-    else
-        if brew bundle --file="$TAP"; then
-            substep "Brewfile taps installation succeeded"
-
-            export HOMEBREW_CASK_OPTS="--no-quarantine"
-            if (echo $BREW; echo $CASK; echo $MAS) | parallel --verbose --linebuffer -j 3 brew bundle --file={}; then
-                success "Brewfile packages installation succeeded"
-            else
-                error "Brewfile packages installation failed"
-                exit 1
-            fi
-        else
-            error "Brewfile taps installation failed"
-            exit 1
-        fi
-    fi
-}
 
 function pull_latest() {
     substep "Pulling latest changes in ${1} repository"
@@ -121,7 +80,6 @@ function setup_symlinks() {
     info "Setting up symlinks"
 
     symlink "hammerspoon"   ${DOTFILES_REPO}/hammerspoon                ~/.hammerspoon
-    symlink "karabiner"     ${DOTFILES_REPO}/karabiner                  ~/.config/karabiner
     symlink "tmux"          ${DOTFILES_REPO}/tmux/tmux.conf             ~/.tmux.conf
     symlink "vim"           ${DOTFILES_REPO}/vim/vimrc                  ~/.vimrc
 
