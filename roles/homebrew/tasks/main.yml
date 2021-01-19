@@ -1,0 +1,32 @@
+- name: Install Brewfile template
+  ansible.builtin.template:
+    src:  '{{ DOTFILES_REPO }}/roles/homebrew/templates/Brewfile.j2'
+    dest: '{{ DOTFILES_REPO }}/roles/homebrew/files/Brewfile'
+
+- name: Check for missing Brewfile packages
+  ansible.builtin.command:
+    cmd: brew bundle check --no-upgrade --file '{{ DOTFILES_REPO }}/roles/homebrew/files/Brewfile'
+  register: check_missing_brewfile_packages
+  failed_when:
+    - check_missing_brewfile_packages.rc == 1
+    - '"Error" in check_missing_brewfile_packages.stderr'
+  changed_when:
+    - check_missing_brewfile_packages.rc == 1
+    - '"Satisfy" in check_missing_brewfile_packages.stdout'
+
+- name: Install missing Brewfile packages
+  when: check_missing_brewfile_packages.changed
+  ansible.builtin.command:
+    cmd: brew bundle install --no-upgrade --file '{{ DOTFILES_REPO }}/roles/homebrew/files/Brewfile'
+  async: 5000
+  poll: 0
+  register: install_missing_brewfile_packages
+
+- name: Wait for installation of missing Brewfile packages
+  when: check_missing_brewfile_packages.changed
+  ansible.builtin.async_status:
+    jid: "{{ install_missing_brewfile_packages.ansible_job_id }}"
+  register: job_result
+  until: job_result.finished
+  retries: 1000
+  delay: 5
