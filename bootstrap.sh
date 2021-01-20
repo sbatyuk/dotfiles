@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
 main() {
-    setup_symlinks # needed for setup_vim and setup_tmux
+    setup_symlinks # needed for setup_vim
     setup_vim
-    setup_tmux
     setup_macOS_defaults
     update_login_items
 }
@@ -43,37 +42,6 @@ function setup_vim() {
         exit 1
     fi
     success "vim successfully setup"
-}
-
-function setup_tmux() {
-    info "Setting up tmux"
-    substep "Installing tpm"
-    if test -e ~/.tmux/plugins/tpm; then
-        substep "tpm already exists"
-        pull_latest ~/.tmux/plugins/tpm
-        substep "Pull successful in tpm's repository"
-    else
-        url=https://github.com/tmux-plugins/tpm
-        if git clone "$url" ~/.tmux/plugins/tpm; then
-            substep "tpm installation succeeded"
-        else
-            error "tpm installation failed"
-            exit 1
-        fi
-    fi
-
-    substep "Installing all plugins"
-
-    # sourcing .tmux.conf is necessary for tpm
-    tmux source-file ~/.tmux.conf 2> /dev/null
-
-    if ~/.tmux/plugins/tpm/bin/./install_plugins &> /dev/null; then
-        substep "Plugins installations succeeded"
-    else
-        error "Plugins installations failed"
-        exit 1
-    fi
-    success "tmux successfully setup"
 }
 
 function setup_symlinks() {
