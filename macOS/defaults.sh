@@ -3,7 +3,6 @@
 main() {
     configure_plist_apps # Configure all apps whose configurations are plists
     configure_numi
-    configure_iterm2
     configure_system
     configure_dock
     configure_finder
@@ -25,11 +24,6 @@ function configure_numi() {
     # To disable welcome tours
     defaults write com.dmitrynikolaev.numi hasLaunchedBefore -int 1
     open "Numi"
-}
-
-function configure_iterm2() {
-    defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -int 1
-    defaults write com.googlecode.iterm2 PrefsCustomFolder -string $DOTFILES_REPO/iTerm2
 }
 
 function configure_system() {
