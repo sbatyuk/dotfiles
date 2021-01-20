@@ -5,6 +5,7 @@
   roles:
     - { role: '{{DOTFILES_REPO}}/roles/fish',         tags: fish         }
     - { role: '{{DOTFILES_REPO}}/roles/karabiner',    tags: karabiner    }
+    - { role: '{{DOTFILES_REPO}}/roles/tmux',         tags: tmux         }
     - { role: '{{DOTFILES_REPO}}/roles/iterm',        tags: iterm        }
     - { role: '{{DOTFILES_REPO}}/roles/vscode',       tags: vscode       }
     - { role: '{{DOTFILES_REPO}}/roles/git',          tags: git          }
