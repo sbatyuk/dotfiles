@@ -1,0 +1,26 @@
+- name: Install tmux with homebrew
+  community.general.homebrew:
+    name: tmux
+    state: present
+
+- name: Create tmux config directory
+  ansible.builtin.file:
+    path: ~/.config/tmux
+    state: directory
+
+- name: Install tmux config template
+  ansible.builtin.template:
+    src: '{{ DOTFILES_REPO }}/roles/tmux/templates/tmux.j2'
+    dest: ~/.config/tmux/tmux.conf
+
+- name: Install tmux plugin manager
+  ansible.builtin.git:
+    repo: 'https://github.com/tmux-plugins/tpm'
+    dest: ~/.tmux/plugins/tpm
+    update: no
+
+- name: Install tmux plugins
+  ansible.builtin.command:
+    cmd: ~/.tmux/plugins/tpm/bin/./install_plugins
+  register: result
+  changed_when: '"Installing" in result.stdout'
