@@ -3,4 +3,5 @@ set --global --export BAT_THEME                 Dracula
 set --global --export EDITOR                    vim
 set --global --export LC_ALL                    en_US.UTF-8 # Set locale bit.ly/3mNj6Ia
 set --global --export PYTHONDONTWRITEBYTECODE   true
+set --global --export VIMINIT                   'source $DOTFILES_REPO/roles/vim/files/vimrc'
 set --global --export fish_greeting             ''
