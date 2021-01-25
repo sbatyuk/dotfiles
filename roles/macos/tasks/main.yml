@@ -1,0 +1,5 @@
+- name: Setup login items
+  ansible.builtin.command:
+    cmd: osascript '{{ DOTFILES_REPO }}/roles/macos/files/login_items.applescript'
+  register: result
+  changed_when: result.rc != 0
