@@ -3,16 +3,10 @@
     name: hammerspoon
     state: present
 
-- name: Setup hammerspoon symlink
-  ansible.builtin.file:
-    src: '{{ DOTFILES_REPO }}/roles/hammerspoon/files'
-    path: '~/.config/hammerspoon'
-    state: link
-
-- name: Set hammerspoon config file custom folder
+- name: Set hammerspoon config file
   community.general.osx_defaults:
     domain: org.hammerspoon.Hammerspoon
     key: MJConfigFile
     type: string
-    value: /Users/sam_hosseini/.config/hammerspoon/init.lua
+    value: '{{ DOTFILES_REPO }}/roles/hammerspoon/files/init.lua'
     state: present
