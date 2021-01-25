@@ -1,0 +1,18 @@
+- name: Install hammerspoon with homebrew
+  community.general.homebrew_cask:
+    name: hammerspoon
+    state: present
+
+- name: Setup hammerspoon symlink
+  ansible.builtin.file:
+    src: '{{ DOTFILES_REPO }}/roles/hammerspoon/files'
+    path: '~/.config/hammerspoon'
+    state: link
+
+- name: Set hammerspoon config file custom folder
+  community.general.osx_defaults:
+    domain: org.hammerspoon.Hammerspoon
+    key: MJConfigFile
+    type: string
+    value: /Users/sam_hosseini/.config/hammerspoon/init.lua
+    state: present
