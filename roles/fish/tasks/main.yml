@@ -55,10 +55,15 @@
     name: starship
     state: present
 
+- name: Create starship config directory
+  ansible.builtin.file:
+    path: ~/.config/starship
+    state: directory
+
 - name: Setup starship symlink
   ansible.builtin.file:
     src: '{{ DOTFILES_REPO }}/roles/fish/files/starship.toml'
-    path: ~/.config/starship.toml
+    path: ~/.config/starship/starship.toml
     state: link
 
 - name: Disable shell login message
