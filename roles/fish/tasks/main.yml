@@ -6,9 +6,11 @@
     state: present
     create: yes
 
-- name: Install fish with homebrew
+- name: Install fish and starship with homebrew
   community.general.homebrew:
-    name: fish
+    name:
+      - fish
+      - starship
     state: present
 
 - name: Add fish executable to /etc/shells
@@ -49,22 +51,6 @@
     executable: /usr/local/bin/fish
     cmd: 'fisher update'
     creates: ~/.config/fish/conf.d/dracula.fish
-
-- name: Install starship with homebrew
-  community.general.homebrew:
-    name: starship
-    state: present
-
-- name: Create starship config directory
-  ansible.builtin.file:
-    path: ~/.config/starship
-    state: directory
-
-- name: Setup starship symlink
-  ansible.builtin.file:
-    src: '{{ DOTFILES_REPO }}/roles/fish/files/starship.toml'
-    path: ~/.config/starship/starship.toml
-    state: link
 
 - name: Disable shell login message
   ansible.builtin.copy:
