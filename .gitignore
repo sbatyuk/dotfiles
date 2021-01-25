@@ -133,7 +133,7 @@ roles/fish/files/functions/__z*.fish
 roles/fish/files/functions/_pisces*.fish
 roles/fish/files/functions/fisher.fish
 homebrew/all_packages
-hammerspoon/Spoons/*
+roles/hammerspoon/files/Spoons/*
 roles/hosts/files/community_hosts_file
 roles/hosts/files/community_hosts_file_updated
 roles/homebrew/files/Brewfile

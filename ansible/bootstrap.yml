@@ -7,6 +7,7 @@
     - { role: '{{DOTFILES_REPO}}/roles/karabiner',    tags: karabiner    }
     - { role: '{{DOTFILES_REPO}}/roles/tmux',         tags: tmux         }
     - { role: '{{DOTFILES_REPO}}/roles/iterm',        tags: iterm        }
+    - { role: '{{DOTFILES_REPO}}/roles/hammerspoon',  tags: hammerspoon  }
     - { role: '{{DOTFILES_REPO}}/roles/vscode',       tags: vscode       }
     - { role: '{{DOTFILES_REPO}}/roles/git',          tags: git          }
     - { role: '{{DOTFILES_REPO}}/roles/hosts',        tags: hosts        }
