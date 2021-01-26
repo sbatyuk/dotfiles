@@ -5,8 +5,6 @@ main() {
 }
 
 function configure_finder() {
-    # Save screenshots to Downloads folder
-    defaults write com.apple.screencapture location -string "${HOME}/Downloads"
     # allow quitting via ⌘ + q; doing so will also hide desktop icons
     defaults write com.apple.finder QuitMenuItem -bool true
     # disable window animations and Get Info animations
@@ -32,8 +30,6 @@ function configure_finder() {
     defaults write NSGlobalDomain AppleShowAllExtensions -bool true
     # Disable the warning when changing a file extension
     defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-    # Disable screenshot preview thumbnails
-    defaults write com.apple.screencapture show-thumbnail -bool false
 }
 
 main "$@"

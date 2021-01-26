@@ -1,6 +1,7 @@
 - name: BOOTSTRAP
   hosts: my_local_machine
   vars:
+    HOME_DIR:      /Users/sam_hosseini
     DOTFILES_REPO: /Users/sam_hosseini/repos/dotfiles
   roles:
     - { role: '{{DOTFILES_REPO}}/roles/fish',         tags: fish         }
