@@ -6,3 +6,9 @@
     ansible-playbook --ask-become-pass --tags fish bootstrap.yml
     ```
 * Open a fish shell and execute `bootstrap`
+* Execute the following functions:
+  * `compile_vim_plugins`
+  * `clone_repos`
+
+* Enter licesne information of purchased applications
+* Manually set [un-automatable shortcuts](https://github.com/sam-hosseini/dotfiles/blob/master/shortcuts/shortcuts.md#un-automatable-shortcuts)
