@@ -1,20 +1,8 @@
 #!/usr/bin/env bash
 
 main() {
-    configure_numi
     configure_dock
     configure_finder
-}
-
-function configure_numi() {
-    quit "Numi"
-    # Enable show in menu bar
-    defaults write com.dmitrynikolaev.numi menuBarMode -int 1
-    # Enable alfred integration
-    defaults write com.dmitrynikolaev.numi alfredIntegration -int 1
-    # To disable welcome tours
-    defaults write com.dmitrynikolaev.numi hasLaunchedBefore -int 1
-    open "Numi"
 }
 
 function configure_dock() {
