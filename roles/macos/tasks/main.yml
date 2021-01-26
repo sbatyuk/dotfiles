@@ -3,3 +3,12 @@
     cmd: osascript '{{ DOTFILES_REPO }}/roles/macos/files/login_items.applescript'
   register: result
   changed_when: result.rc != 0
+
+- name: Setup Cloudflare DNS servers
+  ansible.builtin.command:
+    cmd: networksetup -setdnsservers Wi-Fi {{ item }}
+  with_items:
+    - Empty
+    - 1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001 # https://one.one.one.one/dns/
+  register: result
+  changed_when: result.rc != 0

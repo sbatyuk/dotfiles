@@ -27,14 +27,6 @@ function configure_numi() {
 }
 
 function configure_system() {
-    PRIMARY_CLOUDFLARE_DNS_ADDRESS="1.1.1.1"
-    SECONDARY_CLOUDFLARE_DNS_ADDRESS="1.0.0.1"
-    FIRST_REDUNDANT_CLOUDFLARE_DNS_ADDRESS="2606:4700:4700::1111"
-    SECOND_REDUNDANT_CLOUDFLARE_DNS_ADDRESS="2606:4700:4700::1001"
-
-    # Update DNS servers to Cloudflare's servers https://one.one.one.one/dns/
-    networksetup -setdnsservers Wi-Fi $PRIMARY_CLOUDFLARE_DNS_ADDRESS $SECONDARY_CLOUDFLARE_DNS_ADDRESS $FIRST_REDUNDANT_CLOUDFLARE_DNS_ADDRESS $SECOND_REDUNDANT_CLOUDFLARE_DNS_ADDRESS
-
     # Disable Gatekeeper for getting rid of unknown developers error
     sudo spctl --master-disable
     # Disable natural scrolling
