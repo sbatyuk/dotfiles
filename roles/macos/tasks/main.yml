@@ -82,3 +82,31 @@
     - { key: 'showLaunchpadGestureEnabled', type: 'int', value: '0'}
     # Disable automatically rearranging of Spaces based on most recent use
     - { key: 'mru-spaces', type: 'bool', value: 'false'}
+
+- name: Setup finder preferences
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: '{{ item.key }}'
+    type: '{{ item.type }}'
+    value: '{{ item.value }}'
+    state: present
+  with_items:
+    # Disable all finder animations
+    - { key: 'DisableAllAnimations', type: 'bool', value: 'true'}
+    # Set Downloads folder as the default location for new finder windows
+    - { key: 'NewWindowTarget', type: 'string', value: 'PfLo'}
+    - { key: 'NewWindowTargetPath', type: 'string', value: 'file://{{ HOME_DIR }}/Downloads/'}
+    # Disable status bar
+    - { key: 'ShowStatusBar', type: 'bool', value: 'false'}
+    # Disable path bar
+    - { key: 'ShowPathbar', type: 'bool', value: 'false'}
+    # Display full POSIX path as finder window title
+    - { key: '_FXShowPosixPathInTitle', type: 'bool', value: 'true'}
+    # Keep folders on top when sorting by name
+    - { key: '_FXSortFoldersFirst', type: 'bool', value: 'true'}
+    # Use list view in all finder windows by default
+    - { key: 'FXPreferredViewStyle', type: 'string', value: 'clmv'}
+    # Disable the warning before emptying the Trash
+    - { key: 'WarnOnEmptyTrash', type: 'bool', value: 'false'}
+    # Disable the warning when changing a file extension
+    - { key: 'FXEnableExtensionChangeWarning', type: 'bool', value: 'false'}
