@@ -27,8 +27,6 @@ function configure_numi() {
 }
 
 function configure_system() {
-    # Disable Gatekeeper for getting rid of unknown developers error
-    sudo spctl --master-disable
     # Disable natural scrolling
     defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
     # Enable tap to click

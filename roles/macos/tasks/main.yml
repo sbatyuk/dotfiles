@@ -1,3 +1,16 @@
+- name: Check gatekeeper
+  ansible.builtin.command:
+    cmd: spctl --status
+  register: gatekeeper_status
+  failed_when: false
+  changed_when: false
+
+- name: Disable gatekeeper
+  ansible.builtin.command:
+    cmd: spctl --master-disable # gets rid of unidentified developer warning when opening an app
+  become: yes
+  when: gatekeeper_status.stdout != 'assessments disabled'
+
 - name: Setup login items
   ansible.builtin.command:
     cmd: osascript '{{ DOTFILES_REPO }}/roles/macos/files/login_items.applescript'
