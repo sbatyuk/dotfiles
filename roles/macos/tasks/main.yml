@@ -48,3 +48,31 @@
     # Show battery percentage in menu bar
     - { domain: 'com.apple.systemuiserver', key: 'NSStatusItem Visible com.apple.menuextra.battery', type: 'bool', value: 'true'}
     - { domain: 'com.apple.menuextra.battery', key: 'ShowPercent', type: 'string', value: 'YES'}
+
+- name: Setup dock preferences
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: '{{ item.key }}'
+    type: '{{ item.type }}'
+    value: '{{ item.value }}'
+    state: present
+  with_items:
+    # Don’t show recent applications in Dock
+    - { key: 'show-recents', type: 'bool', value: 'false'}
+    # Set the icon size of Dock items to 36 pixels
+    - { key: 'tilesize', type: 'int', value: '36'}
+    # Remove all default app icons from the Dock
+    - { key: 'persistent-apps', type: 'array', value: '[]'}
+    - { key: 'recent-apps', type: 'array', value: '[]'}
+    # Show only open applications in the Dock
+    - { key: 'static-only', type: 'bool', value: 'true'}
+    # Don’t animate opening applications from the Dock
+    - { key: 'launchanim', type: 'bool', value: 'false'}
+    # Automatically hide and show the Dock
+    - { key: 'autohide', type: 'bool', value: 'true'}
+    # Remove the auto-hiding Dock delay
+    - { key: 'autohide-delay', type: 'float', value: '0'}
+    # Disable the Launchpad gesture (pinch with thumb and three fingers)
+    - { key: 'showLaunchpadGestureEnabled', type: 'int', value: '0'}
+    # Disable automatically rearranging of Spaces based on most recent use
+    - { key: 'mru-spaces', type: 'bool', value: 'false'}
