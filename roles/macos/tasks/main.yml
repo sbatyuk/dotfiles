@@ -25,3 +25,26 @@
     - 1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001 # https://one.one.one.one/dns/
   register: result
   changed_when: result.rc != 0
+
+- name: Setup macOS preferences
+  community.general.osx_defaults:
+    domain: '{{ item.domain }}'
+    key: '{{ item.key }}'
+    type: '{{ item.type }}'
+    value: '{{ item.value }}'
+    state: present
+  with_items:
+    # Disable natural scrolling
+    - { domain: 'NSGlobalDomain', key: 'com.apple.swipescrolldirection', type: 'bool', value: 'false'}
+    # Enable full keyboard access for all controls which enables Tab selection in modal dialogs
+    - { domain: 'NSGlobalDomain', key: 'AppleKeyboardUIMode', type: 'int', value: '3'}
+    # Configure keyboard repeat https://apple.stackexchange.com/a/83923/200178
+    - { domain: 'NSGlobalDomain', key: 'InitialKeyRepeat', type: 'int', value: '15'}
+    - { domain: 'NSGlobalDomain', key: 'KeyRepeat', type: 'int', value: '2'}
+    # Disable "Correct spelling automatically"
+    - { domain: 'NSGlobalDomain', key: 'NSAutomaticSpellingCorrectionEnabled', type: 'bool', value: 'false'}
+    # Enable tap to click
+    - { domain: 'com.apple.AppleMultitouchTrackpad', key: 'Clicking', type: 'bool', value: 'true'}
+    # Show battery percentage in menu bar
+    - { domain: 'com.apple.systemuiserver', key: 'NSStatusItem Visible com.apple.menuextra.battery', type: 'bool', value: 'true'}
+    - { domain: 'com.apple.menuextra.battery', key: 'ShowPercent', type: 'string', value: 'YES'}

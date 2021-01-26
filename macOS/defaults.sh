@@ -3,7 +3,6 @@
 main() {
     configure_plist_apps # Configure all apps whose configurations are plists
     configure_numi
-    configure_system
     configure_dock
     configure_finder
 }
@@ -24,23 +23,6 @@ function configure_numi() {
     # To disable welcome tours
     defaults write com.dmitrynikolaev.numi hasLaunchedBefore -int 1
     open "Numi"
-}
-
-function configure_system() {
-    # Disable natural scrolling
-    defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
-    # Enable tap to click
-    defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
-    # Configure keyboard repeat https://apple.stackexchange.com/a/83923/200178
-    defaults write -g InitialKeyRepeat -int 15
-    defaults write -g KeyRepeat -int 2
-    # Disable "Correct spelling automatically"
-    defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
-    # Enable full keyboard access for all controls which enables Tab selection in modal dialogs
-    defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
-    # Show battery percentage in menu bar
-    defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.battery" -bool true
-    defaults write com.apple.menuextra.battery '{ ShowPercent = YES; }'
 }
 
 function configure_dock() {
