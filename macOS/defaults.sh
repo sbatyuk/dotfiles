@@ -11,8 +11,7 @@ function configure_finder() {
     defaults write com.apple.finder DisableAllAnimations -bool true
     # Set Downloads as the default location for new Finder windows
     defaults write com.apple.finder NewWindowTarget -string "PfLo"
-    defaults write com.apple.finder NewWindowTargetPath -string \
-        "file://${HOME}/Downloads/"
+    defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Downloads/"
     # disable status bar
     defaults write com.apple.finder ShowStatusBar -bool false
     # disable path bar
@@ -26,8 +25,6 @@ function configure_finder() {
     defaults write com.apple.finder FXPreferredViewStyle -string clmv
     # Disable the warning before emptying the Trash
     defaults write com.apple.finder WarnOnEmptyTrash -bool false
-    # Display file extensions in Finder
-    defaults write NSGlobalDomain AppleShowAllExtensions -bool true
     # Disable the warning when changing a file extension
     defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 }
