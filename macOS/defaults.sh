@@ -18,10 +18,6 @@ function configure_dock() {
     defaults write com.apple.dock static-only -bool true
     # Don’t animate opening applications from the Dock
     defaults write com.apple.dock launchanim -bool false
-    # Disable Dashboard
-    defaults write com.apple.dashboard mcx-disabled -bool true
-    # Don’t show Dashboard as a Space
-    defaults write com.apple.dock dashboard-in-overlay -bool true
     # Automatically hide and show the Dock
     defaults write com.apple.dock autohide -bool true
     # Remove the auto-hiding Dock delay
@@ -30,28 +26,6 @@ function configure_dock() {
     defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
     # Disable automatically rearranging of Spaces based on most recent use
     defaults write com.apple.dock mru-spaces -bool false
-
-    ## Hot corners
-    ## Possible values:
-    ##  0: no-op
-    ##  2: Mission Control
-    ##  3: Show application windows
-    ##  4: Desktop
-    ##  5: Start screen saver
-    ##  6: Disable screen saver
-    ##  7: Dashboard
-    ## 10: Put display to sleep
-    ## 11: Launchpad
-    ## 12: Notification Center
-    ## Top left screen corner → Mission Control
-    defaults write com.apple.dock wvous-tl-corner -int 0
-    defaults write com.apple.dock wvous-tl-modifier -int 0
-    ## Top right screen corner → Nothing
-    defaults write com.apple.dock wvous-tr-corner -int 0
-    defaults write com.apple.dock wvous-tr-modifier -int 0
-    ## Bottom left screen corner → Nothing
-    defaults write com.apple.dock wvous-bl-corner -int 0
-    defaults write com.apple.dock wvous-bl-modifier -int 0
     open "Dock"
 }
 
