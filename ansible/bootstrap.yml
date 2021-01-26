@@ -4,10 +4,10 @@
     DOTFILES_REPO: /Users/sam_hosseini/repos/dotfiles
   roles:
     - { role: '{{DOTFILES_REPO}}/roles/fish',         tags: fish         }
+    - { role: '{{DOTFILES_REPO}}/roles/macos',        tags: macos        }
     - { role: '{{DOTFILES_REPO}}/roles/karabiner',    tags: karabiner    }
     - { role: '{{DOTFILES_REPO}}/roles/tmux',         tags: tmux         }
     - { role: '{{DOTFILES_REPO}}/roles/iterm',        tags: iterm        }
-    - { role: '{{DOTFILES_REPO}}/roles/macos',        tags: macos        }
     - { role: '{{DOTFILES_REPO}}/roles/hammerspoon',  tags: hammerspoon  }
     - { role: '{{DOTFILES_REPO}}/roles/vscode',       tags: vscode       }
     - { role: '{{DOTFILES_REPO}}/roles/git',          tags: git          }
