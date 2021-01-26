@@ -7,9 +7,6 @@ main() {
 function configure_finder() {
     # Save screenshots to Downloads folder
     defaults write com.apple.screencapture location -string "${HOME}/Downloads"
-    # Require password immediately after sleep or screen saver begins
-    defaults write com.apple.screensaver askForPassword -int 1
-    defaults write com.apple.screensaver askForPasswordDelay -int 0
     # allow quitting via ⌘ + q; doing so will also hide desktop icons
     defaults write com.apple.finder QuitMenuItem -bool true
     # disable window animations and Get Info animations
@@ -26,15 +23,6 @@ function configure_finder() {
     defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
     # Keep folders on top when sorting by name
     defaults write com.apple.finder _FXSortFoldersFirst -bool true
-    # When performing a search, search the current folder by default
-    defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
-    # Disable disk image verification
-    defaults write com.apple.frameworks.diskimages \
-        skip-verify -bool true
-    defaults write com.apple.frameworks.diskimages \
-        skip-verify-locked -bool true
-    defaults write com.apple.frameworks.diskimages \
-        skip-verify-remote -bool true
     # Use list view in all Finder windows by default
     # Four-letter codes for view modes: icnv, clmv, Flwv, Nlsv
     defaults write com.apple.finder FXPreferredViewStyle -string clmv
