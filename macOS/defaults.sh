@@ -1,17 +1,9 @@
 #!/usr/bin/env bash
 
 main() {
-    configure_plist_apps # Configure all apps whose configurations are plists
     configure_numi
     configure_dock
     configure_finder
-}
-
-function configure_plist_apps() {
-    quit "Transmission"
-    quit "The Unarchiver"
-    import_plist "org.m0k.transmission" "Transmission.plist"
-    import_plist "cx.c3.theunarchiver" "The_Unarchiver.plist"
 }
 
 function configure_numi() {
@@ -132,13 +124,6 @@ tell application "System Events" to tell process "iTerm2"
 set frontmost to true
 end tell
 EOM
-}
-
-function import_plist() {
-    domain=$1
-    filename=$2
-    defaults delete "$domain" &> /dev/null
-    defaults import "$domain" "$filename"
 }
 
 main "$@"
