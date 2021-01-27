@@ -138,3 +138,4 @@ roles/hosts/files/community_hosts_file_updated
 roles/homebrew/files/Brewfile
 roles/karabiner/files/automatic_backups
 roles/karabiner/files/assets
+roles/karabiner/files/karabiner.json

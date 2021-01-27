@@ -8,3 +8,8 @@
     src: '{{ DOTFILES_REPO }}/roles/karabiner/files'
     path: ~/.config/karabiner
     state: link
+
+- name: Install karabiner config template
+  ansible.builtin.template:
+    src:  '{{ DOTFILES_REPO }}/roles/karabiner/templates/karabiner.j2'
+    dest: '{{ DOTFILES_REPO }}/roles/karabiner/files/karabiner.json'
