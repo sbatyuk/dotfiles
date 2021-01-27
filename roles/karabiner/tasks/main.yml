@@ -3,13 +3,8 @@
     name: karabiner-elements
     state: present
 
-- name: Create karabiner config directory
-  ansible.builtin.file:
-    path: ~/.config/karabiner
-    state: directory
-
 - name: Setup karabiner symlink
   ansible.builtin.file:
-    src: '{{ DOTFILES_REPO }}/roles/karabiner/files/karabiner.json'
-    path: ~/.config/karabiner/karabiner.json
+    src: '{{ DOTFILES_REPO }}/roles/karabiner/files'
+    path: ~/.config/karabiner
     state: link

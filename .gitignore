@@ -1,6 +1,5 @@
 brew/Brewfile
 brew/Brewfile*.json
-karabiner/automatic_backups
 
 # Created by https://www.gitignore.io/api/git,vim,macos,linux,emacs
 
@@ -137,3 +136,5 @@ roles/hammerspoon/files/Spoons/*
 roles/hosts/files/community_hosts_file
 roles/hosts/files/community_hosts_file_updated
 roles/homebrew/files/Brewfile
+roles/karabiner/files/automatic_backups
+roles/karabiner/files/assets
