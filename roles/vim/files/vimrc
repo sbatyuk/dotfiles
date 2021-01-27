@@ -14,7 +14,6 @@ Plugin 'VundleVim/Vundle.vim'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins list
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'Valloric/YouCompleteMe' " Code-completion engine
 Plugin 'jiangmiao/auto-pairs' " Insert brackets, parens or quotes in pair
 Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
 Plugin 'vim-syntastic/syntastic' " Syntax checking
@@ -100,11 +99,6 @@ nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
 
-" ================ YouCompleteMe configuration ====================
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_auto_hover = ''
-
 " ================ Syntastic configuration ========================
 highlight SyntasticError guibg=#2f0000
 let g:syntastic_check_on_open = 0
@@ -141,9 +135,6 @@ autocmd BufWritePre *.py Neoformat
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " ================ NORMAL MODE =========================
-
-" map control-i to GoTo subcommand of YouCompleteMe
-nnoremap <C-i> :YcmCompleter GoToDefinition<CR> :<backspace>
 
 function CustomNerdToggle()
     if &filetype == 'nerdtree' || bufname('%') == ""
