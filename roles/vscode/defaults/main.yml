@@ -5,3 +5,4 @@ vscode_extensions:
   - redhat.vscode-yaml
   - ms-python.python
   - ms-toolsai.jupyter # dependency of ms-python.python
+  - samuelcolvin.jinjahtml
