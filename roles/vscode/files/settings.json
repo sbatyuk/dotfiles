@@ -4,5 +4,6 @@
     "window.zoomLevel": 1,
     "workbench.colorTheme": "Dracula",
     "editor.renderFinalNewline": false,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "workbench.startupEditor": "none"
 }
