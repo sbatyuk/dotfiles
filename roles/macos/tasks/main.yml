@@ -20,7 +20,7 @@
 - name: Setup Cloudflare DNS servers
   ansible.builtin.command:
     cmd: networksetup -setdnsservers Wi-Fi {{ item }}
-  with_items:
+  loop:
     - Empty
     - 1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001 # https://one.one.one.one/dns/
   register: result
@@ -33,7 +33,7 @@
     type: '{{ item.type }}'
     value: '{{ item.value }}'
     state: present
-  with_items:
+  loop:
     # Disable natural scrolling
     - { domain: 'NSGlobalDomain', key: 'com.apple.swipescrolldirection', type: 'bool', value: 'false'}
     # Enable full keyboard access for all controls which enables Tab selection in modal dialogs
@@ -62,7 +62,7 @@
     type: '{{ item.type }}'
     value: '{{ item.value }}'
     state: present
-  with_items:
+  loop:
     # Don’t show recent applications in Dock
     - { key: 'show-recents', type: 'bool', value: 'false'}
     # Set the icon size of Dock items to 36 pixels
@@ -90,7 +90,7 @@
     type: '{{ item.type }}'
     value: '{{ item.value }}'
     state: present
-  with_items:
+  loop:
     # Disable all finder animations
     - { key: 'DisableAllAnimations', type: 'bool', value: 'true'}
     # Set Downloads folder as the default location for new finder windows
