@@ -354,15 +354,15 @@
 				</dict>
 			</array>
 			<key>HotKey Characters</key>
-			<string>`</string>
+			<string></string>
 			<key>HotKey Characters Ignoring Modifiers</key>
-			<string>`</string>
+			<string></string>
 			<key>HotKey Key Code</key>
-			<integer>50</integer>
+			<integer>119</integer>
 			<key>HotKey Modifier Activation</key>
 			<integer>0</integer>
 			<key>HotKey Modifier Flags</key>
-			<integer>1048576</integer>
+			<integer>0</integer>
 			<key>HotKey Window Animates</key>
 			<true/>
 			<key>HotKey Window AutoHides</key>
