@@ -4,3 +4,4 @@ vscode_extensions:
   - bmalehorn.vscode-fish
   - redhat.vscode-yaml
   - ms-python.python
+  - ms-toolsai.jupyter # dependency of ms-python.python
