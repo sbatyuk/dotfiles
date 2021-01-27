@@ -14,3 +14,14 @@
   ansible.builtin.template:
     src: '{{ DOTFILES_REPO }}/roles/git/templates/config.j2'
     dest: ~/.config/git/config
+
+- name: Check dotfiles remote origin
+  ansible.builtin.command:
+    cmd: git -C {{ DOTFILES_REPO }} remote --verbose
+  register: dotfiles_remote_origin
+  changed_when: false
+
+- name: Set SSH for dotfiles remote origin
+  ansible.builtin.command:
+    cmd: git -C {{ DOTFILES_REPO }} remote set-url origin git@github.com:sam-hosseini/dotfiles.git
+  when: '"https" in dotfiles_remote_origin.stdout'
