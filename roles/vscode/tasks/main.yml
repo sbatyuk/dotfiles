@@ -14,6 +14,21 @@
     path: '~/Library/Application Support/Code/User/settings.json'
     state: link
 
+- name: Get adhoc vscode extensions
+  ansible.builtin.find:
+    paths: ~/.vscode/extensions/
+    file_type: directory
+    use_regex: yes
+    excludes: '{{ vscode_extensions }}'
+    patterns: '.*'
+  register: adhoc_vscode_extensions
+
+- name: Delete adhoc vscode extensions
+  loop: '{{ adhoc_vscode_extensions.files }}'
+  ansible.builtin.file:
+    path: '{{ item.path }}'
+    state: absent
+
 - name: Install vscode extensions
   loop: "{{ vscode_extensions }}"
   ansible.builtin.command:
