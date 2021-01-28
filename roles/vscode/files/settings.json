@@ -6,5 +6,9 @@
     "editor.renderFinalNewline": false,
     "editor.minimap.enabled": false,
     "workbench.startupEditor": "none",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "path-autocomplete.triggerOutsideStrings": true,
+    "path-autocomplete.pathMappings": {
+        "/": "/"
+    }
 }
