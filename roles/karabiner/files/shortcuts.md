@@ -74,7 +74,6 @@ Directly inspired from amazing [Capslock Enhancement](https://github.com/Vonng/C
 | Origin | Maps to     | Comment                                      |
 | ------ | ----------- | -------------------------------------------- |
 | `C`    | `⌃C`Ctrl+C  | SIGINT                                       |
-| `A`    | `⌃A`Ctrl+A  | My tmux prefix |
 
 ## Shifter
 

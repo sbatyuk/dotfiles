@@ -22,28 +22,6 @@
                 }
             ],
             "type": "basic"
-        },
-        {
-            "from": {
-                "key_code": "a",
-                "modifiers": {
-                    "mandatory": [
-                        "right_command",
-                        "right_control",
-                        "right_shift",
-                        "right_option"
-                    ]
-                }
-            },
-            "to": [
-                {
-                    "key_code": "a",
-                    "modifiers": [
-                        "left_control"
-                    ]
-                }
-            ],
-            "type": "basic"
         }
     ]
 }
