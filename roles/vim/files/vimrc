@@ -18,7 +18,6 @@ Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
 Plugin 'wincent/terminus' " Enhanced terminal integration
 Plugin 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
 
-Plugin 'wincent/command-t' " Fuzzy file search
 Plugin 'sbdchd/neoformat' " Code formatter
 Plugin 'pangloss/vim-javascript' " Javascript indentation and syntax support
 Plugin 'leafgarland/typescript-vim' " Typescript syntax support, indentation based on pangloss/vim-javascript
@@ -48,10 +47,6 @@ let g:airline_section_y = ''
 
 " ================ vim-markdown configuration ========================
 let g:markdown_syntax_conceal = 0
-
-" ================ command-t configuration ========================
-let g:CommandTAlwaysShowDotFiles = 1
-autocmd FocusGained * :CommandTFlush
 
 " ================ Terminus configuration ========================
 let g:TerminusMouse = 0

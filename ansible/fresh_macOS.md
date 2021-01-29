@@ -7,7 +7,6 @@
     ```
 * Open a fish shell and execute `bootstrap`
 * Execute the following functions:
-  * `compile_vim_plugins`
   * `clone_repos`
 
 * Enter licesne information of purchased applications
