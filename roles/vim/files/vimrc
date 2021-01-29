@@ -14,7 +14,6 @@ Plugin 'VundleVim/Vundle.vim'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins list
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'jiangmiao/auto-pairs' " Insert brackets, parens or quotes in pair
 Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
 Plugin 'vim-syntastic/syntastic' " Syntax checking
 Plugin 'SirVer/ultisnips' " Snippet solution
