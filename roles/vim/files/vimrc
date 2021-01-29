@@ -16,8 +16,6 @@ Plugin 'VundleVim/Vundle.vim'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
 
-Plugin 'SirVer/ultisnips' " Snippet solution
-Plugin 'honza/vim-snippets' " Needed for snippet solution
 Plugin 'airblade/vim-gitgutter' " Showing git diff in the 'gutter' (sign column)
 Plugin 'wincent/terminus' " Enhanced terminal integration
 Plugin 'scrooloose/nerdtree' " File tree explorer
@@ -62,10 +60,6 @@ let g:markdown_syntax_conceal = 0
 let g:CommandTAlwaysShowDotFiles = 1
 autocmd FocusGained * :CommandTFlush
 
-" ================ vim-snippets configuration ========================
-" Adding html snippets to tsx and jsx file types
-autocmd FileType typescript,javascript UltiSnipsAddFiletypes html
-
 " ================ Terminus configuration ========================
 let g:TerminusMouse = 0
 let g:TerminusFocusReporting = 1
@@ -100,11 +94,6 @@ nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
 
 " ================ GitGutter configuration ========================
 let g:gitgutter_map_keys = 0
-
-" ================ Snippet engine configuration ===================
-let g:UltiSnipsExpandTrigger = "<c-j>"
-let g:UltiSnipsJumpForwardTrigger = ""
-let g:UltiSnipsJumpBackwardTrigger = ""
 
 " ================ NERDTree configuration =========================
 let NERDTreeQuitOnOpen = 1 " automatically close NerdTree when you open a file
