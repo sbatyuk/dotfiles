@@ -15,9 +15,8 @@ Plugin 'VundleVim/Vundle.vim'
 " => Plugins list
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
-
 Plugin 'wincent/terminus' " Enhanced terminal integration
-Plugin 'scrooloose/nerdtree' " File tree explorer
+
 Plugin 'Yggdroot/indentLine' " Display indention levels with thin vertical lines
 Plugin 'terryma/vim-multiple-cursors' " Sublime Text style multiple selections
 Plugin 'ntpeters/vim-better-whitespace' " Whitespace highlighting and cleaning
@@ -91,15 +90,6 @@ nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
 
-" ================ NERDTree configuration =========================
-let NERDTreeQuitOnOpen = 1 " automatically close NerdTree when you open a file
-let NERDTreeMinimalUI = 1 " disable that old “Press ? for help”
-let NERDTreeShowHidden = 1
-let NERDTreeIgnore = ['\.swp$', '\.DS_Store$', '\.git$', '^node_modules$']
-" close vim if the only window left open is a NERDTree
-autocmd bufenter * if (winnr("$") == 1 &&
-            \ exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
 " ================ Neoformat configuration =========================
 " using prettier for formatting these files
 autocmd BufWritePre *.js,*.jsx Neoformat
@@ -113,16 +103,6 @@ autocmd BufWritePre *.py Neoformat
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " ================ NORMAL MODE =========================
-
-function CustomNerdToggle()
-    if &filetype == 'nerdtree' || bufname('%') == ""
-        :NERDTreeToggle
-    else
-        :NERDTreeFind | :NERDTreeRefreshRoot
-    endif
-endfunction
-" map <leader>o to toggle the tree AND reveal the open file in the tree
-nnoremap <leader>o :call CustomNerdToggle() <CR> :<backspace>
 
 " clear search pattern with <leader> and <space>
 nnoremap <leader><space> :noh<CR>:<backspace>
