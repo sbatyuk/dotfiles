@@ -18,8 +18,6 @@ Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
 Plugin 'wincent/terminus' " Enhanced terminal integration
 Plugin 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
 
-Plugin 'pangloss/vim-javascript' " Javascript indentation and syntax support
-Plugin 'leafgarland/typescript-vim' " Typescript syntax support, indentation based on pangloss/vim-javascript
 Plugin 'mxw/vim-jsx' " Syntax highlighting and indenting for JSX
 Plugin 'ianks/vim-tsx' " Syntax highlighting and indenting for TSX
 Plugin 'dag/vim-fish' " Syntax highlighting and indenting for Fish scripts
