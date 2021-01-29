@@ -10,5 +10,6 @@
     "path-autocomplete.triggerOutsideStrings": true,
     "path-autocomplete.pathMappings": {
         "/": "/"
-    }
+    },
+    "editor.renderWhitespace": "trailing"
 }
