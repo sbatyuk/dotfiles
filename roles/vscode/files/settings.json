@@ -11,5 +11,6 @@
     "path-autocomplete.pathMappings": {
         "/": "/"
     },
-    "editor.renderWhitespace": "trailing"
+    "editor.renderWhitespace": "trailing",
+    "terminal.integrated.fontFamily": "FiraMono Nerd Font"
 }
