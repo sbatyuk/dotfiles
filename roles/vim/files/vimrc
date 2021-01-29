@@ -17,7 +17,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
 Plugin 'wincent/terminus' " Enhanced terminal integration
 
-Plugin 'terryma/vim-multiple-cursors' " Sublime Text style multiple selections
 Plugin 'ntpeters/vim-better-whitespace' " Whitespace highlighting and cleaning
 Plugin 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
 Plugin 'scrooloose/nerdcommenter' " Comment functions
