@@ -18,8 +18,6 @@ Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
 Plugin 'wincent/terminus' " Enhanced terminal integration
 Plugin 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
 
-Plugin 'tpope/vim-markdown' " Syntax highlighting for markdown files
-Plugin 'mzlogin/vim-markdown-toc' " Generate table of content for markdown files
 Plugin 'jez/vim-superman' " Open man pages in Vim
 Plugin 'vim-airline/vim-airline' " Vim statusline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -36,9 +34,6 @@ filetype plugin indent on
 let g:airline_section_b = ''
 let g:airline_section_x = ''
 let g:airline_section_y = ''
-
-" ================ vim-markdown configuration ========================
-let g:markdown_syntax_conceal = 0
 
 " ================ Terminus configuration ========================
 let g:TerminusMouse = 0
