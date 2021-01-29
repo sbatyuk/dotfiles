@@ -7,3 +7,4 @@ vscode_extensions:
   - ms-toolsai.jupyter # dependency of ms-python.python
   - samuelcolvin.jinjahtml
   - ionutvmi.path-autocomplete
+  - hashicorp.terraform
