@@ -18,7 +18,6 @@ Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
 Plugin 'wincent/terminus' " Enhanced terminal integration
 Plugin 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
 
-Plugin 'Vimjas/vim-python-pep8-indent' " A nicer Python indentation style
 Plugin 'wincent/command-t' " Fuzzy file search
 Plugin 'sbdchd/neoformat' " Code formatter
 Plugin 'pangloss/vim-javascript' " Javascript indentation and syntax support
