@@ -15,7 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 " => Plugins list
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
-Plugin 'vim-syntastic/syntastic' " Syntax checking
+
 Plugin 'SirVer/ultisnips' " Snippet solution
 Plugin 'honza/vim-snippets' " Needed for snippet solution
 Plugin 'airblade/vim-gitgutter' " Showing git diff in the 'gutter' (sign column)
@@ -97,12 +97,6 @@ nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
-
-" ================ Syntastic configuration ========================
-highlight SyntasticError guibg=#2f0000
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers = ['flake8']
 
 " ================ GitGutter configuration ========================
 let g:gitgutter_map_keys = 0
