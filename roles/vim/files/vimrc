@@ -16,7 +16,6 @@ Plugin 'VundleVim/Vundle.vim'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
 
-Plugin 'airblade/vim-gitgutter' " Showing git diff in the 'gutter' (sign column)
 Plugin 'wincent/terminus' " Enhanced terminal integration
 Plugin 'scrooloose/nerdtree' " File tree explorer
 Plugin 'Yggdroot/indentLine' " Display indention levels with thin vertical lines
@@ -91,9 +90,6 @@ nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
-
-" ================ GitGutter configuration ========================
-let g:gitgutter_map_keys = 0
 
 " ================ NERDTree configuration =========================
 let NERDTreeQuitOnOpen = 1 " automatically close NerdTree when you open a file
