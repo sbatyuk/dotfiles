@@ -18,8 +18,6 @@ Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
 Plugin 'wincent/terminus' " Enhanced terminal integration
 Plugin 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
 
-Plugin 'dag/vim-fish' " Syntax highlighting and indenting for Fish scripts
-Plugin 'posva/vim-vue' " Syntax highlighting for Vue
 Plugin 'hashivim/vim-terraform' " Syntax highlighting for Terraform files
 Plugin 'tpope/vim-markdown' " Syntax highlighting for markdown files
 Plugin 'mzlogin/vim-markdown-toc' " Generate table of content for markdown files
