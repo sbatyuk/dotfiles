@@ -8,3 +8,4 @@ vscode_extensions:
   - samuelcolvin.jinjahtml
   - ionutvmi.path-autocomplete
   - hashicorp.terraform
+  - asvetliakov.vscode-neovim

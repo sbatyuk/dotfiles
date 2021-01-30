@@ -12,5 +12,7 @@
         "/": "/"
     },
     "editor.renderWhitespace": "trailing",
-    "terminal.integrated.fontFamily": "FiraMono Nerd Font"
+    "terminal.integrated.fontFamily": "FiraMono Nerd Font",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+    "editor.scrollBeyondLastLine": false
 }

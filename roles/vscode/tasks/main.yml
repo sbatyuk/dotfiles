@@ -14,6 +14,14 @@
     path: '~/Library/Application Support/Code/User/settings.json'
     state: link
 
+- name: Disable press and hold while typing in vscode
+  community.general.osx_defaults:
+    domain: com.microsoft.VSCode 
+    key: ApplePressAndHoldEnabled
+    type: bool
+    value: false
+    state: present
+
 - name: Get adhoc vscode extensions
   ansible.builtin.find:
     paths: ~/.vscode/extensions/

@@ -1,7 +1,9 @@
 - name: Install neovim with homebrew
   community.general.homebrew:
-    name: nvim
-    state: present
+    name:
+      - luajit          # First, neovim's dependency, luajit => https://bit.ly/3aafYS8
+      - nvim
+    state: head         # HEAD is needed for vscode-neovim until a stable 0.5 release => https://bit.ly/3r4Wqpo
 
 - name: Create nvim config directory
   ansible.builtin.file:
