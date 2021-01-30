@@ -14,7 +14,6 @@ Plugin 'VundleVim/Vundle.vim'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins list
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'dracula/vim', { 'name': 'dracula' } " best color scheme hands down!
 Plugin 'wincent/terminus' " Enhanced terminal integration
 Plugin 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
 
@@ -169,8 +168,6 @@ set tabstop=4 " number of VISUAL spaces for each tab respresentation
 " => Misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on " turn on syntax highlighting
-let g:dracula_colorterm = 0 " to fix the transparent background of vim when dracula is used
-silent! colorscheme dracula " set desired color scheme
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Autogroups
