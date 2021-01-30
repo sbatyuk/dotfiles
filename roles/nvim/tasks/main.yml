@@ -15,3 +15,13 @@
     src: '{{ DOTFILES_REPO }}/roles/nvim/files/init.vim'
     path: '~/.config/nvim/init.vim'
     state: link
+
+- name: Create vim-plug directory
+  ansible.builtin.file:
+    path: ~/.config/nvim/autoload
+    state: directory
+
+- name: Install vim-plug
+  ansible.builtin.get_url:
+    url: 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    dest: ~/.config/nvim/autoload/plug.vim
