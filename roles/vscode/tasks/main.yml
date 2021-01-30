@@ -8,11 +8,14 @@
     path: '~/Library/Application Support/Code/User'
     state: directory
 
-- name: Setup vscode symlink
+- name: Setup vscode symlinks
   ansible.builtin.file:
-    src: '{{ DOTFILES_REPO }}/roles/vscode/files/settings.json'
-    path: '~/Library/Application Support/Code/User/settings.json'
+    src:  '{{ item.src }}'
+    path: '{{ item.path }}'
     state: link
+  loop:
+    - { src: '{{ DOTFILES_REPO }}/roles/vscode/files/settings.json',    path: '~/Library/Application Support/Code/User/settings.json'     }
+    - { src: '{{ DOTFILES_REPO }}/roles/vscode/files/keybindings.json', path: '~/Library/Application Support/Code/User/keybindings.json'  }
 
 - name: Disable press and hold while typing in vscode
   community.general.osx_defaults:
