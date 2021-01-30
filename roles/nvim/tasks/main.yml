@@ -28,6 +28,6 @@
 
 - name: Install nvim plugins
   ansible.builtin.command:
-    cmd: nvim --headless +PlugInstall +qall
+    cmd: nvim +PlugInstall +qall
   register: result
   changed_when: '"Resolving" in result.stdout'
