@@ -9,3 +9,4 @@ vscode_extensions:
   - ionutvmi.path-autocomplete
   - hashicorp.terraform
   - asvetliakov.vscode-neovim
+  - dunstontc.viml
