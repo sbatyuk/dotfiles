@@ -7,7 +7,6 @@ let mapleader = "\<Space>" " remap <leader> to <space>
 Plugin 'wincent/terminus' " Enhanced terminal integration
 Plugin 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
 
-Plugin 'jez/vim-superman' " Open man pages in Vim
 Plugin 'vim-airline/vim-airline' " Vim statusline
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

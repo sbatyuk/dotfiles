@@ -1,6 +1,7 @@
 call plug#begin()
 
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'dracula/vim',         { 'as': 'dracula' }
+Plug 'jez/vim-superman'     " Open man pages in nvim
 
 call plug#end()
 

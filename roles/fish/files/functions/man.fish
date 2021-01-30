@@ -1,3 +1,3 @@
 function man
-    ~/.vim/bundle/vim-superman/bin/vman $argv
+    ~/.config/nvim/plugged/vim-superman/bin/vman $argv
 end
