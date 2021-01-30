@@ -23,7 +23,6 @@ Plugin 'vim-airline/vim-airline' " Vim statusline
 " => Vundle finalisation
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call vundle#end()
-filetype plugin indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins configurations
@@ -163,11 +162,6 @@ set expandtab " tab becomes a shortcut to insert four spaces
 set shiftwidth=4 " number of spaces to use for auto indent
 set softtabstop=4 " number of spaces in tab when editing
 set tabstop=4 " number of VISUAL spaces for each tab respresentation
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Misc
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-syntax on " turn on syntax highlighting
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Autogroups
