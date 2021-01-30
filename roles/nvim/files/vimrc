@@ -1,15 +1,5 @@
-" Inspired by
-" https://github.com/romainl/idiomatic-vimrc/blob/master/idiomatic-vimrc.vim
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vundle initialization
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible " use Vim settings, rather than Vi settings
-set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle
 set shell=/bin/bash " set shell to bash explicitly due to fish incompatibility
 let mapleader = "\<Space>" " remap <leader> to <space>
-filetype off
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins list
@@ -19,10 +9,6 @@ Plugin 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes
 
 Plugin 'jez/vim-superman' " Open man pages in Vim
 Plugin 'vim-airline/vim-airline' " Vim statusline
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vundle finalisation
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call vundle#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins configurations
