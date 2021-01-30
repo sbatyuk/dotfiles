@@ -1,0 +1,15 @@
+- name: Install neovim with homebrew
+  community.general.homebrew:
+    name: nvim
+    state: present
+
+- name: Create nvim config directory
+  ansible.builtin.file:
+    path: ~/.config/nvim
+    state: directory
+
+- name: Setup nvim symlink
+  ansible.builtin.file:
+    src: '{{ DOTFILES_REPO }}/roles/nvim/files/init.vim'
+    path: '~/.config/nvim/init.vim'
+    state: link
