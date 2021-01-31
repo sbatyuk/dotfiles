@@ -6,17 +6,9 @@ let mapleader = "\<Space>" " remap <leader> to <space>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'wincent/terminus' " Enhanced terminal integration
 Plugin 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
-
-Plugin 'vim-airline/vim-airline' " Vim statusline
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins configurations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" ================ vim-airline configuration ========================
-let g:airline_section_b = ''
-let g:airline_section_x = ''
-let g:airline_section_y = ''
 
 " ================ Terminus configuration ========================
 let g:TerminusMouse = 0
