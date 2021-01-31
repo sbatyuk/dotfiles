@@ -15,6 +15,12 @@ if exists('g:vscode')
 else
     nnoremap <CR> :write<CR>
 endif
+" normal mode => quit by qq
+if exists('g:vscode')
+    nnoremap qq :call VSCodeCall('workbench.action.closeActiveEditor')<CR>
+else
+    nnoremap qq :quit<CR>
+endif
 
 let g:tmux_navigator_disable_when_zoomed = 1
 nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
