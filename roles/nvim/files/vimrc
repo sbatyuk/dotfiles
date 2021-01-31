@@ -5,36 +5,12 @@ let mapleader = "\<Space>" " remap <leader> to <space>
 " => Plugins list
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'wincent/terminus' " Enhanced terminal integration
-Plugin 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugins configurations
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " ================ Terminus configuration ========================
 let g:TerminusMouse = 0
 let g:TerminusFocusReporting = 1
 let g:TerminusAssumeITerm = 1
 let g:TerminusBracketedPaste = 0
-
-" =========== vim-tmux-navigator configuration ====================
-" Consistent navigation in tmux, vim, vimium
-
-" Splits => Alt  + hjkl
-"############################################################################
-
-let g:tmux_navigator_disable_when_zoomed = 1
-let g:tmux_navigator_no_mappings = 1
-
-" https://stackoverflow.com/a/38259051/5208999
-execute "set <M-h>=\eh"
-execute "set <M-j>=\ej"
-execute "set <M-k>=\ek"
-execute "set <M-l>=\el"
-
-nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Mappings (Always use non-recursive mappings, i.e. "nore")
