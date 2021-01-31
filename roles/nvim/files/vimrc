@@ -2,17 +2,6 @@ set shell=/bin/bash " set shell to bash explicitly due to fish incompatibility
 let mapleader = "\<Space>" " remap <leader> to <space>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugins list
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'wincent/terminus' " Enhanced terminal integration
-
-" ================ Terminus configuration ========================
-let g:TerminusMouse = 0
-let g:TerminusFocusReporting = 1
-let g:TerminusAssumeITerm = 1
-let g:TerminusBracketedPaste = 0
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Mappings (Always use non-recursive mappings, i.e. "nore")
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
