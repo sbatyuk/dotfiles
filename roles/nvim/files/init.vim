@@ -7,7 +7,14 @@ Plug 'christoomey/vim-tmux-navigator'   " For moving between tmux panes and vim 
 
 call plug#end()
 
+" insert mode => exit with jj
 inoremap jj <ESC>
+" normal mode => save by enter
+if exists('g:vscode')
+    nnoremap <CR> :call VSCodeCall('workbench.action.files.save')<CR>
+else
+    nnoremap <CR> :write<CR>
+endif
 
 let g:tmux_navigator_disable_when_zoomed = 1
 nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>

@@ -24,9 +24,6 @@ nnoremap <leader>k <C-W>5-
 nnoremap <leader>l <C-W>5>
 nnoremap <leader>h <C-W>5<
 
-" save the file with enter
-nnoremap <CR> :write<CR>
-
 " reload .vimrc with <leader> and R
 nnoremap <leader>R :source ~/.vimrc<cr>:noh<CR>:echo "vim reloaded!"<cr>
 
