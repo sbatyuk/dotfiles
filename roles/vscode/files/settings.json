@@ -15,5 +15,6 @@
     "terminal.integrated.fontFamily": "FiraMono Nerd Font",
     "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "editor.scrollBeyondLastLine": false,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "files.insertFinalNewline": true
 }
