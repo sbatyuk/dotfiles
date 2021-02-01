@@ -1,69 +1,14 @@
-set shell=/bin/bash " set shell to bash explicitly due to fish incompatibility
-let mapleader = "\<Space>" " remap <leader> to <space>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Mappings (Always use non-recursive mappings, i.e. "nore")
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" ================ NORMAL MODE =========================
-
 " clear search pattern with <leader> and <space>
 nnoremap <leader><space> :noh<CR>:<backspace>
 
 " remove until end of file with d and e
 nnoremap de d$
 
-" open vertical or horizontal splits with <leader> and \ or -
-nnoremap <leader>\ :vs<CR>
-nnoremap <leader>- :split<CR>
-
-" resize panes with <leader> and jklh=
-nnoremap <leader>= <C-W>=
-nnoremap <leader>j <C-W>5+
-nnoremap <leader>k <C-W>5-
-nnoremap <leader>l <C-W>5>
-nnoremap <leader>h <C-W>5<
-
-" reload .vimrc with <leader> and R
-nnoremap <leader>R :source ~/.vimrc<cr>:noh<CR>:echo "vim reloaded!"<cr>
-
-" switch between tabs with Shift-h and Shift-l
-nnoremap H gT
-nnoremap L gt
-
 " go to end of line with e
 nnoremap e $
 
 " go to first non-blank charachter with 0
 nnoremap 0 ^
-
-" toggle paste mode with <leader> and p
-set pastetoggle=<leader>p
-
-" map semicolon to colon to avoid the extra shift to go to cmd mode
-nnoremap ; :
-
-" ================ INSERT MODE =========================
-
-" exit INSERT mode with jj
-inoremap jj <ESC>
-
-" ================ VISUAL MODE =========================
-
-" map semicolon to colon to avoid the extra shift to go to cmd mode
-vnoremap ; :
-
-" map s to sort selected lines
-vnoremap s :sort<CR> :<backspace>
-
-" ================ UNBINDINGS =========================
-
-" training for e usage instead of $
-nnoremap $ <Nop>
-nnoremap d$ <Nop>
-
-" removing the stupid error of marker not set when accidentally hitting ';
-nnoremap ' <Nop>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General configurations
