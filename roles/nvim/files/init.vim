@@ -22,6 +22,15 @@ else
     nnoremap qq :quit<CR>
 endif
 
+" go to first non-blank character with 0
+nnoremap 0 ^
+
+" go to end of line with e
+nnoremap e $
+
+" remove until end of line with de
+nnoremap de d$
+
 let g:tmux_navigator_disable_when_zoomed = 1
 nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <M-j> :TmuxNavigateDown<cr>

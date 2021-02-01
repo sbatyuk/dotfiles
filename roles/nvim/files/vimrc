@@ -1,15 +1,6 @@
 " clear search pattern with <leader> and <space>
 nnoremap <leader><space> :noh<CR>:<backspace>
 
-" remove until end of file with d and e
-nnoremap de d$
-
-" go to end of line with e
-nnoremap e $
-
-" go to first non-blank charachter with 0
-nnoremap 0 ^
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General configurations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
