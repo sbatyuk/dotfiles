@@ -16,5 +16,6 @@
     "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "editor.scrollBeyondLastLine": false,
     "explorer.confirmDragAndDrop": false,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "tabnine.experimentalAutoImports": true
 }

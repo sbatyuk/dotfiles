@@ -10,3 +10,4 @@ vscode_extensions:
   - hashicorp.terraform
   - asvetliakov.vscode-neovim
   - dunstontc.viml
+  - tabnine.tabnine-vscode
