@@ -1,6 +1,3 @@
-" clear search pattern with <leader> and <space>
-nnoremap <leader><space> :noh<CR>:<backspace>
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General configurations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

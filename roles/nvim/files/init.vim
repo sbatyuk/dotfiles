@@ -31,6 +31,9 @@ nnoremap e $
 " remove until end of line with de
 nnoremap de d$
 
+" clear search highlight with escape
+nnoremap <esc> :noh<CR>:<backspace>
+
 let g:tmux_navigator_disable_when_zoomed = 1
 nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
