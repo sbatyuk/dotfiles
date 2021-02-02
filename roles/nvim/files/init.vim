@@ -7,6 +7,8 @@ Plug 'christoomey/vim-tmux-navigator'   " For moving between tmux panes and vim 
 
 call plug#end()
 
+set clipboard=unnamed " For neovim to use system clipboard
+
 " insert mode => exit with jj
 inoremap jj <ESC>
 " normal mode => save by enter
