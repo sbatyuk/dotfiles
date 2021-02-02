@@ -5,13 +5,3 @@ set expandtab " tab becomes a shortcut to insert four spaces
 set shiftwidth=4 " number of spaces to use for auto indent
 set softtabstop=4 " number of spaces in tab when editing
 set tabstop=4 " number of VISUAL spaces for each tab respresentation
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Autogroups
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-augroup configgroup
-    " clears all the autocmd's for the group
-    autocmd!
-    autocmd FileType javascript setlocal ts=2 sts=2
-    autocmd BufEnter Makefile setlocal noexpandtab
-augroup END
