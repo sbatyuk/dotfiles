@@ -10,11 +10,10 @@
     path: ~/.config/nvim
     state: directory
 
-- name: Setup nvim symlink
-  ansible.builtin.file:
-    src: '{{ DOTFILES_REPO }}/roles/nvim/files/init.vim'
-    path: '~/.config/nvim/init.vim'
-    state: link
+- name: Install nvim config template
+  ansible.builtin.template:
+    src: '{{ DOTFILES_REPO }}/roles/nvim/templates/nvim.j2'
+    dest: '~/.config/nvim/init.vim'
 
 - name: Create vim-plug directory
   ansible.builtin.file:
