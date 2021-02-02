@@ -1,27 +1,16 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General configurations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set backspace=indent,eol,start  " allow backspace in insert mode
-set backupcopy=yes " preserving soft/hard links bit.ly/2Rmkhma
-set hlsearch " highlight search patterns
 set ignorecase " ignore case when searching...
-set incsearch " highlight search patterns as you type
-set laststatus=2 " always display the statusline
-set nobackup " this has to be disabled for writebackup to work as intended
 set noshowmode " hide default mode text (e.g. INSERT under the statusline)
 set noswapfile " no no no no no no no no!
 set nowrap " don't wrap lines
 set number " show line numbers next to lines
 set scrolloff=15 " set 15 lines to the cursor when moving vertically using j/k
-set showcmd " show commands typed in vim
-set showtabline=1 " only show tabline when there's more than 1 tab
 set smartcase " ...unless we type a capital
 set updatetime=300 " set Vim's updatetime delay
 set visualbell " suppress audio/visual error bell
-set wildmenu " visual autocomplete for command menu
 set wildmode=list:longest,full " bash-like tab completion
-set writebackup " write backup before overwriting a file, delete it afterwards
-set wildignore+=*/node_modules/*,*/venv/*
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Indentation configurations
