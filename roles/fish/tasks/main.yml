@@ -37,9 +37,9 @@
     path: '{{ item.path }}'
     state: link
   loop:
-    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/functions',   path: '~/.config/fish/functions'}
-    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/config.fish', path: '~/.config/fish/config.fish'}
-    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/plugins',     path: '~/.config/fish/fish_plugins'}
+    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/functions',    path: '~/.config/fish/functions'}
+    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/config.fish',  path: '~/.config/fish/config.fish'}
+    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/plugins.fish', path: '~/.config/fish/fish_plugins'}
 
 - name: Download fisher function
   ansible.builtin.get_url:
