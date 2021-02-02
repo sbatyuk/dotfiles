@@ -17,5 +17,6 @@
     "editor.scrollBeyondLastLine": false,
     "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
-    "tabnine.experimentalAutoImports": true
+    "tabnine.experimentalAutoImports": true,
+    "editor.cursorSurroundingLines": 15
 }
