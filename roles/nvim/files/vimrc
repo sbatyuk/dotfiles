@@ -1,18 +1,4 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General configurations
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set ignorecase " ignore case when searching...
-set noshowmode " hide default mode text (e.g. INSERT under the statusline)
-set noswapfile " no no no no no no no no!
-set nowrap " don't wrap lines
-set number " show line numbers next to lines
-set scrolloff=15 " set 15 lines to the cursor when moving vertically using j/k
-set smartcase " ...unless we type a capital
-set updatetime=300 " set Vim's updatetime delay
-set visualbell " suppress audio/visual error bell
-set wildmode=list:longest,full " bash-like tab completion
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Indentation configurations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set expandtab " tab becomes a shortcut to insert four spaces

@@ -7,7 +7,13 @@ Plug 'christoomey/vim-tmux-navigator'   " For moving between tmux panes and vim 
 
 call plug#end()
 
-set clipboard=unnamed " For neovim to use system clipboard
+set clipboard=unnamed               " For neovim to use system clipboard
+set ignorecase                      " For neovim to ignore case when searching
+set noshowmode                      " For neovim to hide INSERT and the like under the statusline
+set noswapfile                      " For neovim to disable swap file creation
+set nowrap                          " For neovim not to wrap lines
+set number                          " For neovim to show line numbers 
+set scrolloff=15                    " For neovim to scroll from the middle of the screen
 
 " insert mode => exit with jj
 inoremap jj <ESC>
