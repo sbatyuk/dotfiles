@@ -1,6 +1,6 @@
-source {{ DOTFILES_REPO }}/roles/tmux/files/tmux_plugins.conf
-source {{ DOTFILES_REPO }}/roles/tmux/files/tmux_global_options.conf
-source {{ DOTFILES_REPO }}/roles/tmux/files/tmux_statusline_options.conf
-source {{ DOTFILES_REPO }}/roles/tmux/files/tmux_bindings.conf
+source {{ DOTFILES_REPO }}/roles/tmux/files/plugins.tmux
+source {{ DOTFILES_REPO }}/roles/tmux/files/global_options.tmux
+source {{ DOTFILES_REPO }}/roles/tmux/files/statusline_options.tmux
+source {{ DOTFILES_REPO }}/roles/tmux/files/bindings.tmux
 
 run '~/.tmux/plugins/tpm/tpm' # MUST BE AT THE END
