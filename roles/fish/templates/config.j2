@@ -1,0 +1,6 @@
+set --global --export DOTFILES_REPO {{ DOTFILES_REPO }}
+
+source {{ DOTFILES_REPO }}/roles/fish/files/starship.fish
+source {{ DOTFILES_REPO }}/roles/fish/files/environment.fish
+source {{ DOTFILES_REPO }}/roles/fish/files/path.fish
+source {{ DOTFILES_REPO }}/roles/homebrew/files/environment.fish

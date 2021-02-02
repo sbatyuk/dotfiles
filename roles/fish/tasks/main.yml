@@ -31,6 +31,11 @@
     path: ~/.config/fish
     state: directory
 
+- name: Install fish config template
+  ansible.builtin.template:
+    src: '{{ DOTFILES_REPO }}/roles/fish/templates/config.j2'
+    dest: ~/.config/fish/config.fish
+
 - name: Setup fish symlinks
   ansible.builtin.file:
     src: '{{ item.src }}'
@@ -38,7 +43,6 @@
     state: link
   loop:
     - { src: '{{ DOTFILES_REPO }}/roles/fish/files/functions',    path: '~/.config/fish/functions'}
-    - { src: '{{ DOTFILES_REPO }}/roles/fish/files/config.fish',  path: '~/.config/fish/config.fish'}
     - { src: '{{ DOTFILES_REPO }}/roles/fish/files/plugins.fish', path: '~/.config/fish/fish_plugins'}
 
 - name: Download fisher function
