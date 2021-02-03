@@ -295,6 +295,26 @@ Resize Split Pane.Move Divider Right</string>
 			<key>Text</key>
 			<string>EBDF7095-0EAF-4383-905B-5A46151162EB</string>
 		</dict>
+		<key>0x62-0x100000-0xb</key>
+		<dict>
+			<key>Action</key>
+			<integer>25</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string>Maximize Active Pane
+Maximize Active Pane</string>
+		</dict>
+		<key>0x65-0x100000-0xe</key>
+		<dict>
+			<key>Action</key>
+			<integer>25</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string>Copy Mode
+Copy Mode</string>
+		</dict>
 		<key>0x68-0x100000-0x4</key>
 		<dict>
 			<key>Action</key>

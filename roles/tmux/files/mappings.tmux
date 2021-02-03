@@ -4,7 +4,3 @@
 ############################################################################
 
 unbind -a # unbind all default key bindings
-
-bind -n M-e copy-mode # tmux copy mode is like vim normal mode
-
-bind -n M-b resize-pane -Z
