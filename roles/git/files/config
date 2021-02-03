@@ -1,15 +1,16 @@
 [user]
-	name    = Sam Hosseini
-	email   = git-email@hosseini.io
+    name    = Sam Hosseini
+    email   = git-email@hosseini.io
 
 [core]
-	autocrlf = input                    # Convert Windows line ending (CRLF) to macOS line ending (LF) when adding files to git
+    editor   = nvim                     # Set git editor to prevent "hint: Waiting for your editor to close the file" message
+    autocrlf = input                    # Convert Windows line ending (CRLF) to macOS line ending (LF) when adding files to git
 
 [pull]
-	rebase = true                       # Rebase local commits on top of remote commits when pulling
+    rebase = true                       # Rebase local commits on top of remote commits when pulling
 
 [advice]
-	addEmptyPathspec = false            # Disable warning of "Maybe you wanted to say git add ."
+    addEmptyPathspec = false            # Disable warning of "Maybe you wanted to say git add ."
 
 [status]
-	showUntrackedFiles = all            # Show all untracked files in an untracked folder, not just the untracked folder
+    showUntrackedFiles = all            # Show all untracked files in an untracked folder, not just the untracked folder
