@@ -235,6 +235,27 @@
 	<false/>
 	<key>FlashTabBarInFullscreen</key>
 	<false/>
+	<key>GlobalKeyMap</key>
+	<dict>
+		<key>0xf72c-0x0-0x74</key>
+		<dict>
+			<key>Action</key>
+			<integer>9</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72d-0x0-0x79</key>
+		<dict>
+			<key>Action</key>
+			<integer>8</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+		</dict>
+	</dict>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideActivityIndicator</key>
@@ -244,7 +265,7 @@
 	<key>HideMenuBarInFullscreen</key>
 	<false/>
 	<key>HideTab</key>
-	<false/>
+	<true/>
 	<key>HideTabNumber</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
