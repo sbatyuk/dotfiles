@@ -18,8 +18,5 @@
     "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
     "tabnine.experimentalAutoImports": true,
-    "editor.cursorSurroundingLines": 15,
-    "files.associations": {
-        "*.tmux": "tmux"
-    }
+    "editor.cursorSurroundingLines": 15
 }
