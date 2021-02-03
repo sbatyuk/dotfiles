@@ -237,6 +237,24 @@
 	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
+		<key>0x2d-0x100000-0x1b</key>
+		<dict>
+			<key>Action</key>
+			<integer>28</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string>EBDF7095-0EAF-4383-905B-5A46151162EB</string>
+		</dict>
+		<key>0x5c-0x100000-0x2a</key>
+		<dict>
+			<key>Action</key>
+			<integer>29</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string>EBDF7095-0EAF-4383-905B-5A46151162EB</string>
+		</dict>
 		<key>0xf72c-0x0-0x74</key>
 		<dict>
 			<key>Action</key>

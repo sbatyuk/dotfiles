@@ -17,9 +17,6 @@ bind -nr M-L resize-pane -R 5
 bind -n M-n new-window  -n '    '
 bind -n M-b resize-pane -Z
 
-bind -n M-\\ split-window -h -c "#{pane_current_path}"
-bind -n M--  split-window -v -c "#{pane_current_path}"
-
 bind -n M-1 select-window -t 1
 bind -n M-2 select-window -t 2
 bind -n M-3 select-window -t 3
