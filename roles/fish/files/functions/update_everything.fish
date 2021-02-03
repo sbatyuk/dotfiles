@@ -10,9 +10,6 @@ function update_everything
 
     tldr --update
 
-    ~/.tmux/plugins/tpm/bin/./clean_plugins
-    ~/.tmux/plugins/tpm/bin/./update_plugins all 1>/dev/null
-
     nvim --headless +PlugClean! +qall
     nvim --headless +PlugUpdate +qall
 end
