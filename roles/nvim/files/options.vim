@@ -6,7 +6,5 @@ set nowrap                          " For neovim not to wrap lines
 set number                          " For neovim to show line numbers 
 set scrolloff=15                    " For neovim to scroll from the middle of the screen
 
-let g:tmux_navigator_disable_when_zoomed = 1
-
 let g:dracula_colorterm = 0 " fix transparent vim background when using dracula
 silent! colorscheme dracula
