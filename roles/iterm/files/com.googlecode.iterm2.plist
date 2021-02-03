@@ -1122,6 +1122,8 @@ Copy Mode</string>
 			<string>/Users/sam_hosseini</string>
 		</dict>
 	</array>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenBookmark</key>
@@ -1169,6 +1171,8 @@ Copy Mode</string>
 	<true/>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>
