@@ -1,17 +1,9 @@
-# My shortcuts
-
-* Hyper is `✱`
-* Hyper is good
-* Hyper is amazing
-
 ## Un-automatable shortcuts
 
 | Shortcut | Application                 | Comment                      |
 | -------- | --------------------------- | ---------------------------- |
-| `✱` + E  | Bear                        | Open Bear main window        |
 | `✱` + T  | Fantastical                 | Mini window shortcut         |
 | `✱` + P  | TickTick                    | Show/Hide Main Window        |
-| `✱` + S  | Bartender                   | Keyboard navigate            |
 | `✱` + F  | 1password                   | Fill Login or Show 1password |
 | `✱` + G  | 1password                   | Show 1password               |
 
