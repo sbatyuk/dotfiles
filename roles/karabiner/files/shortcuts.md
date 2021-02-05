@@ -1,10 +1,3 @@
-## Un-automatable shortcuts
-
-| Shortcut | Application                 | Comment                      |
-| -------- | --------------------------- | ---------------------------- |
-| `✱` + F  | 1password                   | Fill Login or Show 1password |
-| `✱` + G  | 1password                   | Show 1password               |
-
 ## Hammerspoon shortcuts
 
 [window_management.lua](https://github.com/sam-hosseini/dotfiles/blob/master/hammerspoon/window_management.lua)

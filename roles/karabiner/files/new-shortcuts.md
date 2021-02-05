@@ -37,7 +37,9 @@
     * karabiner => hyper + D = page down
     * iterm => page down = scroll one page down
 * F
+    * [un-automatable] 1password => hyper + F = Fill Login or Show 1password
 * G
+    * [un-automatable] 1password => hyper + G = Show 1password
 * HJKL
     * karabiner => hyper + HJKL = arrow keys
     * iterm => command + HJKL = move between panes
