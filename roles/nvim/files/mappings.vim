@@ -24,8 +24,3 @@ nnoremap de d$
 
 " clear search highlight with escape
 nnoremap <esc> :noh<CR>:<backspace>
-
-nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
