@@ -2,8 +2,6 @@
 
 | Shortcut | Application                 | Comment                      |
 | -------- | --------------------------- | ---------------------------- |
-| `✱` + T  | Fantastical                 | Mini window shortcut         |
-| `✱` + P  | TickTick                    | Show/Hide Main Window        |
 | `✱` + F  | 1password                   | Fill Login or Show 1password |
 | `✱` + G  | 1password                   | Show 1password               |
 
