@@ -59,3 +59,6 @@
 * ,
 * .
 * /
+---
+* ←↑↓→
+    * hammerspoon => hyper + ←↑↓→ = resize windows magically

@@ -1,16 +1,3 @@
-## Hammerspoon shortcuts
-
-[window_management.lua](https://github.com/sam-hosseini/dotfiles/blob/master/hammerspoon/window_management.lua)
-
-| Shortcut  | Comment                               |
-| --------- | --------------------------            |
-| `✱` + ←   | Resize window to half towards left    |
-| `✱` + ↓   | Resize window to half towards down    |
-| `✱` + ↑   | Resize window to half towards up      |
-| `✱` + →   | Resize window to half towards right   |
-| `✱` + B   | Maximize window                       |
-| `⌥` + `\`  | Move focus to next window of same app |
-
 ## Karabiner shortcuts
 
 [karabiner.json](https://github.com/sam-hosseini/dotfiles/blob/master/karabiner/karabiner.json)
