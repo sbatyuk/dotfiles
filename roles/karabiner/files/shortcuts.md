@@ -22,6 +22,7 @@
 * \-
     * karabiner => hyper + \- = shift + \-
     * iterm => command + \- = split horizontally
+    * vscode => command + \- = split horizontally
 * =
     * karabiner => hyper + = = shift + =
 ---
@@ -48,6 +49,7 @@
     * karabiner => hyper + \ = /
     * karabiner => hyper + command + \ = |
     * iterm => command + \ = split vertically
+    * vscode => command + \ = split vertically
 ---
 * A
 * S

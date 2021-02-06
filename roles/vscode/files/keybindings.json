@@ -40,5 +40,21 @@
     {
         "key": "cmd+9",
         "command": "workbench.action.openEditorAtIndex9"
+    },
+    {
+        "key": "cmd+-",
+        "command": "-workbench.action.zoomOut"
+    },
+    {
+        "key": "cmd+-",
+        "command": "workbench.action.splitEditorOrthogonal"
+    },
+    {
+        "key": "cmd+k cmd+\\",
+        "command": "-workbench.action.splitEditorOrthogonal"
+    },
+    {
+        "key": "cmd+=",
+        "command": "-workbench.action.zoomIn"
     }
 ]
