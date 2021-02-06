@@ -1,16 +1,3 @@
-## Karabiner shortcuts
-
-[karabiner.json](https://github.com/sam-hosseini/dotfiles/blob/master/karabiner/karabiner.json)
-
-Directly inspired from amazing [Capslock Enhancement](https://github.com/Vonng/Capslock) project
-
-
-### Basic
-| Origin    | Maps to    | Comment                    |
-| --------- | ---------- | -------------------------- |
-| `⇪` Press | `⎋` Escape | Single press to escape     |
-| `⇪` Hold  | `✱`  Hyper | Enable Hyper Functionality |
-
 ### Navigation
 
 - Hold additional `⌘` Command for **selection**
