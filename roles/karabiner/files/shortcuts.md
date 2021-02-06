@@ -65,6 +65,7 @@
     * karabiner => hyper + HJKL = arrow keys
     * karabiner => hyper + command + HJKL = select text
     * karabiner => hyper + option + HL = jump over words
+    * vscode => command + HJKL = move between editor groups
     * iterm => command + HJKL = move between panes
     * iterm => command + shift + HJKL = resize panes
 * ;
