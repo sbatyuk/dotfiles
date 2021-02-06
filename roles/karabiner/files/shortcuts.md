@@ -32,8 +32,5 @@
 | `✱` + /       | `⇧⌘⌃4`              | Screenshot of area to clipboard   |
 | `✱` + `⌘` + / | `⇧⌘4`               | Screenshot of area to file        |
 | `✱` + X       | `⌃␢`  Ctrl+Spacebar | Switch Input Source               |
-| `✱` + `I`     | `⌃I`                | Ctrl + I                          |
-| `✱` + `O`     | `⌃O`                | Ctrl + O                          |
-| `✱` + `R`     | `⌃R`                | Ctrl + R                          |
 | `esc`         | `⌃⌘Q`               | Lock screen                       |
 | `✱` + `Y`     | `⌃⌘␢`               | Native macOS emoji keyboard popup |
