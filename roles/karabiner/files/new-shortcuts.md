@@ -60,5 +60,6 @@
 * .
 * /
 ---
+* spacebar
 * ←↑↓→
     * hammerspoon => hyper + ←↑↓→ = resize windows magically
