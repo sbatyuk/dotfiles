@@ -22,5 +22,8 @@ nnoremap e $
 " remove until end of line with de
 nnoremap de d$
 
+" redo with r
+nnoremap r <C-r>
+
 " clear search highlight with escape
 nnoremap <esc> :noh<CR>:<backspace>
