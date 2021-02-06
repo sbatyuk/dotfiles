@@ -32,6 +32,7 @@
 * R
 * T
 * Y
+    * karabiner => hyper + Y = open emoji pop-up
 * U
     * karabiner => hyper + U = page up
     * karabiner => hyper + command + U = select text with page up
@@ -70,6 +71,7 @@
     * karabiner => hyper + ' = "
 ---
 * Z
+    * karabiner => hyper + Z = change language
 * X
 * C
     * karabiner => hyper + C = ctrl + C
@@ -85,6 +87,8 @@
 * ,
 * .
 * /
+    * karabiner => hyper + / = take screenshot of area to clipboard 
+    * karabiner => hyper + command + / = take screenshot of area to file
 ---
 * spacebar
 * ←↑↓→

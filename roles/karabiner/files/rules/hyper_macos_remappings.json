@@ -1,5 +1,5 @@
 {
-    "description": "Hyper Misc",
+    "description": "Hyper macOS Remappings",
     "manipulators": [
         {
             "from": {
@@ -74,7 +74,7 @@
         },
         {
             "from": {
-                "key_code": "x",
+                "key_code": "z",
                 "modifiers": {
                     "mandatory": [
                         "right_command",
