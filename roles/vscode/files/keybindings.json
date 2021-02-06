@@ -102,5 +102,17 @@
     {
         "key": "cmd+k cmd+right",
         "command": "-workbench.action.focusRightGroup"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findWithSelection"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer"
     }
 ]

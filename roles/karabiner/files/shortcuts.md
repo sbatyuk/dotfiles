@@ -30,6 +30,7 @@
 * <kbd>W</kbd>
 * <kbd>E</kbd>
     * iterm => command + E = copy mode
+    * vscode => command + E = view explorer
 * <kbd>R</kbd>
 * <kbd>T</kbd>
 * <kbd>Y</kbd>
