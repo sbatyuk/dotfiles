@@ -1,23 +1,3 @@
-### Navigation
-
-- Hold additional `⌘` Command for **selection**
-- Hold additional `⌥`  with `HL`  for **jumping over a word**
-
-| Origin | Maps to        | Comment                                 |
-| ------ | -------------- | ------------------------                |
-| `H`    | `←` LeftArrow  | cursor left                             |
-| `J`    | `↓` DownArrow  | cursor down                             |
-| `K`    | `↑` UpArrow    | cursor up                               |
-| `L`    | `→` RightArrow | cursor right                            |
-| `U`    | `⇞` PageUp     | cursor page up                          |
-| `D`    | `⇟` PageDn     | cursor page down                        |
-| `⌘H`   | `⇧←` LeftArrow | cursor left and selection over a word   |
-| `⌘J`   | `⇧↓` DownArrow | cursor down and selection               |
-| `⌘K`   | `⇧↑` UpArrow   | cursor up and selection                 |
-| `⌘L`   | `⇧→` RightArrow| cursor right and selection over a word  |
-| `⌥H`   | `←` LeftArrow  | jump over to left                       |
-| `⌥L`   | `→` RightArrow | jump over to right                      |
-
 ## Deletion
 
 | Origin    | Maps to                            | Comment             |

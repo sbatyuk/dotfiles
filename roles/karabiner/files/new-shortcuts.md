@@ -42,6 +42,8 @@
     * [un-automatable] 1password => hyper + G = Show 1password
 * HJKL
     * karabiner => hyper + HJKL = arrow keys
+    * karabiner => hyper + command + HJKL = select text
+    * karabiner => hyper + option + HL = jump over words
     * iterm => command + HJKL = move between panes
     * iterm => command + shift + HJKL = resize panes
 * ;
