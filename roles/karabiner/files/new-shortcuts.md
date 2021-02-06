@@ -22,6 +22,7 @@
 * Y
 * U
     * karabiner => hyper + U = page up
+    * karabiner => hyper + command + U = select text with page up
     * iterm => page up = scroll one page up
 * I
 * O
@@ -35,6 +36,7 @@
 * S
 * D
     * karabiner => hyper + D = page down
+    * karabiner => hyper + command + D = select text with page down
     * iterm => page down = scroll one page down
 * F
     * [un-automatable] 1password => hyper + F = Fill Login or Show 1password
