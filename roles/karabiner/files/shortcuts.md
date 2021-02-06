@@ -1,9 +1,3 @@
-## Bash Control
-
-| Origin | Maps to     | Comment                                      |
-| ------ | ----------- | -------------------------------------------- |
-| `C`    | `⌃C`Ctrl+C  | SIGINT                                       |
-
 ## Shifter
 
 * A more convient shift for most cases

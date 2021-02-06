@@ -54,6 +54,7 @@
 * Z
 * X
 * C
+    * karabiner => hyper + C = ctrl + C
 * V
 * B
     * hammerspoon => hyper + B = maximize window
