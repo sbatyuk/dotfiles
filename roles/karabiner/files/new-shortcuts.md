@@ -59,7 +59,10 @@
     * hammerspoon => hyper + B = maximize window
     * iterm => command + B = maximize pane
 * N
+    * karabiner => hyper + N = delete a word
+    * karabiner => hyper + command + N = delete until end of line
 * M
+    * karabiner => hyper + M = delete a character
 * ,
 * .
 * /

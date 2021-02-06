@@ -1,11 +1,3 @@
-## Deletion
-
-| Origin    | Maps to                            | Comment             |
-| --------- | ---------------------------------- | ------------------- |
-| `N`       | `⌥⌫`  Option + ForwardDelete       | Delete a word ahead |
-| `M`       | `⌫` ForwardDelete                  | Delete a char ahead |
-| `⌘M`,`⌘N` | `⌘⌥⌫` Command+Option+ForwardDelete | Delete to line head |
-
 ## Bash Control
 
 | Origin | Maps to     | Comment                                      |
