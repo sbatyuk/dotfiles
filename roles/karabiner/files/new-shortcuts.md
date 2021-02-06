@@ -1,17 +1,29 @@
 * `
 * 1
+    * karabiner => hyper + 1 = shift + 1
 * 2
+    * karabiner => hyper + 2 = shift + 2
 * 3
+    * karabiner => hyper + 3 = shift + 3
 * 4
+    * karabiner => hyper + 4 = shift + 4
 * 5
+    * karabiner => hyper + 5 = shift + 5
 * 6
+    * karabiner => hyper + 6 = shift + 6
 * 7
+    * karabiner => hyper + 7 = shift + 7
 * 8
+    * karabiner => hyper + 8 = shift + 8
 * 9
+    * karabiner => hyper + 9 = shift + 9
 * 0
+    * karabiner => hyper + 0 = shift + 0
 * \-
+    * karabiner => hyper + \- = shift + \-
     * iterm => command + \- = split horizontally
 * =
+    * karabiner => hyper + = = shift + =
 ---
 * Q
 * W
@@ -28,8 +40,12 @@
 * O
 * P
 * [
+    * karabiner => hyper + [ = shift + [
 * ]
+    * karabiner => hyper + ] = shift + ]
 * \
+    * karabiner => hyper + \ = /
+    * karabiner => hyper + command + \ = |
     * iterm => command + \ = split vertically
 ---
 * A
@@ -49,7 +65,9 @@
     * iterm => command + HJKL = move between panes
     * iterm => command + shift + HJKL = resize panes
 * ;
+    * karabiner => hyper + ; = :
 * '
+    * karabiner => hyper + ' = "
 ---
 * Z
 * X

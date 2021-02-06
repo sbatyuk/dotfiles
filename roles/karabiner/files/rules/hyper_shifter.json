@@ -279,7 +279,7 @@
             },
             "to": [
                 {
-                    "key_code": "9",
+                    "key_code": "open_bracket",
                     "modifiers": [
                         "left_shift"
                     ]
@@ -301,7 +301,7 @@
             },
             "to": [
                 {
-                    "key_code": "0",
+                    "key_code": "close_bracket",
                     "modifiers": [
                         "left_shift"
                     ]
@@ -324,6 +324,29 @@
             "to": [
                 {
                     "key_code": "slash"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "backslash",
+                "modifiers": {
+                    "mandatory": [
+                        "left_command",
+                        "right_command",
+                        "right_control",
+                        "right_shift",
+                        "right_option"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "backslash",
+                    "modifiers": [
+                        "left_shift"
+                    ]
                 }
             ],
             "type": "basic"
@@ -365,29 +388,6 @@
             "to": [
                 {
                     "key_code": "semicolon",
-                    "modifiers": [
-                        "left_shift"
-                    ]
-                }
-            ],
-            "type": "basic"
-        },
-        {
-            "from": {
-                "key_code": "backslash",
-                "modifiers": {
-                    "mandatory": [
-                        "left_command",
-                        "right_command",
-                        "right_control",
-                        "right_shift",
-                        "right_option"
-                    ]
-                }
-            },
-            "to": [
-                {
-                    "key_code": "backslash",
                     "modifiers": [
                         "left_shift"
                     ]
