@@ -238,29 +238,6 @@
         },
         {
             "from": {
-                "key_code": "d",
-                "modifiers": {
-                    "mandatory": [
-                        "left_command",
-                        "right_command",
-                        "right_control",
-                        "right_shift",
-                        "right_option"
-                    ]
-                }
-            },
-            "to": [
-                {
-                    "key_code": "page_down",
-                    "modifiers": [
-                        "left_shift"
-                    ]
-                }
-            ],
-            "type": "basic"
-        },
-        {
-            "from": {
                 "key_code": "u",
                 "modifiers": {
                     "mandatory": [
@@ -297,6 +274,29 @@
             "to": [
                 {
                     "key_code": "page_down"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "d",
+                "modifiers": {
+                    "mandatory": [
+                        "left_command",
+                        "right_command",
+                        "right_control",
+                        "right_shift",
+                        "right_option"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "page_down",
+                    "modifiers": [
+                        "left_shift"
+                    ]
                 }
             ],
             "type": "basic"
